@@ -74,7 +74,7 @@
         <div
           id={i}
           class={`slide ${sliderCursor}`}
-          style={`background-position: ${i}00vw center; background-image: url(${slide.src})`}
+          style={`background-image: url(${slide.src})`}
         />
       {:else}
         {#if slide.type === "video"}
@@ -209,6 +209,7 @@
     height: 100vh;
     width: 100vw;
     background-size: cover;
+    background-repeat: no-repeat;
     transition: all 200ms ease-out 0s;
   }
 
