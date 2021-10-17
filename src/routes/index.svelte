@@ -61,7 +61,8 @@
           backgroundColor: "#C3862C"
         },
         {
-          src: "360 Content Strategy — We took on the project’s full scope from editorial lineups, branded Google docs and social media meta accounts to commissioning original content. Working with the SB network was key when building Hershel’s global community and content. Brand Positioning, Creative Direction, Production, Theme Development, Contributor Outreach, Pagination & Flatplan, Art Direction, Editorial Design, Print Management and Distribution Strategy.",
+          src: "360 Content Strategy — We took on the project’s full scope from editorial lineups, branded Google docs and social media meta accounts to commissioning original content. Working with the SB network was key when building Hershel’s global community and content.",
+          srcTwo: "Brand Positioning, Creative Direction, Production, Theme Development, Contributor Outreach, Pagination & Flatplan, Art Direction, Editorial Design, Print Management and Distribution Strategy.",
           type: "text",
           title: "Scope",
           font: "roc-grotesk, sans-serif",

@@ -44,7 +44,7 @@
         <p class="p1">
           {$_('dialog.sayHi.p1.text1')} 
           {$_('dialog.sayHi.p1.text2')} 
-          {$_('dialog.sayHi.p1.text3')}
+          {@html $_('dialog.sayHi.p1.text3')}
           <br> 
           {$_('dialog.sayHi.p1.text4')} 
           {$_('dialog.sayHi.p1.text5')} 
@@ -169,13 +169,14 @@
   }
   .modal-section-content p {
     position: absolute;
+    left: 25px;
     z-index:1;
   }
   .dialog-icon {
     position: absolute;
     right: -15px;
     width: 64px;
-    height: 23px;
+    height: 39px;
     padding: 60px;
     cursor: pointer;
     z-index: 4;
@@ -257,7 +258,7 @@
   }
   .bonjour-dialog {
     width: 485px;
-    height: 600px;
+    height: 500px;
     position: absolute;
     z-index: 3;
     background-color: #F86C01;

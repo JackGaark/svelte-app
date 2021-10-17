@@ -100,9 +100,10 @@
             {:else}
             <div class="slide text_slide" style={`background-color: ${slide.backgroundColor}; color:${slide.color}; font-family: ${slide.font || 'Moret Regular'}; font-size: ${slide.fontSize}` }>
                 <div class="text_slide_container">
-                  <h5 class="text_title">
-                    {slide.title}
-                  </h5>{slide.src}
+                    <h5 class="text_title">
+                      {slide.title}
+                    </h5>{slide.src}
+                  <br><br>{slide.srcTwo}
                 </div> 
             </div>
           {/if}
@@ -172,8 +173,8 @@
     align-content: stretch;
   }
   .text_slide_container {
-    padding-left: 55px;
-    padding-top: 75px;
+    padding-left: 25px;
+    padding-top: 50px;
     width: 80%;
   }
   
