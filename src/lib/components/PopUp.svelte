@@ -165,6 +165,7 @@
     padding-top: 150px;
     position: relative;
     font-family: 'Moret Regular';
+    padding-bottom: 0;
 
   }
   .modal-section-content p {
@@ -256,6 +257,8 @@
     font-weight: 400;
     font-family: "Moret Regular";
     cursor: pointer;
+    width: 8px;
+    line-height: 8px;
   }
   .bonjour-dialog {
     width: 485px;
@@ -322,6 +325,7 @@
       position: relative;
       margin-left: -45px;
       padding-top: 40px;
+      margin-bottom: 0;
     }
     .bonjour-dialog {
       width: 70vw;
@@ -348,6 +352,10 @@
     .bonjour-button.close {
       top: 20px;
       right: 5px;
+    }
+
+    .right.modal-section-content {
+      padding-top: 0;
     }
 
 }

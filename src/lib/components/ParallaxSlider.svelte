@@ -102,8 +102,8 @@
                 <div class="text_slide_container">
                     <h5 class="text_title">
                       {slide.title}
-                    </h5>{slide.src}
-                  <br><br>{slide.srcTwo}
+                    </h5>{@html slide.src}
+                    
                 </div> 
             </div>
           {/if}
