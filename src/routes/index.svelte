@@ -69,6 +69,15 @@
           fontSize: "36px",
           color: "#E2EE75",
           backgroundColor: "#C3862C"
+        },
+        {
+          src: "Imogene Barron, Ryan Daniel Browne, Eva Cremers, Natasha & Dino Forte, Michelle Maguire, Meaghan Way, Kelsey McClellan, Ashley Oliveri, Catherine Potvin, Marie H. Rainville, Houmi Sakata, Victoria Sieczka, Aileen Son, Oumayma Ben Tanfous, Stephanie Mercier Voyer, Stephen Wilde, ​​Nico Young Sacha Jackson, Editor Featuring Hana Vu, Danny Smiles, Bradley Sheppard, Amélie Rousseaux, Apolla Echino, Maxime Bayol, Marc Cefalu Awards Editorial, Entire Publication — Applied Arts 2021 Design, Éditorial — Concours Idéa 2021",
+          type: "text",
+          title: "Scope",
+          font: "roc-grotesk, sans-serif",
+          fontSize: "36px",
+          color: "#E2EE75",
+          backgroundColor: "#C3862C"
         }
       ]}
     />
