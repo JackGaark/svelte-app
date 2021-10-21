@@ -74,7 +74,7 @@
         <div
           id={i}
           class={`slide ${sliderCursor}`}
-          style={`background-image: url(${slide.src})`}
+          style={`background-position: ${i}00vw center; background-image: url(${slide.src})`}
         />
       {:else}
         {#if slide.type === "video"}
@@ -210,7 +210,6 @@
     height: 100vh;
     width: 100vw;
     background-size: cover;
-    background-repeat: no-repeat;
     transition: all 200ms ease-out 0s;
   }
 
@@ -261,8 +260,8 @@
     min-width: 20vw;
     padding: 25px;
     padding-left: 25px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
     position: absolute;
     z-index: 1;
     left: 0px;
@@ -278,7 +277,7 @@
 
   .image-logo {
     position: fixed;
-    left: 25px;
+    left: 30px;
     top: 30px;
     width: 177px;
     height: 4.75rem;
@@ -296,6 +295,7 @@
   @media screen and (max-width: 1200px) {
   .slider-title {
     bottom: 0;
+    margin-bottom: -10px;
     font-size: 2.25rem;
   }
   .paginator {
@@ -343,6 +343,11 @@
     .text_title {
       padding-top: 5px;
       font-size: 24px;
+    }
+
+    .image-logo {
+    width: 117px;
+    top: 10px;
     }
   }
 </style>

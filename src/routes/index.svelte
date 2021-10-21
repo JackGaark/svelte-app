@@ -29,27 +29,31 @@
       title="{$_('slider.1.title')}"
       slides={[
         {
-          src: "images/HSCo_Mag_1.png",
+          src: "images/HSCo_1.png",
           type: "image"
         },
         {
-          src:"images/HSCo_Mag_2.png",
+          src:"images/HSCo_2.png",
           type: "image"
         },
         {
-          src:"images/HSCo_Mag_3.png",
+          src:"images/HSCo_3.png",
           type: "image"
         },
         {
-          src:"images/HSCo_Mag_4.png",
+          src:"images/HSCo_4.png",
           type: "image"
         },
         {
-          src:"images/HSCo_Mag_5.png",
+          src:"images/HSCo_5.png",
           type: "image"
         },
         {
-          src: "images/HSCo_Mag_6.png",
+          src: "images/HSCo_6.png",
+          type: "image"
+        },
+        {
+          src: "images/HSCo_7.png",
           type: "image"
         },
         {

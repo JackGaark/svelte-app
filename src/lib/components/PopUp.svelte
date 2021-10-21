@@ -174,7 +174,7 @@
   }
   .dialog-icon {
     position: absolute;
-    right: -15px;
+    right: -10px;
     width: 64px;
     height: 39px;
     padding: 60px;
@@ -227,7 +227,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  color: #1900FF
+  color: #1900FF;
+  margin-left: -20px;
 }
 .dialog-center-mobile {
   display: none;
@@ -235,7 +236,7 @@
 
 .image-logo {
     position: absolute;
-    left: 24px;
+    left: 25px;
     top: 30px;
     width: 117px;
     z-index: 1;
@@ -245,11 +246,11 @@
     writing-mode: vertical-rl;
     text-orientation: sideways;
     position: absolute;
-    right: 40px;
-    top: 25vh;
+    right: 50px;
+    top: 400px;
     color:#1900FF;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 14.33px;
     font-size: 0.8rem;
     z-index: 2;
     font-weight: 400;
@@ -293,8 +294,8 @@
   .bonjour-button.close {
     background-color: #1F0EDF;
     color:  #F86C01;
-    top: 70px;
-    right: 4px;
+    top: 230px;
+    right: 20px;
   }
     @media screen and (max-width: 600px) {
     .modal-section {
@@ -319,11 +320,12 @@
     }
     .modal-section-content p {
       position: relative;
-      margin-left: -20px;
+      margin-left: -45px;
+      padding-top: 40px;
     }
     .bonjour-dialog {
       width: 70vw;
-      height: 80vh;
+      height: 65vh;
       top:100px
     }
 
@@ -333,6 +335,19 @@
     .dialog-icon.mobile {
       width: 37px;
       display:block;
+      height: 23px;
+      padding-top: 55px;
+      padding-right: 35px;
+    }
+
+    .bonjour-button {
+      top: 120px;
+      right: 25px;
+    }
+
+    .bonjour-button.close {
+      top: 20px;
+      right: 5px;
     }
 
 }

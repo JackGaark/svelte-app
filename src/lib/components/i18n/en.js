@@ -36,10 +36,7 @@ export const en = {
   },
   dialog: {
     title: 'Hi there, Bounjour and Bienvenue.',
-    leftText: `Super Bonjour is a creative studio specializing in strategy, branding & content.
-    Empathy, awareness & exploration are at the heart of our practice. Our design solutions align purpose with output. Meaning we future proof you. We challenge your status quo.
-    We reimagine systems, spaces & creative for a healthier future. Our studio culture champions low yield, high quality work and we’ve developed a proprietary process (Brand Therapy™) to get us there.
-    Plus, we’ve got a tap that pours sweet, sweet secret sauce.`,
+    leftText: `We are a creative studio — based on two of Canada’s three coasts. With HQs in both Montréal and Vancouver, we make sure we work almost all the time zones (lolz). Got budget? Hit us up! We deliver sweet sweet creative, zappy copy or slick code. Wegotchu. What if we had more text and a few more sentences in here? Then we would need to scroll some more... A little more, still.`,
     services: {
       title: 'Services',
       strategy: 'Strategy',
