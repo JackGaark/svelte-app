@@ -208,8 +208,8 @@
   }
 
   .left-text {
-    font-size: 30px;
-    line-height: 39px;
+    font-size: 54px;
+    line-height: 70px;
   }
 
 .right.modal-section-content {
@@ -356,6 +356,10 @@
 
     .right.modal-section-content {
       padding-top: 0;
+    }
+    .left-text {
+      font-size: 30px;
+      line-height: 39px;
     }
 
 }

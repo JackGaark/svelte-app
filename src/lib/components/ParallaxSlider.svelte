@@ -173,7 +173,7 @@
     align-content: stretch;
   }
   .text_slide_container {
-    padding-left: 25px;
+    padding-left: 55px;
     padding-top: 50px;
     width: 80%;
   }
@@ -259,7 +259,7 @@
     /* background-color: rgb(255 255 255 / 80%); */
     min-width: 20vw;
     padding: 25px;
-    padding-left: 25px;
+    padding-left: 55px;
     padding-bottom: 30px;
     margin-bottom: 20px;
     position: absolute;
@@ -277,7 +277,7 @@
 
   .image-logo {
     position: fixed;
-    left: 30px;
+    left: 55px;
     top: 30px;
     width: 177px;
     height: 4.75rem;
