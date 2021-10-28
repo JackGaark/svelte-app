@@ -565,12 +565,32 @@
           type: "image"
         },
         {
-          src: "The body sats what words cannot- vulnerable, free and quitely powerful.  Our creative direction counterbalances traditional beauty ideals and removes the male gaze to introduce a woman's body in a new and real context. HIRRS is designed for a woman's movement.",
+          src: "As part of the North American Nike campaign to revive the cultural caché of Air Max, we were brought on as the Canadian team. The images, featuring multimedia artist Will Selviz were rolled out at Nike and Foot Locker, in-store and online,  and to launch Air Max Day.",
           type: "text",
-          title: "Heading file",
-          backgroundbackgroundColor: "#3851BA"
+          title: "Scope",
+          fontSize: "54px",
+          color: "#FFFFFF",
+          backgroundColor: "#222232"
+        },
+        {
+          src: "Working closely with the in-house leads, we were on set in Vancouver to art direct and liaise with the Portland and NYC teams.",
+          type: "text",
+          title: "Scope",
+          font: "roc-grotesk, sans-serif",
+          fontSize: "30px",
+          color: "#E2EE75",
+          backgroundColor: "#222232"
+        },
+        {
+          src: "Vancouver Team — Talent Will Selviz Photography Conor Cunningham Assist. Rob Seebacher, Mats Schram, Donnel Barroso Styling Leila Bani, Assist. Masha Pazhouh, Deo Cruz HMU Christopher Deagle DOP The Pool Service Production Design Hank Mann Sets & Props Freddy Harder, Lauren Barrufa 1st AD Richard AmiesProduction Blue Amber, Vancouver",
+          type: "text",
+          title: "Scope",
+          font: "roc-grotesk, sans-serif",
+          fontSize: "30px",
+          color: "#E2EE75",
+          backgroundColor: "##3851BA"
         }
-        ]}
+      ]}
     />
     <ParallaxSlider
       title="{$_('slider.7.title')}"
@@ -609,10 +629,14 @@
           type: "image"
         },
         {
-          src: "The body sats what words cannot- vulnerable, free and quitely powerful.  Our creative direction counterbalances traditional beauty ideals and removes the male gaze to introduce a woman's body in a new and real context. HIRRS is designed for a woman's movement.",
+          src: "Photography Kelly Jacob, Akina Chan, Briggs Ogloff, William Arcand, Marie H. Rainville, Assist. Don Loga, Emily Velasquez Gilbert, Kyle Gibson, Alex Guiry, Axel & Jacques Palomares, Greg Beck Videography Gerardo Alcaine Styling Tinashe Musara, Leila Bani, Tiana Franks, Frédérique Gauthier, Izabel Soucy, Assist. Eunice Huot, Alyson Holler Sets & Props Evelyne Morin HMU Ashley Diabo, Maxine Munsun, Maria Walton, Alana & Maddie Alper, Léonie Lévesque, Claudine Jourdain Models Ivy, Jamil, Ludovie, Kevin, Simone, Zacc, Anastasia, Tatenda, Shade, Whitney, Ciana Yekta, Chanel, Noémie Jérôme, Naomy, Adams, Production Aaron Van Dyck (Vancouver),  Kristia Louis-Seize (Montréal)",
           type: "text",
-          title: "Heading file"
-        }
+          title: "Scope",
+          font: "roc-grotesk, sans-serif",
+          fontSize: "30px",
+          color: "#E2EE75",
+          backgroundColor: "##A3232E"
+        } 
       ]}
     />
     <ParallaxSlider
@@ -656,9 +680,30 @@
           type: "image"
         },
         {
-          src: "The body sats what words cannot- vulnerable, free and quitely powerful.  Our creative direction counterbalances traditional beauty ideals and removes the male gaze to introduce a woman's body in a new and real context. HIRRS is designed for a woman's movement.",
+          src: "We updated the brand strategy to support the client’s shift from trend retailer to a purpose-driven brand. We brought significant changes to the DNA, resetting them on a foundation of inclusion, a community-first approach that is still true to the brand today. Extending these values behind the lens with the crew and talent allowed us to prove the Call It Spring family is real.",
           type: "text",
-          title: "Heading file"
+          title: "Scope",
+          fontSize: "54px",
+          color: "#C84600",
+          backgroundColor: "#CABADF"
+        },
+        {
+          src: "As the once-upon-a-time in house, we go way back. Our history, trust and deep understanding of their business reality positioned us as long-term partners. Creative Direction Brand Strategy Messaging Casting On-set Direction SB Secret Sauce Shot List Shoe Face Ratio™",
+          type: "text",
+          title: "Scope",
+          font: "roc-grotesk, sans-serif",
+          fontSize: "30px",
+          color: "#E2EE75",
+          backgroundColor: "#CABADF"
+        },
+        {
+          src: "As Kombi’s strategic and creative partner we supported their internal team<bThis edit includes images from various seasons.Photography Tim Barber Styling Imogene Barron Sets & Props Sean Daly HMU Nikki Providence, Sandy Ganzer, Danielle & Nicole Kahlani Models KC, Dronme, Sandrine, Shaheem, Barbie, Julian, Christie, Alexis, Bella, Sahara, Josiah Production The Production Club, Jade Jean-Marie, Natasha Forte, Camp Productions Shot on location in LA & London",
+          type: "text",
+          title: "Scope",
+          font: "roc-grotesk, sans-serif",
+          fontSize: "30px",
+          color: "#E2EE75",
+          backgroundColor: "#CABADF"
         }
       ]}
     />
@@ -680,7 +725,33 @@
         {
           src: "images/LOUISE_4.png",
           type: "image"
-        }
+        },
+        {
+          src: "How do you begin with a sound and create imagery that speaks to the emotion and personal message of a song? With Louise Burns, coming to terms with teen stardom led her towards heartbreaking introspection and her fourth album, Portraits. Our creative direction recognized her growth and spoke to the strength of being a grown ass woman.",
+          type: "text",
+          title: "Creative Direction & Design",
+          fontSize: "54px",
+          color: "#FFFFFF",
+          backgroundColor: "#1D1D1D"
+        },
+        {
+          src: "We worked collaboratively  with Louise to define her new look and build the team to help create it. Creative Direction On-set Direction Graphic Design",
+          type: "text",
+          title: "Scope",
+          font: "roc-grotesk, sans-serif",
+          fontSize: "30px",
+          color: "#E2EE75",
+          backgroundColor: "#1D1D1D"
+        },
+        {
+          src: "Photography Jennifer Latour Styling Redia Soltis HMU Taylor Smits, Harriet Sales",
+          type: "text",
+          title: "Scope",
+          font: "roc-grotesk, sans-serif",
+          fontSize: "30px",
+          color: "#E2EE75",
+          backgroundColor: "#1D1D1D"
+        },
       ]}
     />
     <ParallaxSlider
@@ -731,12 +802,23 @@
           type: "image"
         },
         {
-          src: "The body sats what words cannot- vulnerable, free and quitely powerful.  Our creative direction counterbalances traditional beauty ideals and removes the male gaze to introduce a woman's body in a new and real context. HIRRS is designed for a woman's movement.",
+          src: "Through our relationship with Osei Duro, we experienced something beyond a typical partnership. We collaborated with creatives in many cities, travelled and immersed ourselves in different realities, and challenged our understanding of (slow) fashion. It fundamentally changed our understanding of the industry, our practice and our impact.  ",
           type: "text",
-          title: "Heading file",
-          backgroundbackgroundColor: "#3851BA"
+          title: "Scope",
+          fontSize: "54px",
+          color: "#E1D8CA",
+          backgroundColor: "#111E"
+        },
+        {
+          src: "Campaign Photography Jessica Sarkodie, Mathieu Fortin Film & Travel Photography Super BonjourSets & Props Osei Duro, Super Bonjour Styling Osei Duro, Jay Forest HMU by Alana & Maddie Alper Models Nuerki, Penny Shot in Montréal and in various locations around Accra, Ghana",
+          type: "text",
+          title: "Credits",
+          font: "roc-grotesk, sans-serif",
+          fontSize: "30px",
+          color: "#E2EE75",
+          backgroundColor: "#111E"
         }
-        ]}
+      ]}
     />
     <ParallaxSlider
       title="{$_('slider.5.title')}"
@@ -770,11 +852,31 @@
           type: "image"
         },
         {
-          src: "The body sats what words cannot- vulnerable, free and quitely powerful.  Our creative direction counterbalances traditional beauty ideals and removes the male gaze to introduce a woman's body in a new and real context. HIRRS is designed for a woman's movement.",
+          src: "As their creative partners, we worked with the in-house team to course correct their positioning vis-a-vis a booming wellness industry. We refined a proprietary take on self-care and rituals, updated their overall design codes to inform their campaigns, packaging, tone and OOH messaging.",
           type: "text",
-          title: "Heading file",
-          backgroundbackgroundColor: "#3851BA"
-        }
+          title: "Brand Positioning & Campaign Strategy",
+          fontSize: "54px",
+          color: "#FFFFFF",
+          backgroundColor: "#290B15"
+        },
+        {
+          src: "Creative Direction, Campaign Strategy, Art Buying & On-set Direction Video Storyboarding & Direction Packaging Design  ",
+          type: "text",
+          title: "Scope",
+          font: "roc-grotesk, sans-serif",
+          fontSize: "30px",
+          color: "#E2EE75",
+          backgroundColor: "#290B15"
+        },
+        {
+          src: "This edit includes images from various seasons Photography by Mathieu Fortin Assist. Martin Lacroix, Marc-André Dumas, Carlo Calope, Gerardo Alcaine Sets & Props Evelyne Morin, Audrey St-Laurent Production Studio L’Éloi, Montréal",
+          type: "text",
+          title: "Scope",
+          font: "roc-grotesk, sans-serif",
+          fontSize: "30px",
+          color: "#E2EE75",
+          backgroundColor: "#290B15"
+        },
         ]}
     />
     <ParallaxSlider
@@ -805,11 +907,31 @@
           type: "image"
         },
         {
-          src: "The body sats what words cannot- vulnerable, free and quitely powerful.  Our creative direction counterbalances traditional beauty ideals and removes the male gaze to introduce a woman's body in a new and real context. HIRRS is designed for a woman's movement.",
+          src: "For the love of dad — a feminist take on Father’s Day, updating how men are portrayed. Inspired by Linda McCartney’s family photos, our concept was anchored in the compassionate and tender gaze of a partner. Challenging the outdated codes of masculinity, we analyzed what it means to be a father (figure) today and crafted a love letter to the true spirit of fatherhood.",
           type: "text",
-          title: "Heading file",
-          backgroundbackgroundColor: "#3851BA"
-        }
+          title: "Scope",
+          fontSize: "54px",
+          color: "#C84600",
+          backgroundColor: "#CABADF"
+        },
+        {
+          src: "Sometimes, casting needs to happen on both sides of the lens. We reached out to our community to find the right pairing of family and photographer. Partnering with our favorite London-based photographer, Imogene Barron, we captured sweet father-daughter moments at the Jean-Marie home. Creative Direction Messaging Casting Art Buying Virtual Art Direction ",
+          type: "text",
+          title: "Scope",
+          font: "roc-grotesk, sans-serif",
+          fontSize: "30px",
+          color: "#E2EE75",
+          backgroundColor: "#CABADF"
+        },
+        {
+          src: "Photography Imogene Barron, Assist James Giffiths Styling Imogene Barron, Assist. Alicia Ellis London Production Jade Jean-Marie Vancouver Production Aaron Van Dyck Featuring The Jean-Marie Family — Leon, Iggy & Milou Shot on location in London",
+          type: "text",
+          title: "Scope",
+          font: "roc-grotesk, sans-serif",
+          fontSize: "30px",
+          color: "#E2EE75",
+          backgroundColor: "#CABADF"
+        },
         ]}
     />
     <ParallaxSlider 
@@ -840,10 +962,31 @@
             type: "image"
           },
           {
-          src: "The body sats what words cannot- vulnerable, free and quitely powerful.  Our creative direction counterbalances traditional beauty ideals and removes the male gaze to introduce a woman's body in a new and real context. HIRRS is designed for a woman's movement.",
+          src: "Starting from a copy brief, we rooted this concept in emotional insights, designed to unite. Capturing that very moment of transformation — the feeling of achieving a new personal best — we called in a community of lunchtime athletes and introducing them to their new favorite retailer.",
           type: "text",
-          title: "Heading file"
-          }
+          title: "Scope",
+          fontSize: "54px",
+          color: "#F8D0FB",
+          backgroundColor: "#C34C25"
+        },
+        {
+          src: "We joined the in-house team to develop an awareness campaign for multiple cities and new markets. Campaign Strategy & Qualitative Insights Storyboarding, Casting & On-set Direction SB Secret Sauce Shot List",
+          type: "text",
+          title: "Scope",
+          font: "roc-grotesk, sans-serif",
+          fontSize: "30px",
+          color: "#E2EE75",
+          backgroundColor: "#C34C25"
+        },
+        {
+          src: "Photography by Mathieu Fortin, Assist. Aljosa Alijagic, William Cole Styling by Farah Benosman, Assist. Marianne Blais & Pascale Tessier Sets & Props Mathilde Beaudoin-Tessier, Jean-Philippe Pelletier HMU Valeria Amirova, Assist. Marie-Pier Tardif Models Sheida, Noémie, Diizon, Amélie Production Jordan R. Bruneau, Madame Brown Shot at the Olympic Stadium, Montréal ",
+          type: "text",
+          title: "Scope",
+          font: "roc-grotesk, sans-serif",
+          fontSize: "30px",
+          color: "#E2EE75",
+          backgroundColor: "#C34C25"
+        },
         ]}
     />
     <ParallaxSlider
@@ -878,12 +1021,15 @@
           type: "image"
         },
         {
-          src: "The body sats what words cannot- vulnerable, free and quitely powerful.  Our creative direction counterbalances traditional beauty ideals and removes the male gaze to introduce a woman's body in a new and real context. HIRRS is designed for a woman's movement.",
+          src: "Creative Direction, Campaign Strategy & On-set Direction Super Bonjour This edit includes images from various seasons. Photography Nik Mirus, Mathieu Fortin Assist. Jeremy Bobrow, Marc-André Dumas DOP Nik Mirus Assist. Gerardo Alcaine, Gaffer Bastien Mayer, Grip Stéphane Klopp Copy & Script Sacha Jackson Sets & Props Evelyne Morin, Audrey St-Laurent, Michaël Ho Styling Rima Chahine Produced & Shot at Studio L’Éloi, Montréal ",
           type: "text",
-          title: "Heading file",
-          backgroundbackgroundColor: "#3851BA"
+          title: "Scope",
+          font: "roc-grotesk, sans-serif",
+          fontSize: "30px",
+          color: "#E2EE75",
+          backgroundColor: "#9A7429"
         }
-        ]}
+      ]}
     />
   </div>
 </main>

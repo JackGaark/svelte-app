@@ -170,7 +170,7 @@
   }
   .modal-section-content p {
     position: absolute;
-    left: 25px;
+    left: 55px;
     z-index:1;
     margin-top: 25px;
   }
@@ -197,7 +197,7 @@
     font-size: 18px;
     color: #E2EE75;
     margin-bottom: 2px;
-    margin-left: -20px;
+    margin-left: 5px;
   }
   
   .dialog-center {
@@ -238,7 +238,7 @@
 
 .image-logo {
     position: absolute;
-    left: 25px;
+    left: 55px;
     top: 30px;
     width: 177px;
     height: 76px;

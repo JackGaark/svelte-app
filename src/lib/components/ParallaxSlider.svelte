@@ -180,6 +180,7 @@
   
   .text_title {
     padding-top: 50px;
+    padding-bottom: 10px;
     margin-bottom: 2px;
     color: #E2EE75;
     font-size: 18px;
