@@ -317,6 +317,12 @@
   }
 
   @media screen and (max-width: 600px) {
+    .slide-video-extra-padding video {
+      width: 100vw;
+      height: auto;
+      margin: 0;
+    }
+    
     .slider-title {
       font-size: 1.0rem;
       width: 5vw;
@@ -350,9 +356,9 @@
     }
 
     .image-logo {
-    width: 117px;
-    top: 10px;
-    left: 25px;
+      width: 117px;
+      top: 10px;
+      left: 25px;
     }
   }
 </style>
