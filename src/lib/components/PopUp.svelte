@@ -325,7 +325,8 @@
     .modal-section-content p {
       position: relative;
       margin-left: -45px;
-      padding-top: 40px;
+      padding-top: 30px;
+      margin-top: 0;
       margin-bottom: 0;
     }
     .bonjour-dialog {
