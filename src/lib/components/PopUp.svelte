@@ -303,7 +303,17 @@
     right: 20px;
   }
     @media screen and (max-width: 600px) {
-    .modal-section {
+    
+    .image-logo {
+      position: absolute;
+      left: 25px;
+      top: 30px;
+      width: 177px;
+      height: 76px;
+      z-index: 1;
+  }
+    
+      .modal-section {
       width: 100%;
       flex: 1;
       overflow:initial;
@@ -334,6 +344,7 @@
       padding-top: 30px;
       margin-top: 0;
       margin-bottom: 0;
+      left: 25px;
     }
     .bonjour-dialog {
       width: 70vw;
@@ -369,6 +380,15 @@
       font-size: 30px;
       line-height: 39px;
     }
+
+    h5.title {
+    font-family: 'Opposit-Medium';
+    font-weight: 100;
+    font-size: 18px;
+    color: #E2EE75;
+    margin-bottom: 2px;
+    margin-left: -20px;
+  }
 
 }
 </style>
