@@ -339,11 +339,13 @@
 
     .text_slide_container {
       padding-top: 5px;
+      padding-left: 25px;
     }
 
     .text_title {
       padding-top: 5px;
       font-size: 24px;
+      margin-top: 0;
     }
 
     .image-logo {
