@@ -172,6 +172,7 @@
     position: absolute;
     left: 25px;
     z-index:1;
+    margin-top: 25px;
   }
   .dialog-icon {
     position: absolute;
