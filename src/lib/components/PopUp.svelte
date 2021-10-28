@@ -325,6 +325,8 @@
       justify-content: normal;
       overflow-y: auto;
       height: 100vh;
+      align-items: flex-start;
+			align-content: flex-start;
     }
     .modal-section-content p {
       position: relative;
