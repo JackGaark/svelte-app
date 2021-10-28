@@ -319,6 +319,7 @@
     .slider-title {
       font-size: 1.0rem;
       width: 5vw;
+      padding-left: 25px;
     }
 
     .paginator{
@@ -348,6 +349,7 @@
     .image-logo {
     width: 117px;
     top: 10px;
+    left: 25px;
     }
   }
 </style>
