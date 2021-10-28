@@ -311,6 +311,9 @@
     }
     .dialog-center-mobile {
       display: block;
+      width: 100vw;
+      height: auto;
+      object-fit: cover;
     }
     .dialog-center {
       display:none;
