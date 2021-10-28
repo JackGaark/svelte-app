@@ -311,7 +311,7 @@
   }
  
   .image-logo {
-    width: 117px;
+    width: 177px;
     }
   }
 
@@ -344,7 +344,7 @@
 
     .text_title {
       padding-top: 5px;
-      font-size: 24px;
+      font-size: 18px;
       margin-top: 0;
     }
 

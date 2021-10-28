@@ -240,7 +240,8 @@
     position: absolute;
     left: 25px;
     top: 30px;
-    width: 117px;
+    width: 177px;
+    height: 76px;
     z-index: 1;
   }
   .bonjour-button {
