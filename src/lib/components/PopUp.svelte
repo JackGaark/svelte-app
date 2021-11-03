@@ -309,8 +309,8 @@
       position: absolute;
       left: 25px;
       top: 30px;
-      width: 177px;
-      height: 76px;
+      width: 117px;
+      height: 4.75rem;
       z-index: 1;
   }
     
@@ -361,12 +361,12 @@
       display:block;
       height: 23px;
       padding-top: 55px;
-      padding-right: 35px;
+      padding-right: 40px;
     }
 
     .bonjour-button {
       top: 120px;
-      right: 25px;
+      right: 30px;
     }
 
     .bonjour-button.close {

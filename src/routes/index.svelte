@@ -274,7 +274,7 @@
         },
         {
           addPadding: true,
-          src:"videos/video7.mp4",
+          src:"videos/NP_5.mp4",
           type: "video"
         },
         {
