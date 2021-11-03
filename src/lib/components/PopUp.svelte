@@ -224,6 +224,7 @@
 .right.modal-section-content h5 {
   color: #C84501;
   font-weight: 200;
+  margin-left: -20px;
 }
 .right.modal-section-content ul {
   list-style: none;

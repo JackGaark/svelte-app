@@ -1,37 +1,58 @@
 export const en = {
   slider: {
     1: {
-      title: 'Good morning',
+      title: 'HSCo Magazine',
     },
     2: {
-      title: 'Good morning 2',
+      title: 'Osei Duro',
     },
     3: {
-      title: 'Good morning 3',
+      title: 'Fable Home',
     },
     4: {
-      title: 'Good morning 4',
+      title: 'HSCo',
     },
     5: {
-      title: 'Good morning 5',
+      title: 'Nine Point',
     },
     6: {
-      title: 'Good morning 6',
+      title: 'Hirrs',
     },
     7: {
-      title: 'Good morning 7',
+      title: 'LB -- 1',
     },
     8: {
-      title: 'Good morning 8',
+      title: 'Rise',
     },
     9: {
-      title: 'Good morning 9',
+      title: 'Kombi',
     },
     10: {
-      title: 'Good morning 10',
+      title: 'Nike',
     },
     11: {
-      title: 'Good morning 11',
+      title: 'LB -- 2',
+    },
+    12: {
+      title: 'CIS',
+    },
+    13: {
+      title: 'Louise Burns',
+    },
+    14: {
+      title: 'Ghana',
+    },
+    15: {
+      title: 'DT -- 1',
+    },
+    16: {
+      title: 'Saxx',
+    },
+    17: {
+      title: 'Alti',
+    },
+    18: {
+      title: 'DT -- 2',
     }
   },
   dialog: {

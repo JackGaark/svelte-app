@@ -53,7 +53,7 @@
           type: "image"
         },
         {
-          src: "Magazines *♡* also a great medium to reposition a brand. We created a tool to build a community and generate lasting ties with creatives & travelers.Vol 1: Islands — a theme explored geographically, and metaphorically. From the launch party at Echo Park Island to a 1 800 number connecting you to the sounds of island life, every detail was considered.",
+          src: "Magazines *♡* Also a great medium to reposition a brand. We created a tool to build a community and generate lasting ties with creatives and travelers.<br>Vol 1: Islands — a theme explored geographically and metaphorically. From the launch party on Echo Park’s island to a 1-800 number connecting you to the sounds of island life, every detail was considered.  ",
           type: "text",
           title: "Creating a Travel Magazine",
           fontSize: "54px",
@@ -61,7 +61,7 @@
           backgroundColor: "#C3862C"
         },
         {
-          src: "360 Content Strategy — <br>We took on the project’s full scope from editorial lineups, branded Google docs and social media meta accounts to commissioning original content. Working with the SB network was key when building Hershel’s global community and content.<br><br>Brand Positioning, Creative Direction, Production, Theme Development, Contributor Outreach, Pagination & Flatplan, Art Direction, Editorial Design, Print Management and Distribution Strategy.",
+          src: "360 Content Strategy — <br>We took on the full scope from editorial lineups, branded Google Docs and social media meta accounts, to commissioning original content. Working with our network was key when building Herschel’s global community.<br><br>Brand Positioning, Creative Direction  <br>Production, Theme Development, Contributor Outreach <br>Pagination & Flatplan, Art Direction, Editorial Design <br>Print Management & Distribution Strategy <br>Event & Activation",
           type: "text",
           title: "Scope",
           font: "roc-grotesk, sans-serif",
@@ -70,7 +70,7 @@
           backgroundColor: "#C3862C"
         },
         {
-          src: "Imogene Barron, Ryan Daniel Browne, Eva Cremers, Natasha & Dino Forte, Michelle Maguire, Meaghan Way, Kelsey McClellan, Ashley Oliveri, Catherine Potvin, Marie H. Rainville, Houmi Sakata, Victoria Sieczka, Aileen Son, Oumayma Ben Tanfous, Stephanie Mercier Voyer, Stephen Wilde, ​​Nico Young, Sacha Jackson, Editor<br><br>Featuring Hana Vu, Danny Smiles, Bradley Sheppard, Amélie Rousseaux, Apolla Echino, Maxime Bayol, Marc Cefalu Awards<br> <br>Editorial, Entire Publication — Applied Arts 2021<br>Design, Éditorial — Concours Idéa 2021",
+          src: "Imogene Barron, Ryan Daniel Browne, Eva Cremers, Natasha & Dino Forte, Michelle Maguire, Meaghan Way, Kelsey McClellan, Ashley Oliveri, Catherine Potvin, Marie H. Rainville, Houmi Sakata, Victoria Sieczka, Aileen Son, Oumayma Ben Tanfous, Stephanie Mercier Voyer, Stephen Wilde, ​​Nico Young<br>Sacha Jackson, Editor<br><br>Featuring Hana Vu, Danny Smiles, Bradley Sheppard, Amélie Rousseaux, Apolla Echino, Maxime Bayol, Marc Cefalu<br><br>Awards<br> Editorial, Entire Publication — Applied Arts 2021<br>Design, Éditorial — Concours Idéa 2021",
           type: "text",
           title: "Credits",
           font: "roc-grotesk, sans-serif",
@@ -81,7 +81,7 @@
       ]}
     />
     <ParallaxSlider
-      title="{$_('slider.1.title')}"
+      title="{$_('slider.2.title')}"
       slides={[
         {
           src: "images/OD_1.png",
@@ -125,7 +125,7 @@
           title: "Scope",
           font: "roc-grotesk, sans-serif",
           fontSize: "30px",
-          color: "#E1D8CA",
+          color: "#E2EE75",
           backgroundColor: "#111E0C"
         },
         {
@@ -134,13 +134,13 @@
           title: "Credits",
           font: "roc-grotesk, sans-serif",
           fontSize: "30px",
-          color: "#E1D8CA",
+          color: "#E2EE75",
           backgroundColor: "#111E0C"
         }
       ]}
     />
     <ParallaxSlider
-      title="{$_('slider.1.title')}"
+      title="{$_('slider.3.title')}"
       slides={[
         {
           src: "images/Fable_1.png",
@@ -195,7 +195,7 @@
       ]}
     />
     <ParallaxSlider
-      title="{$_('slider.3.title')}"
+      title="{$_('slider.4.title')}"
       slides={[ 
         {
           src: "images/HSCo_1.png",
@@ -234,7 +234,7 @@
           backgroundColor: "#384163"
         },
         {
-          src: "In a creative partnership with their internal team, we supported their brand strategy by developing a distinct approach to seasonal versus product campaigns and a go-to-market strategy (drops and partnerships). Creative Direction Campaign Strategy On-set Direction",
+          src: "In a creative partnership with their internal team, we supported their brand strategy by developing a distinct approach to seasonal versus product campaigns and a go-to-market strategy (drops and partnerships). <br><br>Creative Direction<br>Campaign Strategy<br>On-set Direction",
           type: "text",
           title: "Scope",
           font: "roc-grotesk, sans-serif",
@@ -254,7 +254,7 @@
       ]}
     />
     <ParallaxSlider
-      title="{$_('slider.4.title')}"
+      title="{$_('slider.5.title')}"
       slides={[
         {
           src: "images/NP_1.png",
@@ -318,7 +318,7 @@
         ]}
     />
     <ParallaxSlider
-      title="{$_('slider.8.title')}"
+      title="{$_('slider.6.title')}"
       slides={[
         {
         src: "images/HIRRS_1.png",
@@ -374,7 +374,7 @@
       ]}   
     />
     <ParallaxSlider
-      title="{$_('slider.6.title')}"
+      title="{$_('slider.7.title')}"
       slides={[
         {
           src: "images/LB_1_1.png",
@@ -424,7 +424,7 @@
         ]}
     />
     <ParallaxSlider
-      title="{$_('slider.6.title')}"
+      title="{$_('slider.8.title')}"
       slides={[
         {
           src: "images/Rise_1.png",
@@ -483,7 +483,7 @@
         ]}
     />
     <ParallaxSlider
-      title="{$_('slider.5.title')}"
+      title="{$_('slider.9.title')}"
       slides={[
         {
           src: "images/KOMBI_1.png",
@@ -538,7 +538,7 @@
         ]}
     />
     <ParallaxSlider
-      title="{$_('slider.5.title')}"
+      title="{$_('slider.10.title')}"
       slides={[
         {
           src: "images/NIKE_1.png",
@@ -593,7 +593,7 @@
       ]}
     />
     <ParallaxSlider
-      title="{$_('slider.7.title')}"
+      title="{$_('slider.11.title')}"
       slides={[ 
         {
           src: "images/LB_2_1.png",
@@ -640,7 +640,7 @@
       ]}
     />
     <ParallaxSlider
-      title="{$_('slider.7.title')}"
+      title="{$_('slider.12.title')}"
       slides={[ 
         {
           src: "images/CIS_1.png",
@@ -708,7 +708,7 @@
       ]}
     />
     <ParallaxSlider
-      title="{$_('slider.9.title')}"
+      title="{$_('slider.13.title')}"
       slides={[
         {
           src:"images/LOUISE_1.png",
@@ -755,7 +755,7 @@
       ]}
     />
     <ParallaxSlider
-      title="{$_('slider.5.title')}"
+      title="{$_('slider.14.title')}"
       slides={[
         {
           src: "images/GHANA_1.png",
@@ -821,7 +821,7 @@
       ]}
     />
     <ParallaxSlider
-      title="{$_('slider.5.title')}"
+      title="{$_('slider.15.title')}"
       slides={[
         {
           src: "images/DT1_1.png",
@@ -880,7 +880,7 @@
         ]}
     />
     <ParallaxSlider
-      title="{$_('slider.5.title')}"
+      title="{$_('slider.16.title')}"
       slides={[
         {
           src: "images/Saxx_1.png",
@@ -935,7 +935,7 @@
         ]}
     />
     <ParallaxSlider 
-        title="{$_('slider.2.title')}"
+        title="{$_('slider.17.title')}"
         slides={[
           {
             src: "images/ALTI_1.png",
@@ -990,7 +990,7 @@
         ]}
     />
     <ParallaxSlider
-      title="{$_('slider.5.title')}"
+      title="{$_('slider.18.title')}"
       slides={[
         {
           src: "images/DT_2_1.png",
