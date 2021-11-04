@@ -1,58 +1,58 @@
 export const en = {
   slider: {
     1: {
-      title: 'HSCo Magazine',
+      title: 'Herschel Magazine — 2020',
     },
     2: {
-      title: 'Osei Duro',
+      title: 'Osei Duro — 2019',
     },
     3: {
-      title: 'Fable Home',
+      title: 'Fable Home — 2020',
     },
     4: {
-      title: 'HSCo',
+      title: 'Herschel Supply — 2019/20',
     },
     5: {
-      title: 'Nine Point',
+      title: 'Nine Point PR Agency — 2020',
     },
     6: {
-      title: 'Hirrs',
+      title: 'Hirrs — 2019',
     },
     7: {
-      title: 'LB -- 1',
+      title: 'Little Burgundy Shoes — 2019/20',
     },
     8: {
-      title: 'Rise',
+      title: 'Rise Kombucha — 2019',
     },
     9: {
-      title: 'Kombi',
+      title: 'Kombi Canada — 2021',
     },
     10: {
-      title: 'Nike',
+      title: 'NIKE Air Max — 2021',
     },
     11: {
-      title: 'LB -- 2',
+      title: 'Little Burgundy Shoes — 2019-21',
     },
     12: {
-      title: 'CIS',
+      title: 'Call It Spring — 2019/20',
     },
     13: {
-      title: 'Louise Burns',
+      title: 'Louise Burns — 2019',
     },
     14: {
-      title: 'Ghana',
+      title: 'Ghana — 2019',
     },
     15: {
-      title: 'DT -- 1',
+      title: 'DAVIDs TEA — 2019',
     },
     16: {
-      title: 'Saxx',
+      title: 'SAXX Fathers Day — 2021',
     },
     17: {
-      title: 'Alti',
+      title: 'Altitude Sports — 2021',
     },
     18: {
-      title: 'DT -- 2',
+      title: 'DAVIDs TEA — 2019/20',
     }
   },
   dialog: {

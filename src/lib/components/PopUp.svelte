@@ -308,7 +308,7 @@
     .image-logo {
       position: absolute;
       left: 25px;
-      top: 30px;
+      top: 20px;
       width: 117px;
       height: 4.75rem;
       z-index: 1;
