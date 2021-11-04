@@ -349,7 +349,7 @@
     }
     .bonjour-dialog {
       width: 70vw;
-      height: 65vh;
+      height: 70vh;
       top:100px
     }
 
@@ -370,7 +370,7 @@
     }
 
     .bonjour-button.close {
-      top: 20px;
+      top: 5px;
       right: 5px;
     }
 
