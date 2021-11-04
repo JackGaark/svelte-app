@@ -282,8 +282,9 @@
           type: "image"
         },
         {
-          src:"images/NP_7.png",
-          type: "image"
+          addPadding: true,
+          src:"videos/NP_7.mov",
+          type: "video"
         },
         {
           src:"videos/NP_8.mp4",
@@ -561,13 +562,14 @@
           type: "image"
         },
         {
-          src:"images/NIKE_6.png",
-          type: "image"
+          addPadding: true,
+          src:"videos/NIKE_6.mov",
+          type: "video"
         },
         {
           src: "As part of the North American Nike campaign to revive the cultural caché of Air Max, we were brought on as the Canadian team. The images, featuring multimedia artist Will Selviz were rolled out at Nike and Foot Locker, in-store and online,  and to launch Air Max Day.",
           type: "text",
-          title: "Scope",
+          title: "Air Max Will Selviz",
           fontSize: "54px",
           color: "#FFFFFF",
           backgroundColor: "#222232"
@@ -588,7 +590,7 @@
           font: "roc-grotesk, sans-serif",
           fontSize: "30px",
           color: "#E2EE75",
-          backgroundColor: "##3851BA"
+          backgroundColor: "#222232"
         }
       ]}
     />
