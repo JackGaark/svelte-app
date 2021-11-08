@@ -290,8 +290,8 @@
   }
   video {
     width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+    height: auto;
+    object-fit: unset;
   }
 
   .image-logo {
