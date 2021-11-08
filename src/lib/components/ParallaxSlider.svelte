@@ -91,13 +91,13 @@
           style={`background-position: ${i}00vw center;`}
         >
           <!-- svelte-ignore a11y-media-has-caption -->
-          <video src={slide.src} autoplay loop muted />
+          <video src={slide.src} autoplay="true" loop muted />
         </div>
         {:else}
           {#if slide.type === "two-columns"}
             <div class="slide two-columns-slide">
               <div class="slide-column slide-left-column">
-                <video src={slide.videoSrc} autoplay loop muted />
+                <video src={slide.videoSrc} autoplay="true" loop muted />
               </div>
                 <div class="slide-column slide-right-column">
                   <!-- svelte-ignore a11y-img-redundant-alt -->
