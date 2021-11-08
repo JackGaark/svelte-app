@@ -8,6 +8,9 @@
   export let slides;
   // export let newSlides;
   export let title;
+  export let title2;
+  export let titleFontClassName;
+  export let title2FontClassName;
 
   
   // console.log(newSlides)
@@ -62,7 +65,11 @@
 
 <div class="slider-wrapper" bind:clientWidth={wrapperWidth} on:mousemove={handleMousemove}>
   <img class="image-logo" src="images/00-sb-logo-simple-white.svg" alt="Logo" />
-  <h2 class="slider-title">{title}</h2>
+  <img class="image-logo mobile" src="images/00-sb-logo-simple-white.svg" alt="Logo" />
+  <h2 class="slider-title">
+    <span class={`${titleFontClassName || ''}`}>{title}</span>
+    <span class={`${title2FontClassName || ''}`}>{title2 || ''}</span>
+  </h2>
   <div
     class={`slider ${sliderCursor}`}
     bind:this={activeSlide}
@@ -123,12 +130,22 @@
     display: none;
   }
 
+    .image-logo.mobile {
+      display: none;
+    }
+
+    .slider-title .moret {
+      font-family: 'moret', serif;
+    }
+
+
+
   .slide-video-extra-padding video {
     width: 70vw;
     height: 70vh;
     margin-left: 15vw;
     margin-right: 15vw;
-    object-fit: none;
+    /* object-fit: none; */
     margin-top: 15vh;
     margin-bottom: 15vh;
     }
@@ -269,6 +286,7 @@
     bottom: 0;
     color: #fff;
     font-size: 38px;
+    font-weight: normal;
   }
   video {
     width: 100vw;
@@ -321,6 +339,13 @@
       width: 100vw;
       height: auto;
       margin: 0;
+    }
+
+    .image-logo {
+      display: none;
+    }
+    .image-logo.mobile {
+      display: block;
     }
     
     .slider-title {

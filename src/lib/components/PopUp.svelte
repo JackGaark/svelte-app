@@ -371,7 +371,7 @@
 
     .bonjour-button.close {
       top: 5px;
-      right: 5px;
+      right: 25px;
     }
 
     .right.modal-section-content {

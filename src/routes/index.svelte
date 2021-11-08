@@ -27,6 +27,8 @@
   <div class="container">
     <ParallaxSlider
       title="{$_('slider.1.title')}"
+      titleFontClassName="moret"
+      title2="{$_('slider.1.title2')}"
       slides={[
         {
           src: "images/HSCo_Mag_1.png",

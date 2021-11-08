@@ -1,7 +1,8 @@
 export const en = {
   slider: {
     1: {
-      title: 'Herschel Magazine — 2020',
+      title: 'Herschel Magazine — ',
+      title2: '2020'
     },
     2: {
       title: 'Osei Duro — 2019',
