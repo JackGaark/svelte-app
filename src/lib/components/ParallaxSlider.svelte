@@ -335,10 +335,17 @@
   }
 
   @media screen and (max-width: 600px) {
+    .slide-right-column {
+    margin-left: 10px;
+  }
+
+  .slide-left-column {
+    margin-right: 10px;
+  }
     .slide-video-extra-padding video {
-      width: 100vw;
+      width: 75vw;
       height: auto;
-      margin: 0;
+      margin: 20px 50px;
     }
 
     .image-logo {
