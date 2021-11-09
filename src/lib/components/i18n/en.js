@@ -5,55 +5,72 @@ export const en = {
       title2: '2020'
     },
     2: {
-      title: 'Osei Duro — 2019',
+      title: 'Osei Duro — ',
+      title2: '2019'
     },
     3: {
-      title: 'Fable Home — 2020',
+      title: 'Fable Home — ',
+      title2: '2020'
     },
     4: {
-      title: 'Herschel Supply — 2019/20',
+      title: 'Herschel Supply — ',
+      title2: '2019/20'
     },
     5: {
-      title: 'Nine Point PR Agency — 2020',
+      title: 'Nine Point PR Agency — ',
+      title2: '2019/20'
     },
     6: {
-      title: 'Hirrs — 2019',
+      title: 'Hirrs — ',
+      title2: '2019'
     },
     7: {
-      title: 'Little Burgundy Shoes — 2019/20',
+      title: 'Little Burgundy Shoes — ',
+      title2: '2019/20'
     },
     8: {
-      title: 'Rise Kombucha — 2019',
+      title: 'Rise Kombucha — ',
+      title2: '2019'
     },
     9: {
-      title: 'Kombi Canada — 2021',
+      title: 'Kombi Canada — ',
+      title2: '2021'
     },
     10: {
-      title: 'NIKE Air Max — 2021',
+      title: 'NIKE Air Max — ',
+      title2: '2021'
     },
     11: {
-      title: 'Little Burgundy Shoes — 2019-21',
+      title: 'Little Burgundy Shoes — ',
+      title2: '2019/20'
     },
     12: {
-      title: 'Call It Spring — 2019/20',
+      title: 'Call It Spring — ',
+      title2: '2019/20'
     },
     13: {
-      title: 'Louise Burns — 2019',
+      title: 'Louise Burns — ',
+      title2: '2019'
     },
     14: {
-      title: 'Ghana — 2019',
+      title: 'Ghana — ',
+      title2: '2019'
     },
     15: {
-      title: 'DAVIDs TEA — 2019',
+      title: 'DAVIDs TEA — ',
+      title2: '2019'
     },
     16: {
-      title: 'SAXX Fathers Day — 2021',
+      title: 'SAXX Fathers Day — ',
+      title2: '2021'
     },
     17: {
-      title: 'Altitude Sports — 2021',
+      title: 'Altitude Sports — ',
+      title2: '2021'
     },
     18: {
-      title: 'DAVIDs TEA — 2019/20',
+      title: 'DAVIDs TEA — ',
+      title2: '2019/20'
     }
   },
   dialog: {

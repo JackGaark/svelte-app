@@ -64,8 +64,8 @@
 </script>
 
 <div class="slider-wrapper" bind:clientWidth={wrapperWidth} on:mousemove={handleMousemove}>
-  <img class="image-logo" src="images/00-sb-logo-simple-white.svg" alt="Logo" />
-  <img class="image-logo mobile" src="images/00-sb-logo-simple-white.svg" alt="Logo" />
+  <img class="image-logo" src="images/LOGO-Ai.svg" alt="Logo" />
+  <img class="image-logo mobile" src="images/LOGOFACE-Ai.svg" alt="Logo" />
   <h2 class="slider-title">
     <span class={`${titleFontClassName || ''}`}>{title}</span>
     <span class={`${title2FontClassName || ''}`}>{title2 || ''}</span>
@@ -105,7 +105,7 @@
                 </div>
             </div>
             {:else}
-            <div class="slide text_slide" style={`background-color: ${slide.backgroundColor}; color:${slide.color}; font-family: ${slide.font || 'Moret Regular'}; font-size: ${slide.fontSize}` }>
+            <div class="slide text_slide" style={`background-color: ${slide.backgroundColor}; color:${slide.color}; font-family: ${slide.font || 'roc-grotesk'}; font-size: ${slide.fontSize}` }>
                 <div class="text_slide_container">
                     <h5 class="text_title">
                       {slide.title}
@@ -134,8 +134,8 @@
       display: none;
     }
 
-    .slider-title .moret {
-      font-family: 'moret', serif;
+    .slider-title .roc-grotesk {
+      font-family: 'roc-grotesk', sans-serif;
     }
 
 
