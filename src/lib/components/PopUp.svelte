@@ -366,7 +366,7 @@
 
     .bonjour-button {
       top: 120px;
-      right: 25px;
+      right: 35px;
     }
 
     .bonjour-button.close {
