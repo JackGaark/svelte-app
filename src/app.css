@@ -2,14 +2,14 @@
     font-family: 'Opposit-Medium';
     font-style: normal;
     font-weight: 400;
-    src: url('./Opposit-Medium.otf') format('opentype');
+    src: url('.font/Opposit-Medium.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'Moret Regular';
     font-style: normal;
     font-weight: 400;
-    src: url('./More-regular.ttf') format('opentype');
+    src: url('.font/Moret-regular.ttf') format('opentype');
   }
   
   @font-face {
