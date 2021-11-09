@@ -290,8 +290,8 @@
   }
   video {
     width: 100vw;
-    height: auto;
-    object-fit: unset;
+    height: 100vh;
+    object-fit: cover;
   }
 
   .image-logo {
@@ -335,6 +335,12 @@
   }
 
   @media screen and (max-width: 600px) {
+    video {
+    width: 100vw;
+    height: auto;
+    object-fit: unset;
+  }
+    
     .slide-right-column {
     margin-left: 10px;
   }
