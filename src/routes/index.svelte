@@ -275,7 +275,6 @@
           type: "video"
         },
         {
-          addPadding: true,
           src:"videos/NP_5.mp4",
           type: "video"
         },

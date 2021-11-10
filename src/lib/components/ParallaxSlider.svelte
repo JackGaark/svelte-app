@@ -64,7 +64,7 @@
 </script>
 
 <div class="slider-wrapper" bind:clientWidth={wrapperWidth} on:mousemove={handleMousemove}>
-  <img class="image-logo" src="images/LOGO-Ai.svg" alt="Logo" />
+  <img class="image-logo" src="images/LOGO-Ai small_Super Bonjour smaller.svg" alt="Logo" />
   <img class="image-logo mobile" src="images/LOGOFACE-Ai.svg" alt="Logo" />
   <h2 class="slider-title">
     <span class={`${titleFontClassName || ''}`}>{title}</span>
@@ -105,7 +105,7 @@
                 </div>
             </div>
             {:else}
-            <div class="slide text_slide" style={`background-color: ${slide.backgroundColor}; color:${slide.color}; font-family: ${slide.font || 'roc-grotesk'}; font-size: ${slide.fontSize}` }>
+            <div class="slide text_slide" style={`background-color: ${slide.backgroundColor}; color:${slide.color}; font-family: ${slide.font || 'moret'}; font-size: ${slide.fontSize}` }>
                 <div class="text_slide_container">
                     <h5 class="text_title">
                       {slide.title}
@@ -214,7 +214,7 @@
     text-align: 15vw;
     font-size: 50px;
     font-weight: 100;
-    font-family: "Moret Regular";
+    font-family: "moret";
   }
   
   .slider {
@@ -266,14 +266,14 @@
     right: 20vw;
     text-align: center;
     width: 100px;
-    font-family: "Moret Regular";
+    font-family: "moret";
     /* background-color: rgb(255 255 255 / 80%); */
     color: #fff;
     font-size: 36px;
   }
 
   .slider-title {
-    font-family: "Opposit-Medium";
+    font-family: "moret";
     /* background-color: rgb(255 255 255 / 80%); */
     min-width: 20vw;
     padding: 25px;

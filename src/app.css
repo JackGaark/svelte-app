@@ -2,28 +2,26 @@
     font-family: 'Opposit-Medium';
     font-style: normal;
     font-weight: 400;
-    src: url('.font/Opposit-Medium.otf') format('opentype');
+    src: url('./Opposit-Medium.otf') format('opentype');
   }
   
-  @font-face {
+  /* @font-face {
     font-family: 'Moret Regular';
     font-style: normal;
     font-weight: 400;
-    src: url('.font/Moret-regular.ttf') format('opentype');
-  }
+    src: url('./Moret-regular.ttf') format('opentype');
+  } */
   
   @font-face {
     font-family: 'roc-grotesk', sans-serif;
     font-weight: 700;
     font-style: normal;
-    src: url('https://use.typekit.net/aeh4acf.css');
   }
   
   @font-face {
     font-family: 'moret', serif;
     font-weight: 400;
     font-style: normal;
-    src: url('https://use.typekit.net/aeh4acf.css');
   }
   
   html,

@@ -164,7 +164,7 @@
     padding: 50px;
     padding-top: 150px;
     position: relative;
-    font-family: 'Moret Regular';
+    font-family: 'moret';
     padding-bottom: 0;
 
   }
@@ -258,7 +258,7 @@
     font-size: 0.8rem;
     z-index: 2;
     font-weight: 400;
-    font-family: "Moret Regular";
+    font-family: "moret";
     cursor: pointer;
     width: 8px;
     line-height: 8px;
@@ -290,7 +290,7 @@
   .bonjour-dialog-container .p1 {
     font-size: 0.8rem;
     font-weight: 400;
-    font-family: "Moret Regular";
+    font-family: "moret";
     width: 88%;
   }
   .bonjour-dialog-container .footer {
