@@ -88,10 +88,12 @@
         <div
           id={i}
           class={`slide slide-video ${sliderCursor} ${slide.addPadding ? "slide-video-extra-padding": ""}`}
-          style={`background-position: ${i}00vw center;`}
+          style={`background-position: ${i}00vw center; position: relative;`}
         >
-          <!-- svelte-ignore a11y-media-has-caption -->
-          <video src={slide.src} autoplay="true" loop muted playsinline/>
+          <div class="video-container">
+            <!-- svelte-ignore a11y-media-has-caption -->
+            <video src={slide.src} autoplay="true" loop muted playsinline/>
+          </div>
         </div>
         {:else}
           {#if slide.type === "two-columns"}
@@ -129,6 +131,27 @@
     video::-webkit-media-controls-fullscreen-button, video::-webkit-media-controls-play-button, video::-webkit-media-controls-pausebutton {
     display: none;
   }
+
+.video-container {
+  position: absolute;
+  padding-bottom: 56.25%;
+  padding-top: 0;
+  height: 0;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
     .image-logo.mobile {
       display: none;
@@ -193,6 +216,7 @@
     padding-left: 55px;
     padding-top: 50px;
     width: 80%;
+    line-height: 130%;
   }
   
   .text_title {
@@ -203,6 +227,7 @@
     font-size: 18px;
     font-weight: 100;
     font-family: "Opposit-Medium";
+    line-height: 39px;
 
   }
   

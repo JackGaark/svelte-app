@@ -74,7 +74,7 @@
         {
           src: "Imogene Barron, Ryan Daniel Browne, Eva Cremers, Natasha & Dino Forte, Michelle Maguire, Meaghan Way, Kelsey McClellan, Ashley Oliveri, Catherine Potvin, Marie H. Rainville, Houmi Sakata, Victoria Sieczka, Aileen Son, Oumayma Ben Tanfous, Stephanie Mercier Voyer, Stephen Wilde, ​​Nico Young<br>Sacha Jackson, Editor<br><br>Featuring Hana Vu, Danny Smiles, Bradley Sheppard, Amélie Rousseaux, Apolla Echino, Maxime Bayol, Marc Cefalu<br><br>Awards<br> Editorial, Entire Publication — Applied Arts 2021<br>Design, Éditorial — Concours Idéa 2021",
           type: "text",
-          title: "Credits",
+          title: "Contributors",
           font: "roc-grotesk, sans-serif",
           fontSize: "30px",
           color: "#E2EE75",
@@ -84,6 +84,8 @@
     />
     <ParallaxSlider
       title="{$_('slider.2.title')}"
+      titleFontClassName="roc-grotesk"
+      title2="{$_('slider.2.title2')}"
       slides={[
         {
           src: "images/OD_1.png",
@@ -143,6 +145,8 @@
     />
     <ParallaxSlider
       title="{$_('slider.3.title')}"
+      titleFontClassName="roc-grotesk"
+      title2="{$_('slider.3.title2')}"
       slides={[
         {
           src: "images/Fable_1.png",
@@ -165,7 +169,7 @@
           type: "image"
         },
         {
-          src: "videos/Fable_SuperBonjour.mp4",
+          src: "videos/Fable_6.mp4",
           type: "video"
         },
         {
@@ -198,6 +202,8 @@
     />
     <ParallaxSlider
       title="{$_('slider.4.title')}"
+      titleFontClassName="roc-grotesk"
+      title2="{$_('slider.4.title2')}"
       slides={[ 
         {
           src: "images/HSCo_1.png",
@@ -257,6 +263,8 @@
     />
     <ParallaxSlider
       title="{$_('slider.5.title')}"
+      titleFontClassName="roc-grotesk"
+      title2="{$_('slider.5.title2')}"
       slides={[
         {
           src: "images/NP_1.png",
@@ -300,7 +308,7 @@
           backgroundColor: "#C3862C"
         },
         {
-          src: "Our strategy evolved Nine Point’s brand identity into a complete ecosystem,<br>including branding, design, direction, tone and photography.<br><br>Brand Strategy<br>Creative Direction<br>Identity & Digital Design<br>Voice & Messaging<br>Art Direction<br>Off-figure Sets & Props.",
+          src: "Our strategy evolved Nine Point’s brand identity into a complete ecosystem,<br>including branding, design, direction, tone and photography.<br><br>Brand Strategy<br>Creative Direction<br>Identity & Digital Design<br>Voice & Messaging<br>Art Direction<br>Off-figure Sets & Props",
           type: "text",
           title: "Scope",
           font: "roc-grotesk, sans-serif",
@@ -321,6 +329,8 @@
     />
     <ParallaxSlider
       title="{$_('slider.6.title')}"
+      titleFontClassName="roc-grotesk"
+      title2="{$_('slider.6.title2')}"
       slides={[
         {
         src: "images/HIRRS_1.png",
@@ -356,7 +366,7 @@
           backgroundColor: "#290B15"
         },
         {
-          src: "Supporting their slow fashion ethos, we worked with the founders to establish a<br>creative direction designed to last.<br>Creative Direction<br>Art Buying<br>Casting<br>On-set Direction",
+          src: "Supporting their slow fashion ethos, we worked with the founders to establish a creative direction designed to last.<br>Creative Direction<br>Art Buying<br>Casting<br>On-set Direction",
           type: "text",
           title: "Scope",
           font: "roc-grotesk, sans-serif",
@@ -377,6 +387,8 @@
     />
     <ParallaxSlider
       title="{$_('slider.7.title')}"
+      titleFontClassName="roc-grotesk"
+      title2="{$_('slider.7.title2')}"
       slides={[
         {
           src: "images/LB_1_1.png",
@@ -427,6 +439,8 @@
     />
     <ParallaxSlider
       title="{$_('slider.8.title')}"
+      titleFontClassName="roc-grotesk"
+      title2="{$_('slider.8.title2')}"
       slides={[
         {
           src: "images/Rise_1.png",
@@ -465,7 +479,7 @@
           backgroundColor: "#C374F6"
         },
         {
-          src: "Having history with the brand and team, SB x LB share a lot of trust and respect.<br>As their campaign partners, we have had the pleasure to support their brand<br>leaders and creative team.<br><br>Creative Direction<br>Campaign Strategy<br>Casting<br>Art Buying<br>On-set Direction<br>Seasonal Design Direction",
+          src: "We built a creative strategy which recognized that the brand is larger than the product. Working in tandem with the brand strategist we developed an integrated campaign (photography, video, microsite direction, OOH design, event programming including guests and speakers, invitation design, and social media assets).<br><br>Creative Direction<br>On-set Direction<br>Design<br>Event & Activation ",
           type: "text",
           title: "Scope",
           font: "roc-grotesk, sans-serif",
@@ -486,6 +500,8 @@
     />
     <ParallaxSlider
       title="{$_('slider.9.title')}"
+      titleFontClassName="roc-grotesk"
+      title2="{$_('slider.9.title2')}"
       slides={[
         {
           src: "images/KOMBI_1.png",
@@ -517,7 +533,7 @@
           title: "Campaign Strategy",
           fontSize: "54px",
           color: "#FFFFFF",
-          backgroundColor: "##3851BA"
+          backgroundColor: "#3851BA"
         },
         {
           src: "As Kombi’s strategic and creative partner we supported their internal team<br>throughout campaign development from concept to production.<br> Additionally, we supported the brand to shape their customer facing personality.<br>Creative Direction<br>Campaign Strategy<br>Concept<br>Voice & Messaging<br> Casting<br>Art Buying<br>On-set Direction<br>Seasonal Design Direction<br>Production",
@@ -526,7 +542,7 @@
           font: "roc-grotesk, sans-serif",
           fontSize: "30px",
           color: "#E2EE75",
-          backgroundColor: "##3851BA"
+          backgroundColor: "#3851BA"
         },
         {
           src: "Photography Kelly Jacob, assisted by Renaud Robert, Tom Berthelot<br>  Videography  Matt Charland, Oli Chapo<br>Styling Izabel Soucy, Assist. Samuel Joubert<br>HMU Valeria Amirova<br>Models Sam, Juliette, Jade, Cole, Rokko Riders<br>Catherine Perrault, Antoine St-Hilaire, Julien Gauthier, Jacob Gagnon<br>Producer Jade Fortin Côté, Assist.  Alexis Gauvin B.",
@@ -535,12 +551,14 @@
           font: "roc-grotesk, sans-serif",
           fontSize: "30px",
           color: "#E2EE75",
-          backgroundColor: "##3851BA"
+          backgroundColor: "#3851BA"
         },
         ]}
     />
     <ParallaxSlider
       title="{$_('slider.10.title')}"
+      titleFontClassName="roc-grotesk"
+      title2="{$_('slider.10.title2')}"
       slides={[
         {
           src: "images/NIKE_1.png",
@@ -597,6 +615,8 @@
     />
     <ParallaxSlider
       title="{$_('slider.11.title')}"
+      titleFontClassName="roc-grotesk"
+      title2="{$_('slider.11.title2')}"
       slides={[ 
         {
           src: "images/LB_2_1.png",
@@ -644,6 +664,8 @@
     />
     <ParallaxSlider
       title="{$_('slider.12.title')}"
+      titleFontClassName="roc-grotesk"
+      title2="{$_('slider.12.title2')}"
       slides={[ 
         {
           src: "images/CIS_1.png",
@@ -712,6 +734,8 @@
     />
     <ParallaxSlider
       title="{$_('slider.13.title')}"
+      titleFontClassName="roc-grotesk"
+      title2="{$_('slider.13.title2')}"
       slides={[
         {
           src:"images/LOUISE_1.png",
@@ -759,6 +783,8 @@
     />
     <ParallaxSlider
       title="{$_('slider.14.title')}"
+      titleFontClassName="roc-grotesk"
+      title2="{$_('slider.14.title2')}"
       slides={[
         {
           src: "images/GHANA_1.png",
@@ -825,6 +851,8 @@
     />
     <ParallaxSlider
       title="{$_('slider.15.title')}"
+      titleFontClassName="roc-grotesk"
+      title2="{$_('slider.15.title2')}"
       slides={[
         {
           src: "images/DT1_1.png",
@@ -884,6 +912,8 @@
     />
     <ParallaxSlider
       title="{$_('slider.16.title')}"
+      titleFontClassName="roc-grotesk"
+      title2="{$_('slider.16.title2')}"
       slides={[
         {
           src: "images/Saxx_1.png",
@@ -939,6 +969,8 @@
     />
     <ParallaxSlider 
         title="{$_('slider.17.title')}"
+        titleFontClassName="roc-grotesk"
+        title2="{$_('slider.17.title2')}"
         slides={[
           {
             src: "images/ALTI_1.png",
@@ -994,6 +1026,8 @@
     />
     <ParallaxSlider
       title="{$_('slider.18.title')}"
+      titleFontClassName="roc-grotesk"
+      title2="{$_('slider.18.title2')}"
       slides={[
         {
           src: "images/DT_2_1.png",
