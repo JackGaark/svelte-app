@@ -3,6 +3,8 @@
   import PopUp from '$lib/components/PopUp.svelte';
   import { _ } from 'svelte-i18n';
   import { initI18n } from '$lib/components/i18n/i18n.js';
+  import { onMount } from 'svelte';
+  import { checkIsMobile } from '$lib/utils/helpers';
   import '../app.css';
 
   initI18n();
@@ -14,11 +16,34 @@
   function hideModal() {
     modalOpen = false;
   }
+
+  // We want the ui to be viewed in landscape on mobile devices.
+  let isMobile = false;
+  let isLandscapeView = false;
+
+  // Check for mobile device.
+  onMount(async () => {
+    isMobile = checkIsMobile();
+  });
+
+  // Check that the phone is in landscape.
+  $: innerWidth = 0;
+  $: innerHeight = 0;
+  $: {
+    isLandscapeView = innerWidth > innerHeight;
+  }
 </script>
+
+<svelte:window bind:innerWidth bind:innerHeight />
 
 <div class="header">
   <img src="images/dialog-icon.png" class="dialog-icon" alt="Dialog icon" on:click={showModal} />
 </div>
+
+<!-- Show a warning in portrait mode to rotate your phone. -->
+{#if isMobile && !isLandscapeView}
+  <h1 style={'background:white'}>Please rotate your phone.</h1>
+{/if}
 
 <PopUp bind:modalOpen />
 
