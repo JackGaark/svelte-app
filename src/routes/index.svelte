@@ -50,6 +50,7 @@
 <main>
   <div class="container">
     <ParallaxSlider
+      isMobile={isMobile && isLandscapeView}
       title={$_('slider.1.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.1.title2')}
@@ -64,7 +65,7 @@
         },
         {
           src: 'images/HSCo_Mag_3.png',
-          type: 'imaqge'
+          type: 'image'
         },
         {
           src: 'images/HSCo_Mag_4.png',

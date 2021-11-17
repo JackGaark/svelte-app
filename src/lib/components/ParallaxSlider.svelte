@@ -10,16 +10,23 @@
   export let title;
   export let title2;
   export let titleFontClassName;
-  export let title2FontClassName;
+  export let title2FontClassName = '';
+  export let isMobile = false;
+
+  const slideDimensions = {
+    width: isMobile ? 100 : 100,
+    height: isMobile ? 100 : 100
+  };
 
   // console.log(newSlides)
 
   const nextSlide = () => {
     // {console.log ("hello world from next slide")}
     if (slide < slides.length - 1) {
-      activeSlide.style.transform = `translate3d(-${slide + 1}00vw, 0, 0)`;
+      activeSlide.style.transform = `translate3d(-${(slide + 1) * slideDimensions.width}vw, 0, 0)`;
       slide += 1;
     } else {
+      // Go back to beginning of project slides.
       activeSlide.style.transform = `translate3d(0vw, 0, 0)`;
       slide = 0;
     }
@@ -27,8 +34,9 @@
 
   const prevSlide = () => {
     if (slide === 0) {
-      activeSlide.style.transform = `translate3d(-200vw, 0, 0)`;
+      console.log('HI');
       slide = slides.length - 1;
+      activeSlide.style.transform = `translate3d(-800vw, 0, 0)`;
     } else {
       activeSlide.style.transform = `translate3d(-${slide - 1}00vw, 0, 0)`;
       slide = slide - 1;
@@ -60,9 +68,20 @@
     const cursorXPosition = event.clientX;
     sliderCursor = wrapperWidth / 2 <= cursorXPosition ? Cursors.RIGHT : Cursors.LEFT;
   }
+
+  // Mobile Styles
+  const styledWrapper = `
+    background: red;
+    height: 100vh;
+  `;
 </script>
 
-<div class="slider-wrapper" bind:clientWidth={wrapperWidth} on:mousemove={handleMousemove}>
+<div
+  class="slider-wrapper"
+  bind:clientWidth={wrapperWidth}
+  on:mousemove={handleMousemove}
+  style={isMobile ? styledWrapper : ''}
+>
   <img class="image-logo" src="images/LOGO-Ai small_Super Bonjour smaller.svg" alt="Logo" />
   <img class="image-logo mobile" src="images/LOGOFACE-Ai.svg" alt="Logo" />
   <h2 class="slider-title">
@@ -85,7 +104,7 @@
       {:else if slide.type === 'video'}
         <div
           id={i}
-          class={`slide slide-video ${sliderCursor} ${
+          class={`slide  slide-video ${sliderCursor} ${
             slide.addPadding ? 'slide-video-extra-padding' : ''
           }`}
           style={`background-position: ${i}00vw center; position: relative;`}
@@ -421,5 +440,7 @@
       top: 10px;
       left: 25px;
     }
+  }
+  @media screen and (orientation: landscape) and (max-height: 499px) {
   }
 </style>
