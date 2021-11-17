@@ -2,63 +2,22 @@
   import { ChevronLeftIcon, ChevronRightIcon } from 'svelte-feather-icons';
   import { debug } from 'svelte/internal';
 
-  let activeSlide;
-  let slide = 0;
-  let x = 0;
   export let slides;
-  // export let newSlides;
   export let title;
   export let title2;
   export let titleFontClassName;
   export let title2FontClassName = '';
   export let isMobile = false;
 
-  const slideDimensions = {
-    width: isMobile ? 100 : 100,
-    height: isMobile ? 100 : 100
-  };
+  let activeSlide;
+  let x = 0;
 
-  // console.log(newSlides)
-
-  const nextSlide = () => {
-    // {console.log ("hello world from next slide")}
-    if (slide < slides.length - 1) {
-      activeSlide.style.transform = `translate3d(-${(slide + 1) * slideDimensions.width}vw, 0, 0)`;
-      slide += 1;
-    } else {
-      // Go back to beginning of project slides.
-      activeSlide.style.transform = `translate3d(0vw, 0, 0)`;
-      slide = 0;
-    }
-  };
-
-  const prevSlide = () => {
-    if (slide === 0) {
-      console.log('HI');
-      slide = slides.length - 1;
-      activeSlide.style.transform = `translate3d(-800vw, 0, 0)`;
-    } else {
-      activeSlide.style.transform = `translate3d(-${slide - 1}00vw, 0, 0)`;
-      slide = slide - 1;
-    }
-  };
+  let slide_els = [];
+  $: active_index = 0;
 
   const Cursors = {
     RIGHT: 'right-cursor',
     LEFT: 'left-cursor'
-  };
-
-  const handleSliderClick = () => {
-    if (sliderCursor === Cursors.RIGHT) {
-      nextSlide();
-    } else if (sliderCursor === Cursors.LEFT) {
-      prevSlide();
-    }
-  };
-
-  const onActiveSlide = (n) => {
-    slide = n;
-    activeSlide.style.transform = `translate3d(-${n}00vw, 0, 0)`;
   };
 
   let sliderCursor = 'cursor';
@@ -69,18 +28,44 @@
     sliderCursor = wrapperWidth / 2 <= cursorXPosition ? Cursors.RIGHT : Cursors.LEFT;
   }
 
-  // Mobile Styles
-  const styledWrapper = `
-    background: red;
-    height: 100vh;
-  `;
+  // Go to next slide in project.
+  const nextSlide = () => {
+    if (active_index < slides.length - 1) {
+      active_index += 1;
+      activeSlide.style.transform = `translate3d(-${active_index * 100}vw, 0, 0)`;
+    } else {
+      // Go back to beginning of project slides.
+      activeSlide.style.transform = `translate3d(0, 0, 0)`;
+      active_index = 0;
+    }
+  };
+
+  // Go to previous slide in project
+  const prevSlide = () => {
+    if (active_index === 0) {
+      active_index = slides.length - 1;
+      activeSlide.style.transform = `translate3d(-${active_index * 100}vw, 0, 0)`;
+    } else {
+      active_index -= 1;
+      activeSlide.style.transform = `translate3d(-${active_index * 100}vw, 0, 0)`;
+    }
+  };
+
+  // Handles the users click depending on which side of the page it's on
+  const handleSliderClick = () => {
+    if (sliderCursor === Cursors.RIGHT) {
+      nextSlide();
+    } else if (sliderCursor === Cursors.LEFT) {
+      prevSlide();
+    }
+  };
 </script>
 
 <div
   class="slider-wrapper"
   bind:clientWidth={wrapperWidth}
   on:mousemove={handleMousemove}
-  style={isMobile ? styledWrapper : ''}
+  style={isMobile ? 'height:100%' : ''}
 >
   <img class="image-logo" src="images/LOGO-Ai small_Super Bonjour smaller.svg" alt="Logo" />
   <img class="image-logo mobile" src="images/LOGOFACE-Ai.svg" alt="Logo" />
@@ -95,54 +80,56 @@
     style={`width: ${slides.length}00vw`}
   >
     {#each slides as slide, i}
-      {#if slide.type === 'image'}
-        <div
-          id={i}
-          class={`slide ${sliderCursor}`}
-          style={`background-position: ${i}00vw center; background-image: url(${slide.src})`}
-        />
-      {:else if slide.type === 'video'}
-        <div
-          id={i}
-          class={`slide  slide-video ${sliderCursor} ${
-            slide.addPadding ? 'slide-video-extra-padding' : ''
-          }`}
-          style={`background-position: ${i}00vw center; position: relative;`}
-        >
-          <div class="video-container">
-            <!-- svelte-ignore a11y-media-has-caption -->
-            <video src={slide.src} autoplay="true" loop muted playsinline />
+      <div bind:this={slide_els[i]}>
+        {#if slide.type === 'image'}
+          <div
+            id={i}
+            class={`slide ${sliderCursor}`}
+            style={`background-position: ${i}00vw center; background-image: url(${slide.src})`}
+          />
+        {:else if slide.type === 'video'}
+          <div
+            id={i}
+            class={`slide  slide-video ${sliderCursor} ${
+              slide.addPadding ? 'slide-video-extra-padding' : ''
+            }`}
+            style={`background-position: ${i}00vw center; position: relative;`}
+          >
+            <div class="video-container">
+              <!-- svelte-ignore a11y-media-has-caption -->
+              <video src={slide.src} autoplay="true" loop muted playsinline />
+            </div>
           </div>
-        </div>
-      {:else if slide.type === 'two-columns'}
-        <div class="slide two-columns-slide">
-          <div class="slide-column slide-left-column">
-            <video src={slide.videoSrc} autoplay="true" loop muted playsinline />
+        {:else if slide.type === 'two-columns'}
+          <div class="slide two-columns-slide">
+            <div class="slide-column slide-left-column">
+              <video src={slide.videoSrc} autoplay="true" loop muted playsinline />
+            </div>
+            <div class="slide-column slide-right-column">
+              <!-- svelte-ignore a11y-img-redundant-alt -->
+              <img src={slide.imageSrc} alt="left column image" />
+            </div>
           </div>
-          <div class="slide-column slide-right-column">
-            <!-- svelte-ignore a11y-img-redundant-alt -->
-            <img src={slide.imageSrc} alt="left column image" />
+        {:else}
+          <div
+            class="slide text_slide"
+            style={`background-color: ${slide.backgroundColor}; color:${
+              slide.color
+            }; font-family: ${slide.font || 'moret'}; font-size: ${slide.fontSize}`}
+          >
+            <div class="text_slide_container">
+              <h5 class="text_title">
+                {slide.title}
+              </h5>
+              {@html slide.src}
+            </div>
           </div>
-        </div>
-      {:else}
-        <div
-          class="slide text_slide"
-          style={`background-color: ${slide.backgroundColor}; color:${slide.color}; font-family: ${
-            slide.font || 'moret'
-          }; font-size: ${slide.fontSize}`}
-        >
-          <div class="text_slide_container">
-            <h5 class="text_title">
-              {slide.title}
-            </h5>
-            {@html slide.src}
-          </div>
-        </div>
-      {/if}
+        {/if}
+      </div>
     {/each}
   </div>
   <div class="paginator">
-    <h4>{slide + 1} / {slides.length}</h4>
+    <h4>{active_index + 1} / {slides.length}</h4>
   </div>
 </div>
 
