@@ -1,6 +1,7 @@
 <script>
   import { ChevronLeftIcon, ChevronRightIcon } from 'svelte-feather-icons';
   import { debug } from 'svelte/internal';
+  import { debounce } from '$lib/utils/helpers';
 
   export let slides;
   export let title;
@@ -10,10 +11,10 @@
   export let isMobile = false;
 
   let activeSlide;
-  let x = 0;
-
   let slide_els = [];
   $: active_index = 0;
+
+  let aspectRatio = { mobile: 8 / 5 };
 
   const Cursors = {
     RIGHT: 'right-cursor',
@@ -28,28 +29,46 @@
     sliderCursor = wrapperWidth / 2 <= cursorXPosition ? Cursors.RIGHT : Cursors.LEFT;
   }
 
+  /*
+  [NOTE]: If you feel like the debounce is not giving the user experience you want and
+  you know for a fact all the slides are the same size then you can just set the offset to 
+  the width of any slide * active_index. Below is just more robust for any future changes.
+  */
   // Go to next slide in project.
-  const nextSlide = () => {
+  const nextSlide = debounce(() => {
+    // [width] of the current slide
+    let width = slide_els[active_index].clientWidth;
+
+    // [offset] corresponds to the sum of the widths of slides passed.
+    let offset = activeSlide.getBoundingClientRect().x;
+
     if (active_index < slides.length - 1) {
       active_index += 1;
-      activeSlide.style.transform = `translate3d(-${active_index * 100}vw, 0, 0)`;
+      activeSlide.style.transform = `translateX(${offset - width}px)`;
     } else {
-      // Go back to beginning of project slides.
-      activeSlide.style.transform = `translate3d(0, 0, 0)`;
+      // Go back to beginning of project slides when you reach the end.
+      activeSlide.style.transform = `translateX(0)`;
       active_index = 0;
     }
-  };
+  }, 200);
 
   // Go to previous slide in project
-  const prevSlide = () => {
+  const prevSlide = debounce(() => {
+    const { value } = slide_els[active_index].attributes.type;
+    // [width] of the current slide
+    let width = slide_els[active_index].clientWidth;
+
+    // [offset] corresponds to the sum of the widths of slides passed.
+    let offset = activeSlide.getBoundingClientRect().x;
+
     if (active_index === 0) {
       active_index = slides.length - 1;
-      activeSlide.style.transform = `translate3d(-${active_index * 100}vw, 0, 0)`;
+      activeSlide.style.transform = `translateX(-${activeSlide.clientWidth - width}px)`;
     } else {
       active_index -= 1;
-      activeSlide.style.transform = `translate3d(-${active_index * 100}vw, 0, 0)`;
+      activeSlide.style.transform = `translateX(${offset + width}px)`;
     }
-  };
+  }, 200);
 
   // Handles the users click depending on which side of the page it's on
   const handleSliderClick = () => {
@@ -77,10 +96,17 @@
     class={`slider ${sliderCursor}`}
     bind:this={activeSlide}
     on:click={handleSliderClick}
-    style={`width: ${slides.length}00vw`}
+    style={`width: ${slides.length * 100}vw`}
   >
     {#each slides as slide, i}
-      <div bind:this={slide_els[i]}>
+      <div
+        class={'slider-slide'}
+        type={slide.type}
+        bind:this={slide_els[i]}
+        style={`width:${
+          isMobile ? `${activeSlide.clientHeight * aspectRatio.mobile}px` : '100vw'
+        };`}
+      >
         {#if slide.type === 'image'}
           <div
             id={i}
@@ -90,10 +116,16 @@
         {:else if slide.type === 'video'}
           <div
             id={i}
-            class={`slide  slide-video ${sliderCursor} ${
-              slide.addPadding ? 'slide-video-extra-padding' : ''
-            }`}
-            style={`background-position: ${i}00vw center; position: relative;`}
+            class={`
+            slide
+            slide-video
+            ${sliderCursor}
+            ${slide.addPadding ? 'slide-video-extra-padding' : ''}`}
+            style={`
+            background-position: ${i}00vw center;
+            position: relative;
+            ${isMobile ? '' : 'width:100vw'}
+            `}
           >
             <div class="video-container">
               <!-- svelte-ignore a11y-media-has-caption -->
@@ -256,7 +288,6 @@
 
   .slide {
     height: 100vh;
-    width: 100vw;
     background-size: cover;
     transition: all 200ms ease-out 0s;
   }
