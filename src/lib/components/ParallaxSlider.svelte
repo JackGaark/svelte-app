@@ -1,27 +1,32 @@
 <script>
-  import { ChevronLeftIcon, ChevronRightIcon } from 'svelte-feather-icons';
-  import { debug } from 'svelte/internal';
   import { debounce } from '$lib/utils/helpers';
+
   export let slidesData;
   export let title;
   export let title2;
   export let titleFontClassName;
   export let title2FontClassName = '';
+
+  // [isMobile] means the user is on a mobile device AND in landscape mode.
   export let isMobile = false;
+
+  // Inner width and height of window.
   export let innerWidth;
   export let innerHeight;
 
-  let activeSlide;
-  // Aspect ratio for mobile 5:8
-  let aspectRatio = { mobile: 8 / 5 };
-  $: slides = slidesData;
+  // [sliderEl] is the element that wraps all the project slides and translates based on which slide is active (e.g. slides[active_index]).
+  let sliderEl;
 
-  // We handle the slides differently in mobile (only one text slide)
+  /* 
+  In mobile, the text slides are condensed into one. So the [slides] array is shortened to only have the first text slide.
+  In the html, we iterate over the leftover text slides slidesData.slice(text_slides_index, slidesData.length) and input them to the main text slide.
+   */
+  $: slides = slidesData;
   $: text_slide_index = slidesData.findIndex((s) => s.type === 'text');
   $: slides = isMobile && slidesData ? slidesData.slice(0, text_slide_index + 1) : slidesData;
-  $: slide_els = [];
-  $: active_index = 0;
-  $: activeSlideHeight = 0;
+
+  $: slide_els = []; // all slide elements
+  $: active_index = 0; // index of currently displayed slide.
 
   const Cursors = {
     RIGHT: 'right-cursor',
@@ -40,6 +45,10 @@
   - SLIDE CHANGE  ------------------------
   The offset is the translateX value that the slides must transform to show the active slide. It is calculated by getting the sum of the widths of the slides that have already been scrolled through.
   */
+  // Aspect ratio for mobile is 5:8.
+  let aspectRatio = { mobile: 8 / 5 };
+  $: mobile_width = Math.round(innerHeight * aspectRatio.mobile);
+
   const calculateOffset = () => {
     if (!slide_els) {
       return;
@@ -53,13 +62,16 @@
     // Calculate the offset by getting the sum of the widths of slides passed.
     const offset = slides.reduce((r, v, i) => {
       let width = v?.clientWidth || 0;
+      if (isMobile) {
+        width = mobile_width;
+      }
       return r + width;
     }, 0);
 
     // When on mobile, the text slide has the image from the previous slide showing on the left.
     if (isMobile && value === 'text') {
       // calculate the left padding by taking the width of the window - the current slide width
-      let left_padding = innerWidth - slide_els[active_index].clientWidth;
+      let left_padding = innerWidth - mobile_width;
       return offset - left_padding;
     } else {
       return offset;
@@ -69,29 +81,27 @@
   // Go to next slide in project.
   const nextSlide = () => {
     active_index = active_index < slides.length - 1 ? active_index + 1 : 0;
-    if (active_index === 0) {
+    if (isMobile && active_index === 0) {
       active_index = slides.length - 1;
       return updateProjectIndex(id + 1);
     }
     let offset = calculateOffset();
-
-    activeSlide.style.transform = `translateX(${0 - offset}px)`;
+    sliderEl.style.transform = `translateX(${0 - offset}px)`;
   };
 
   // Go to previous slide in project
   const prevSlide = () => {
     active_index = active_index === 0 ? slides.length - 1 : active_index - 1;
-    console.log('p', active_index);
-    if (active_index === slides.length - 1) {
+    if (isMobile && active_index === slides.length - 1) {
       active_index = 0;
       return updateProjectIndex(id - 1);
     }
 
     let offset = calculateOffset();
-    activeSlide.style.transform = `translateX(${0 - offset}px)`;
+    sliderEl.style.transform = `translateX(${0 - offset}px)`;
   };
 
-  // Handles the users click depending on which side of the page it's on
+  // Handles the users click depending on which side of the page it's on.
   const handleSliderClick = () => {
     if (sliderCursor === Cursors.RIGHT) {
       nextSlide();
@@ -105,7 +115,7 @@
     window.scrollTo(0, 0);
 
     let offset = calculateOffset();
-    activeSlide.style.transform = `translateX(${0 - offset}px)`;
+    sliderEl.style.transform = `translateX(${0 - offset}px)`;
   };
   // -------------------------
 
@@ -116,11 +126,11 @@
 
   const handleScrollDown = debounce((e) => {
     const { scrollHeight, scrollTop } = e.target;
-    if (scrollTop + innerHeight >= scrollHeight - 50) {
+    // Detect if user is at the bottom of the window to move to next slide.
+    if (scrollTop + innerHeight >= scrollHeight - 100) {
       nextSlide();
     }
   }, 200);
-
   // -------------------------
 </script>
 
@@ -130,7 +140,7 @@
   class="slider-wrapper"
   bind:clientWidth={wrapperWidth}
   on:mousemove={handleMousemove}
-  style={isMobile ? `height:100vh` : ''}
+  style={isMobile ? `width:${innerWidth}px; height:${innerHeight}px` : ''}
 >
   <img class="image-logo" src="images/LOGO-Ai small_Super Bonjour smaller.svg" alt="Logo" />
   <img class="image-logo mobile" src="images/LOGOFACE-Ai.svg" alt="Logo" />
@@ -140,17 +150,16 @@
   </h2>
   <div
     class={`slider ${sliderCursor}`}
-    bind:this={activeSlide}
+    bind:this={sliderEl}
     on:click={handleSliderClick}
-    style={`width: ${slides.length * 100}vw`}
+    style={`width: ${isMobile ? `${mobile_width * slides.length}px` : `${slides.length * 100}vw`}`}
   >
     {#each slides as slide, i}
       <div
         class={'slider-slide'}
         type={slide.type}
         bind:this={slide_els[i]}
-        bind:clientHeight={activeSlideHeight}
-        style={`width:${isMobile ? `${activeSlideHeight * aspectRatio.mobile}px` : '100vw'};`}
+        style={`width:${isMobile ? `${Math.round(innerHeight * aspectRatio.mobile)}px` : '100vw'};`}
       >
         {#if slide.type === 'image'}
           <div
@@ -194,18 +203,19 @@
             background-color: ${slide.backgroundColor}; color:${slide.color};
             font-family: ${slide.font || 'moret'};
             font-size: ${slide.fontSize};
-            overflow:${isMobile ? 'scroll' : 'auto'};
+            overflow-y:${isMobile ? 'scroll' : 'auto'};
+            width:100%;
             `}
             on:scroll={handleScrollDown}
           >
             {#if isMobile}
               <!-- All the text is encapsulated in one slide for mobile -->
               {#each slidesData.slice(text_slide_index, slidesData.length) as textSlide}
-                <div class="text_slide_container">
+                <div style={'padding:1rem 2rem'}>
                   <h5 class="text_title">
                     {textSlide.title}
                   </h5>
-                  {@html textSlide.src}
+                  <p>{@html textSlide.src}</p>
                 </div>
               {/each}
             {:else}
@@ -318,6 +328,11 @@
     line-height: 130%;
   }
 
+  .text_slide_container_mobile {
+    width: 100%;
+    padding: 2rem;
+  }
+
   .text_title {
     padding-top: 50px;
     padding-bottom: 10px;
@@ -344,7 +359,7 @@
     position: relative;
     display: flex;
     flex-wrap: nowrap;
-    transition: all 200ms ease-out 0s;
+    transition: all 200ms linear 0s;
     background: #c3862c;
   }
 
@@ -361,7 +376,7 @@
     width: 100vw;
     overflow: hidden;
     transition: 0.3s all;
-    background: #c3862c;
+    background: red;
   }
 
   .arrow {

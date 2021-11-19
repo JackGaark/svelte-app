@@ -39,19 +39,24 @@
 
   // Keep track of the currently displayed project
   let current_project = 0;
+  let max_num_projects = 3;
   let containerEl;
+
+  // Slide in vertically next project if it exists.
   const nextProject = (project_index) => {
-    if (project_index < 3) {
+    if (project_index < max_num_projects) {
       containerEl.style.transform = `translate(0px, -${project_index * innerHeight}px)`;
     }
   };
+
+  // Slide in vertically previous project if it exists.
   const prevProject = (project_index) => {
     if (project_index >= 0) {
       containerEl.style.transform = `translate(0px, ${project_index * innerHeight}px)`;
     }
   };
 
-  const updateProject = (updated_index) => {
+  const handleProjectUpdate = (updated_index) => {
     if (updated_index > current_project) {
       nextProject(updated_index);
     } else {
@@ -83,14 +88,14 @@
 <main>
   <div class="container" bind:this={containerEl}>
     <ParallaxSlider
-      updateProjectIndex={(id) => updateProject(id)}
-      id={0}
       title={$_('slider.1.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.1.title2')}
       isMobile={isMobile && isLandscapeView}
       {innerWidth}
       {innerHeight}
+      id={0}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       slidesData={[
         {
           src: 'images/HSCo_Mag_1.png',
@@ -145,7 +150,7 @@
       ]}
     />
     <ParallaxSlider
-      updateProjectIndex={(id) => updateProject(id)}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       id={1}
       title={$_('slider.2.title')}
       titleFontClassName="roc-grotesk"
@@ -211,7 +216,7 @@
       ]}
     />
     <ParallaxSlider
-      updateProjectIndex={(id) => updateProject(id)}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       id={2}
       title={$_('slider.3.title')}
       titleFontClassName="roc-grotesk"
@@ -1197,7 +1202,7 @@
 
   .container {
     overflow: hidden;
-    transition: transform 0.2s linear;
+    transition: transform 1s linear;
   }
 
   .header {
