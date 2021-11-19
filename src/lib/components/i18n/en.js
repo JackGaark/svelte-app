@@ -79,7 +79,7 @@ export const en = {
     services: {
       title: 'Services',
       strategy: 'Strategy',
-      branding: 'Branding',
+      branding: 'Brand Strategy,<br>Naming & Strategy',
       design: 'Design',
       creativeDirection: 'Creative Direction',
       artDirection: 'Art Direction',

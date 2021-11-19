@@ -90,7 +90,7 @@
           class={`slide slide-video ${sliderCursor} ${slide.addPadding ? "slide-video-extra-padding": ""}`}
           style={`background-position: ${i}00vw center; position: relative;`}
         >
-          <div class="video-container">
+          <div class={`${slide.addPadding ? "video-container": ""}`}>
             <!-- svelte-ignore a11y-media-has-caption -->
             <video src={slide.src} autoplay="true" loop muted playsinline/>
           </div>
