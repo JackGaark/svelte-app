@@ -88,14 +88,14 @@
 <main>
   <div class="container" bind:this={containerEl}>
     <ParallaxSlider
+      id={0}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.1.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.1.title2')}
       isMobile={isMobile && isLandscapeView}
       {innerWidth}
       {innerHeight}
-      id={0}
-      updateProjectIndex={(id) => handleProjectUpdate(id)}
       slidesData={[
         {
           src: 'images/HSCo_Mag_1.png',
@@ -150,8 +150,8 @@
       ]}
     />
     <ParallaxSlider
-      updateProjectIndex={(id) => handleProjectUpdate(id)}
       id={1}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.2.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.2.title2')}
@@ -216,8 +216,8 @@
       ]}
     />
     <ParallaxSlider
-      updateProjectIndex={(id) => handleProjectUpdate(id)}
       id={2}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.3.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.3.title2')}
@@ -277,8 +277,9 @@
         }
       ]}
     />
-    <!-- <ParallaxSlider
-      project_index={3}
+    <ParallaxSlider
+      id={3}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.4.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.4.title2')}
@@ -343,7 +344,8 @@
       ]}
     />
     <ParallaxSlider
-      project_index={4}
+      id={4}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.5.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.5.title2')}
@@ -411,8 +413,10 @@
           backgroundColor: '#C3862C'
         }
       ]}
-    /> -->
-    <!--<ParallaxSlider
+    />
+    <ParallaxSlider
+      id={5}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.6.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.6.title2')}
@@ -474,6 +478,8 @@
       ]}
     />
     <ParallaxSlider
+      id={6}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.7.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.7.title2')}
@@ -529,6 +535,8 @@
       ]}
     />
     <ParallaxSlider
+      id={7}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.8.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.8.title2')}
@@ -593,6 +601,8 @@
       ]}
     />
     <ParallaxSlider
+      id={8}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.9.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.9.title2')}
@@ -653,6 +663,8 @@
       ]}
     />
     <ParallaxSlider
+      id={9}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.10.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.10.title2')}
@@ -714,6 +726,8 @@
       ]}
     />
     <ParallaxSlider
+      id={10}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.11.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.11.title2')}
@@ -766,6 +780,8 @@
       ]}
     />
     <ParallaxSlider
+      id={11}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.12.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.12.title2')}
@@ -839,6 +855,8 @@
       ]}
     />
     <ParallaxSlider
+      id={12}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.13.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.13.title2')}
@@ -891,6 +909,8 @@
       ]}
     />
     <ParallaxSlider
+      id={13}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.14.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.14.title2')}
@@ -962,6 +982,8 @@
       ]}
     />
     <ParallaxSlider
+      id={14}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.15.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.15.title2')}
@@ -1026,6 +1048,8 @@
       ]}
     />
     <ParallaxSlider
+      id={15}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.16.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.16.title2')}
@@ -1086,6 +1110,8 @@
       ]}
     />
     <ParallaxSlider
+      id={16}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.17.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.17.title2')}
@@ -1146,6 +1172,8 @@
       ]}
     />
     <ParallaxSlider
+      id={17}
+      updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.18.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.18.title2')}
@@ -1191,7 +1219,7 @@
           backgroundColor: '#9A7429'
         }
       ]}
-    /> -->
+    />
   </div>
 </main>
 
