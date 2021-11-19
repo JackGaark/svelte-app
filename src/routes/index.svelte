@@ -1,3 +1,7 @@
+<script context="module">
+  import Viewport from 'svelte-viewport-info';
+</script>
+
 <script>
   import ParallaxSlider from '$lib/components/ParallaxSlider.svelte';
   import PopUp from '$lib/components/PopUp.svelte';
@@ -19,42 +23,75 @@
 
   // We want the ui to be viewed in landscape on mobile devices.
   let isMobile = false;
-  let isLandscapeView = false;
 
   // Check for mobile device.
   onMount(async () => {
     isMobile = checkIsMobile();
+    if (isMobile) {
+      document.body.style.overflow = 'hidden';
+    }
   });
 
   // Check that the phone is in landscape.
-  $: innerWidth = 0;
-  $: innerHeight = 0;
-  $: {
-    isLandscapeView = innerWidth > innerHeight;
-  }
+  $: innerWidth = Viewport?.Width || 0;
+  $: innerHeight = Viewport?.Height || 0;
+  $: isLandscapeView = Viewport?.Orientation === 'landscape' || false;
+
+  // Keep track of the currently displayed project
+  let current_project = 0;
+  let containerEl;
+  const nextProject = (project_index) => {
+    if (project_index < 3) {
+      containerEl.style.transform = `translate(0px, -${project_index * innerHeight}px)`;
+    }
+  };
+  const prevProject = (project_index) => {
+    if (project_index >= 0) {
+      containerEl.style.transform = `translate(0px, ${project_index * innerHeight}px)`;
+    }
+  };
+
+  const updateProject = (updated_index) => {
+    if (updated_index > current_project) {
+      nextProject(updated_index);
+    } else {
+      prevProject(updated_index);
+    }
+  };
 </script>
 
-<svelte:window bind:innerWidth bind:innerHeight />
+<svelte:body
+  on:viewportchanged={() => {
+    innerWidth = Viewport.Width;
+    innerHeight = Viewport.Height;
+  }}
+  on:orientationchangeend={() => {
+    isLandscapeView = Viewport.Orientation === 'landscape';
+  }} />
 
 <div class="header">
   <img src="images/dialog-icon.png" class="dialog-icon" alt="Dialog icon" on:click={showModal} />
 </div>
 
 <!-- Show a warning in portrait mode to rotate your phone. -->
-{#if isMobile && !isLandscapeView}
+{#if isMobile && Viewport.Orientation === 'portrait'}
   <h1 style={'background:white'}>Please rotate your phone.</h1>
 {/if}
 
 <PopUp bind:modalOpen />
 
 <main>
-  <div class="container">
+  <div class="container" bind:this={containerEl}>
     <ParallaxSlider
-      isMobile={isMobile && isLandscapeView}
+      updateProjectIndex={(id) => updateProject(id)}
+      id={0}
       title={$_('slider.1.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.1.title2')}
-      slides={[
+      isMobile={isMobile && isLandscapeView}
+      {innerWidth}
+      {innerHeight}
+      slidesData={[
         {
           src: 'images/HSCo_Mag_1.png',
           type: 'image'
@@ -108,10 +145,15 @@
       ]}
     />
     <ParallaxSlider
+      updateProjectIndex={(id) => updateProject(id)}
+      id={1}
       title={$_('slider.2.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.2.title2')}
-      slides={[
+      isMobile={isMobile && isLandscapeView}
+      {innerWidth}
+      {innerHeight}
+      slidesData={[
         {
           src: 'images/OD_1.png',
           type: 'image'
@@ -169,10 +211,15 @@
       ]}
     />
     <ParallaxSlider
+      updateProjectIndex={(id) => updateProject(id)}
+      id={2}
       title={$_('slider.3.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.3.title2')}
-      slides={[
+      isMobile={isMobile && isLandscapeView}
+      {innerWidth}
+      {innerHeight}
+      slidesData={[
         {
           src: 'images/Fable_1.png',
           type: 'image'
@@ -225,11 +272,15 @@
         }
       ]}
     />
-    <ParallaxSlider
+    <!-- <ParallaxSlider
+      project_index={3}
       title={$_('slider.4.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.4.title2')}
-      slides={[
+      isMobile={isMobile && isLandscapeView}
+      {innerWidth}
+      {innerHeight}
+      slidesData={[
         {
           src: 'images/HSCo_1.png',
           type: 'image'
@@ -287,10 +338,14 @@
       ]}
     />
     <ParallaxSlider
+      project_index={4}
       title={$_('slider.5.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.5.title2')}
-      slides={[
+      isMobile={isMobile && isLandscapeView}
+      {innerWidth}
+      {innerHeight}
+      slidesData={[
         {
           src: 'images/NP_1.png',
           type: 'image'
@@ -351,12 +406,15 @@
           backgroundColor: '#C3862C'
         }
       ]}
-    />
-    <ParallaxSlider
+    /> -->
+    <!--<ParallaxSlider
       title={$_('slider.6.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.6.title2')}
-      slides={[
+      isMobile={isMobile && isLandscapeView}
+      {innerWidth}
+      {innerHeight}
+      slidesData={[
         {
           src: 'images/HIRRS_1.png',
           type: 'image'
@@ -414,7 +472,10 @@
       title={$_('slider.7.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.7.title2')}
-      slides={[
+      isMobile={isMobile && isLandscapeView}
+      {innerWidth}
+      {innerHeight}
+      slidesData={[
         {
           src: 'images/LB_1_1.png',
           type: 'image'
@@ -466,7 +527,10 @@
       title={$_('slider.8.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.8.title2')}
-      slides={[
+      isMobile={isMobile && isLandscapeView}
+      {innerWidth}
+      {innerHeight}
+      slidesData={[
         {
           src: 'images/Rise_1.png',
           type: 'image'
@@ -527,7 +591,10 @@
       title={$_('slider.9.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.9.title2')}
-      slides={[
+      isMobile={isMobile && isLandscapeView}
+      {innerWidth}
+      {innerHeight}
+      slidesData={[
         {
           src: 'images/KOMBI_1.png',
           type: 'image'
@@ -584,7 +651,10 @@
       title={$_('slider.10.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.10.title2')}
-      slides={[
+      isMobile={isMobile && isLandscapeView}
+      {innerWidth}
+      {innerHeight}
+      slidesData={[
         {
           src: 'images/NIKE_1.png',
           type: 'image'
@@ -642,7 +712,10 @@
       title={$_('slider.11.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.11.title2')}
-      slides={[
+      isMobile={isMobile && isLandscapeView}
+      {innerWidth}
+      {innerHeight}
+      slidesData={[
         {
           src: 'images/LB_2_1.png',
           type: 'image'
@@ -691,7 +764,10 @@
       title={$_('slider.12.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.12.title2')}
-      slides={[
+      isMobile={isMobile && isLandscapeView}
+      {innerWidth}
+      {innerHeight}
+      slidesData={[
         {
           src: 'images/CIS_1.png',
           type: 'image'
@@ -761,7 +837,10 @@
       title={$_('slider.13.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.13.title2')}
-      slides={[
+      isMobile={isMobile && isLandscapeView}
+      {innerWidth}
+      {innerHeight}
+      slidesData={[
         {
           src: 'images/LOUISE_1.png',
           type: 'image'
@@ -810,7 +889,10 @@
       title={$_('slider.14.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.14.title2')}
-      slides={[
+      isMobile={isMobile && isLandscapeView}
+      {innerWidth}
+      {innerHeight}
+      slidesData={[
         {
           src: 'images/GHANA_1.png',
           type: 'image'
@@ -878,7 +960,10 @@
       title={$_('slider.15.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.15.title2')}
-      slides={[
+      isMobile={isMobile && isLandscapeView}
+      {innerWidth}
+      {innerHeight}
+      slidesData={[
         {
           src: 'images/DT1_1.png',
           type: 'image'
@@ -939,7 +1024,10 @@
       title={$_('slider.16.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.16.title2')}
-      slides={[
+      isMobile={isMobile && isLandscapeView}
+      {innerWidth}
+      {innerHeight}
+      slidesData={[
         {
           src: 'images/Saxx_1.png',
           type: 'image'
@@ -996,7 +1084,10 @@
       title={$_('slider.17.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.17.title2')}
-      slides={[
+      isMobile={isMobile && isLandscapeView}
+      {innerWidth}
+      {innerHeight}
+      slidesData={[
         {
           src: 'images/ALTI_1.png',
           type: 'image'
@@ -1053,7 +1144,10 @@
       title={$_('slider.18.title')}
       titleFontClassName="roc-grotesk"
       title2={$_('slider.18.title2')}
-      slides={[
+      isMobile={isMobile && isLandscapeView}
+      {innerWidth}
+      {innerHeight}
+      slidesData={[
         {
           src: 'images/DT_2_1.png',
           type: 'image'
@@ -1092,7 +1186,7 @@
           backgroundColor: '#9A7429'
         }
       ]}
-    />
+    /> -->
   </div>
 </main>
 
@@ -1103,6 +1197,7 @@
 
   .container {
     overflow: hidden;
+    transition: transform 0.2s linear;
   }
 
   .header {

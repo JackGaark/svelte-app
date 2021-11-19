@@ -2,19 +2,26 @@
   import { ChevronLeftIcon, ChevronRightIcon } from 'svelte-feather-icons';
   import { debug } from 'svelte/internal';
   import { debounce } from '$lib/utils/helpers';
-
-  export let slides;
+  export let slidesData;
   export let title;
   export let title2;
   export let titleFontClassName;
   export let title2FontClassName = '';
   export let isMobile = false;
+  export let innerWidth;
+  export let innerHeight;
 
   let activeSlide;
-  let slide_els = [];
-  $: active_index = 0;
-
+  // Aspect ratio for mobile 5:8
   let aspectRatio = { mobile: 8 / 5 };
+  $: slides = slidesData;
+
+  // We handle the slides differently in mobile (only one text slide)
+  $: text_slide_index = slidesData.findIndex((s) => s.type === 'text');
+  $: slides = isMobile && slidesData ? slidesData.slice(0, text_slide_index + 1) : slidesData;
+  $: slide_els = [];
+  $: active_index = 0;
+  $: activeSlideHeight = 0;
 
   const Cursors = {
     RIGHT: 'right-cursor',
@@ -30,45 +37,59 @@
   }
 
   /*
-  [NOTE]: If you feel like the debounce is not giving the user experience you want and
-  you know for a fact all the slides are the same size then you can just set the offset to 
-  the width of any slide * active_index. Below is just more robust for any future changes.
+  - SLIDE CHANGE  ------------------------
+  The offset is the translateX value that the slides must transform to show the active slide. It is calculated by getting the sum of the widths of the slides that have already been scrolled through.
   */
-  // Go to next slide in project.
-  const nextSlide = debounce(() => {
-    // [width] of the current slide
-    let width = slide_els[active_index].clientWidth;
-
-    // [offset] corresponds to the sum of the widths of slides passed.
-    let offset = activeSlide.getBoundingClientRect().x;
-
-    if (active_index < slides.length - 1) {
-      active_index += 1;
-      activeSlide.style.transform = `translateX(${offset - width}px)`;
-    } else {
-      // Go back to beginning of project slides when you reach the end.
-      activeSlide.style.transform = `translateX(0)`;
-      active_index = 0;
+  const calculateOffset = () => {
+    if (!slide_els) {
+      return;
     }
-  }, 200);
+    // Check if slide is text type.
+    const { value } = slide_els[active_index]?.attributes?.type;
 
-  // Go to previous slide in project
-  const prevSlide = debounce(() => {
-    const { value } = slide_els[active_index].attributes.type;
-    // [width] of the current slide
-    let width = slide_els[active_index].clientWidth;
+    // Slides that have been passed.
+    const slides = slide_els.slice(0, active_index);
 
-    // [offset] corresponds to the sum of the widths of slides passed.
-    let offset = activeSlide.getBoundingClientRect().x;
+    // Calculate the offset by getting the sum of the widths of slides passed.
+    const offset = slides.reduce((r, v, i) => {
+      let width = v?.clientWidth || 0;
+      return r + width;
+    }, 0);
 
+    // When on mobile, the text slide has the image from the previous slide showing on the left.
+    if (isMobile && value === 'text') {
+      // calculate the left padding by taking the width of the window - the current slide width
+      let left_padding = innerWidth - slide_els[active_index].clientWidth;
+      return offset - left_padding;
+    } else {
+      return offset;
+    }
+  };
+
+  // Go to next slide in project.
+  const nextSlide = () => {
+    active_index = active_index < slides.length - 1 ? active_index + 1 : 0;
     if (active_index === 0) {
       active_index = slides.length - 1;
-      activeSlide.style.transform = `translateX(-${activeSlide.clientWidth - width}px)`;
-    } else {
-      active_index -= 1;
-      activeSlide.style.transform = `translateX(${offset + width}px)`;
+      return updateProjectIndex(id + 1);
     }
-  }, 200);
+    let offset = calculateOffset();
+
+    activeSlide.style.transform = `translateX(${0 - offset}px)`;
+  };
+
+  // Go to previous slide in project
+  const prevSlide = () => {
+    active_index = active_index === 0 ? slides.length - 1 : active_index - 1;
+    console.log('p', active_index);
+    if (active_index === slides.length - 1) {
+      active_index = 0;
+      return updateProjectIndex(id - 1);
+    }
+
+    let offset = calculateOffset();
+    activeSlide.style.transform = `translateX(${0 - offset}px)`;
+  };
 
   // Handles the users click depending on which side of the page it's on
   const handleSliderClick = () => {
@@ -78,13 +99,38 @@
       prevSlide();
     }
   };
+
+  // Recalculate offset value as window is resized.
+  const handleResize = () => {
+    window.scrollTo(0, 0);
+
+    let offset = calculateOffset();
+    activeSlide.style.transform = `translateX(${0 - offset}px)`;
+  };
+  // -------------------------
+
+  // - MOBILE SCROLL -----------------------
+
+  export let updateProjectIndex;
+  export let id;
+
+  const handleScrollDown = debounce((e) => {
+    const { scrollHeight, scrollTop } = e.target;
+    if (scrollTop + innerHeight >= scrollHeight - 50) {
+      nextSlide();
+    }
+  }, 200);
+
+  // -------------------------
 </script>
+
+<svelte:window on:resize={handleResize} on:orientationchange={handleResize} />
 
 <div
   class="slider-wrapper"
   bind:clientWidth={wrapperWidth}
   on:mousemove={handleMousemove}
-  style={isMobile ? 'height:100%' : ''}
+  style={isMobile ? `height:100vh` : ''}
 >
   <img class="image-logo" src="images/LOGO-Ai small_Super Bonjour smaller.svg" alt="Logo" />
   <img class="image-logo mobile" src="images/LOGOFACE-Ai.svg" alt="Logo" />
@@ -103,9 +149,8 @@
         class={'slider-slide'}
         type={slide.type}
         bind:this={slide_els[i]}
-        style={`width:${
-          isMobile ? `${activeSlide.clientHeight * aspectRatio.mobile}px` : '100vw'
-        };`}
+        bind:clientHeight={activeSlideHeight}
+        style={`width:${isMobile ? `${activeSlideHeight * aspectRatio.mobile}px` : '100vw'};`}
       >
         {#if slide.type === 'image'}
           <div
@@ -145,16 +190,32 @@
         {:else}
           <div
             class="slide text_slide"
-            style={`background-color: ${slide.backgroundColor}; color:${
-              slide.color
-            }; font-family: ${slide.font || 'moret'}; font-size: ${slide.fontSize}`}
+            style={`
+            background-color: ${slide.backgroundColor}; color:${slide.color};
+            font-family: ${slide.font || 'moret'};
+            font-size: ${slide.fontSize};
+            overflow:${isMobile ? 'scroll' : 'auto'};
+            `}
+            on:scroll={handleScrollDown}
           >
-            <div class="text_slide_container">
-              <h5 class="text_title">
-                {slide.title}
-              </h5>
-              {@html slide.src}
-            </div>
+            {#if isMobile}
+              <!-- All the text is encapsulated in one slide for mobile -->
+              {#each slidesData.slice(text_slide_index, slidesData.length) as textSlide}
+                <div class="text_slide_container">
+                  <h5 class="text_title">
+                    {textSlide.title}
+                  </h5>
+                  {@html textSlide.src}
+                </div>
+              {/each}
+            {:else}
+              <div class="text_slide_container">
+                <h5 class="text_title">
+                  {slide.title}
+                </h5>
+                {@html slide.src}
+              </div>
+            {/if}
           </div>
         {/if}
       </div>
@@ -284,6 +345,7 @@
     display: flex;
     flex-wrap: nowrap;
     transition: all 200ms ease-out 0s;
+    background: #c3862c;
   }
 
   .slide {
@@ -299,6 +361,7 @@
     width: 100vw;
     overflow: hidden;
     transition: 0.3s all;
+    background: #c3862c;
   }
 
   .arrow {
@@ -460,5 +523,6 @@
     }
   }
   @media screen and (orientation: landscape) and (max-height: 499px) {
+    /* For mobile-size but acts on desktop as well */
   }
 </style>
