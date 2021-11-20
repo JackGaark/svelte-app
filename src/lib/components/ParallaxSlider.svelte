@@ -376,7 +376,7 @@
     width: 100vw;
     overflow: hidden;
     transition: 0.3s all;
-    background: red;
+    background: #c3862c;
   }
 
   .arrow {
