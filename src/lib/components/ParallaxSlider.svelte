@@ -42,63 +42,54 @@
   }
 
   /*
-  - SLIDE CHANGE  ------------------------
-  The offset is the translateX value that the slides must transform to show the active slide. It is calculated by getting the sum of the widths of the slides that have already been scrolled through.
-  */
-  // Aspect ratio for mobile is 5:8.
+    - SLIDE CHANGE  ------------------------
+    Assuming that the desktop slides = 100vw and mobile slides have a 5:8 aspect ratio
+    */
   let aspectRatio = { mobile: 8 / 5 };
-  $: mobile_width = Math.round(innerHeight * aspectRatio.mobile);
+  $: mobile_width = Math.round(innerHeight * aspectRatio.mobile); //in px
+  $: DESKTOP_WIDTH = 100; //in vw
 
-  const calculateOffset = () => {
-    if (!slide_els) {
-      return;
-    }
-    // Check if slide is text type.
-    const { value } = slide_els[active_index]?.attributes?.type;
-
-    // Slides that have been passed.
-    const slides = slide_els.slice(0, active_index);
-
-    // Calculate the offset by getting the sum of the widths of slides passed.
-    const offset = slides.reduce((r, v, i) => {
-      let width = v?.clientWidth || 0;
-      if (isMobile) {
-        width = mobile_width;
-      }
-      return r + width;
-    }, 0);
-
-    // When on mobile, the text slide has the image from the previous slide showing on the left.
-    if (isMobile && value === 'text') {
+  // Calculates the offset for the x translation.
+  let calculateXOffset = (w) => {
+    // [offset] is calculated by multiplying the width by the active index.
+    let offset = active_index * w;
+    // When on mobile, the last slide has the image from the previous slide showing on the left.
+    if (isMobile && active_index === slides.length - 1) {
       // calculate the left padding by taking the width of the window - the current slide width
       let left_padding = innerWidth - mobile_width;
-      return offset - left_padding;
-    } else {
-      return offset;
+      offset = offset - left_padding;
     }
+    return 0 - offset;
   };
 
-  // Go to next slide in project.
+  // Handles the translation on [sliderEl] to move to the next slide.
   const nextSlide = () => {
-    active_index = active_index < slides.length - 1 ? active_index + 1 : 0;
-    if (isMobile && active_index === 0) {
-      active_index = slides.length - 1;
+    // On last slide of project, go to next project index.
+    if (isMobile && active_index === slides.length - 1) {
       return updateProjectIndex(id + 1);
     }
-    let offset = calculateOffset();
-    sliderEl.style.transform = `translateX(${0 - offset}px)`;
+    // Update active index.
+    active_index = active_index < slides.length - 1 ? active_index + 1 : 0;
+    let translate_x = isMobile
+      ? `${calculateXOffset(mobile_width)}px`
+      : `${calculateXOffset(DESKTOP_WIDTH)}vw`;
+
+    return (sliderEl.style.transform = `translateX(${translate_x})`);
   };
 
-  // Go to previous slide in project
+  // Handles the translation on [sliderEl] to move to the previous slide.
   const prevSlide = () => {
-    active_index = active_index === 0 ? slides.length - 1 : active_index - 1;
-    if (isMobile && active_index === slides.length - 1) {
-      active_index = 0;
+    // On last slide of project, go to previous project index.
+    if (isMobile && active_index === 0) {
       return updateProjectIndex(id - 1);
     }
+    // Update active index.
+    active_index = active_index === 0 ? slides.length - 1 : active_index - 1;
+    let translate_x = isMobile
+      ? `${calculateXOffset(mobile_width)}px`
+      : `${calculateXOffset(DESKTOP_WIDTH)}vw`;
 
-    let offset = calculateOffset();
-    sliderEl.style.transform = `translateX(${0 - offset}px)`;
+    return (sliderEl.style.transform = `translateX(${translate_x})`);
   };
 
   // Handles the users click depending on which side of the page it's on.
@@ -110,13 +101,6 @@
     }
   };
 
-  // Recalculate offset value as window is resized.
-  const handleResize = () => {
-    window.scrollTo(0, 0);
-
-    let offset = calculateOffset();
-    sliderEl.style.transform = `translateX(${0 - offset}px)`;
-  };
   // -------------------------
 
   // - MOBILE SCROLL -----------------------
@@ -133,8 +117,6 @@
   }, 200);
   // -------------------------
 </script>
-
-<svelte:window on:resize={handleResize} on:orientationchange={handleResize} />
 
 <div
   class="slider-wrapper"
@@ -156,7 +138,7 @@
   >
     {#each slides as slide, i}
       <div
-        class={'slider-slide'}
+        class="slider-slide"
         type={slide.type}
         bind:this={slide_els[i]}
         style={`width:${isMobile ? `${Math.round(innerHeight * aspectRatio.mobile)}px` : '100vw'};`}
@@ -211,7 +193,7 @@
             {#if isMobile}
               <!-- All the text is encapsulated in one slide for mobile -->
               {#each slidesData.slice(text_slide_index, slidesData.length) as textSlide}
-                <div style={'padding:1rem 2rem'}>
+                <div style="padding:1rem 2rem">
                   <h5 class="text_title">
                     {textSlide.title}
                   </h5>
