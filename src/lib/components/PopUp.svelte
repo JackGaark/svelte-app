@@ -102,15 +102,15 @@
           <div class="services">
             <h5 class="title">{$_('dialog.services.title')}</h5>
             <ul>
-              <li>{$_('dialog.services.strategy')}</li>
-              <li>{$_('dialog.services.branding')}</li>
-              <li>{$_('dialog.services.design')}</li>
-              <li>{$_('dialog.services.creativeDirection')}</li>
-              <li>{$_('dialog.services.artDirection')}</li>
-              <li>{$_('dialog.services.motion')}</li>
-              <li>{$_('dialog.services.production')}</li>
-              <li>{$_('dialog.services.digital')}</li>
-              <li>{$_('dialog.services.content')}</li>
+              <li>{@html $_('dialog.services.strategy')}</li>
+              <li>{@html $_('dialog.services.branding')}</li>
+              <li>{@html $_('dialog.services.design')}</li>
+              <li>{@html $_('dialog.services.creativeDirection')}</li>
+              <li>{@html $_('dialog.services.artDirection')}</li>
+              <li>{@html $_('dialog.services.motion')}</li>
+              <li>{@html $_('dialog.services.production')}</li>
+              <li>{@html $_('dialog.services.digital')}</li>
+              <li>{@html $_('dialog.services.content')}</li>
             </ul>
           </div>
           <div class="client-list">
@@ -146,6 +146,11 @@
 {/if}
 
 <style>
+  .services li {
+    margin-bottom: 5px;
+    line-height: 20px;
+  }
+  
   .popup {
     height: 80vh;
     width: 100vw;

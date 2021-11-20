@@ -152,18 +152,14 @@
         {:else if slide.type === 'video'}
           <div
             id={i}
-            class={`
-            slide
-            slide-video
-            ${sliderCursor}
-            ${slide.addPadding ? 'slide-video-extra-padding' : ''}`}
-            style={`
-            background-position: ${i}00vw center;
-            position: relative;
-            ${isMobile ? '' : 'width:100vw'}
-            `}
+            class={`slide slide-video ${sliderCursor} ${
+              slide.addPadding ? 'slide-video-extra-padding' : ''
+            }`}
+            style={`background-position: ${i}00vw center; position: relative;${
+              isMobile ? '' : 'width:100vw'
+            }`}
           >
-            <div class="video-container">
+            <div class={`${slide.addPadding ? 'video-container' : ''} ${isMobile ? '100%' : ''}`}>
               <!-- svelte-ignore a11y-media-has-caption -->
               <video src={slide.src} autoplay="true" loop muted playsinline />
             </div>
