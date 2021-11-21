@@ -128,8 +128,8 @@
 
 <style>
   .services li {
-    margin-bottom: 5px;
-    line-height: 20px;
+    margin-bottom: 8px;
+    line-height: 130%;
   }
   
   .popup {
@@ -232,6 +232,8 @@
   margin-left: -20px;
 }
 .right.modal-section-content ul {
+  line-height: 130%;
+  margin-bottom: 8px;
   list-style: none;
   margin: 0;
   padding: 0;

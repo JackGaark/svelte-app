@@ -114,7 +114,7 @@ export const en = {
         text: '1747 Saint Patrick, Montréal, QC CA - H3K3G9',
       },
       footer: {
-        text: 'Super Bonjour is a bi-coastal studio.',
+        text: 'We acknowledges that in Vancouver we operate on unceded Coast Salish territory of the sḵwx̱wú7mesh (Squamish), sel̓íl̓witulh (Tsleil-Waututh), and xʷməθkʷəy̓əm (Musqueam) nations and that in Tiohtiá:ke (known as Montreal) we operate on the unceded traditional territory of the Kanien’kehá:ka Nation.',
       },
     },
   },
