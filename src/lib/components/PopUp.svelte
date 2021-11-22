@@ -147,8 +147,8 @@
 
 <style>
   .services li {
-    margin-bottom: 5px;
-    line-height: 20px;
+    margin-bottom: 8px;
+    line-height: 130%;
   }
   
   .popup {
@@ -235,13 +235,32 @@
     line-height: 70px;
   }
 
-  .right.modal-section-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-family: 'roc-grotesk';
-    font-size: 18px;
-  }
+
+.right.modal-section-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: 'roc-grotesk';
+  font-size:  18px;
+}
+  
+.right.modal-section-content h5 {
+  color: #C84501;
+  font-weight: 200;
+  margin-left: -20px;
+}
+.right.modal-section-content ul {
+  line-height: 130%;
+  margin-bottom: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #1900FF;
+  margin-left: -20px;
+}
+.dialog-center-mobile {
+  display: none;
+}
 
   .right.modal-section-content h5 {
     color: #c84501;
