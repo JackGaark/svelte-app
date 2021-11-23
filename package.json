@@ -21,5 +21,8 @@
     "svelte-feather-icons": "^3.3.0",
     "svelte-i18n": "^3.3.9"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "svelte-lazy": "^1.0.12"
+  }
 }

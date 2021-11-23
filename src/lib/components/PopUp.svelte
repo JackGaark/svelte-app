@@ -92,32 +92,35 @@
               <li>{@html $_('dialog.services.production')}</li>
               <li>{@html $_('dialog.services.digital')}</li>
               <li>{@html $_('dialog.services.content')}</li>
+              <!-- <li>{@html $_('dialog.services.content')}</li>
+              <li>{@html $_('dialog.services.content')}</li> -->
             </ul>
           </div>
           <div class="client-list">
             <h5 class="title">{$_('dialog.clientList.title')}</h5>
             <ul>
-              <li>Kombi Canada</li>
               <li>Nike</li>
+              <li>Herschel Supply</li>
+              <li>Kombi</li>
               <li>Altitude Sports</li>
-              <li>Little Burgundy</li>
-              <li>Saxx Underwear</li>
+              <li>Ground Sounds</li>
+              <li>Saje Wellness</li>
               <li>Fable Home</li>
-              <li>Herschel Supply Co.</li>
-              <li>Call it Spring</li>
-              <li>Aldo</li>
-              <li>Hirrs</li>
-              <li>Nine Point Agency</li>
-              <li>Alain Carle Architect</li>
+              <li>Nine Point Cannabis PR</li>
+              <li>Frank Ghery, The Grand LA</li>
               <li>Osei Duro</li>
-              <li>Koppitsch Wine</li>
-              <li>Boxermans</li>
-              <li>Loic</li>
-              <li>Denise</li>
-              <li>Kit and Ace</li>
-              <li>Oh Baby Nutrition</li>
+              <li>HIRRS Bodywear</li>
               <li>La Firme</li>
-              <li>...</li>
+              <li>Alain Carle Architect</li>
+              <li>Little Burgundy Shoes</li>
+              <li>Call It Spring</li>
+              <li>ALDO</li>
+              <li>DAVIDs TEA</li>
+              <li>Kit & Ace</li>
+              <li>Eddie Bauer</li>
+              <li>enRoute</li>
+              <li>SAXX</li>
+              <li>RISE Kombucha</li>
             </ul>
           </div>
         </div>
@@ -295,9 +298,9 @@
     margin-bottom:0;
   }
   .bonjour-dialog-container .p1 {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
     font-weight: 400;
-    font-family: "moret";
+    font-family: "roc-grotesk";
     width: 88%;
   }
   .bonjour-dialog-container .footer {

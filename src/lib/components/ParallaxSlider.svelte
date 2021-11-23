@@ -1,6 +1,8 @@
 <script>
   import { ChevronLeftIcon, ChevronRightIcon } from "svelte-feather-icons";
   import { debug } from "svelte/internal";
+  import Lazy from 'svelte-lazy';
+
 
   let activeSlide;
   let slide = 0;
@@ -78,11 +80,13 @@
   >
     {#each slides as slide, i}
       {#if slide.type === "image"}
+      <Lazy height={300}>
         <div
           id={i}
           class={`slide ${sliderCursor}`}
           style={`background-position: ${i}00vw center; background-image: url(${slide.src})`}
         />
+      </Lazy>
       {:else}
         {#if slide.type === "video"}
         <div
@@ -92,7 +96,9 @@
         >
           <div class={`${slide.addPadding ? "video-container": ""}`}>
             <!-- svelte-ignore a11y-media-has-caption -->
-            <video src={slide.src} autoplay="true" loop muted playsinline/>
+            <Lazy height={300}>
+              <video src={slide.src} autoplay="true" loop muted playsinline/>
+            </Lazy>
           </div>
         </div>
         {:else}
@@ -103,7 +109,9 @@
               </div>
                 <div class="slide-column slide-right-column">
                   <!-- svelte-ignore a11y-img-redundant-alt -->
-                  <img src={slide.imageSrc} alt="left column image">
+                  <Lazy height={300}>
+                    <img src={slide.imageSrc} alt="left column image">
+                  </Lazy>
                 </div>
             </div>
             {:else}
