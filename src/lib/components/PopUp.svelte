@@ -177,8 +177,9 @@
     width: 50%;
     min-width: 300px;
     flex: 1 1 auto;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     padding-bottom: 530px;
+    height: 100%;
   }
   .left-side {
     background-color: #1900ff;
@@ -194,7 +195,7 @@
     padding-bottom: 0;
   }
   .modal-section-content p {
-    position: absolute;
+    position: relative;
     left: 55px;
     z-index: 1;
     margin-top: 25px;
