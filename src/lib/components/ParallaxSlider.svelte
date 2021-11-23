@@ -262,7 +262,7 @@
     height: 70vh;
     margin-left: 15vw;
     margin-right: 15vw;
-    /* object-fit: none; */
+    object-fit: contain;
     margin-top: 15vh;
     margin-bottom: 15vh;
   }
@@ -414,7 +414,7 @@
   video {
     width: 100vw;
     height: 100vh;
-    /* object-fit: cover; */
+    object-fit: cover;
 
   }
 
