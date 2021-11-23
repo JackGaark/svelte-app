@@ -23,10 +23,7 @@
   },
   "type": "module",
   "dependencies": {
-<<<<<<< HEAD
-    "svelte-lazy": "^1.0.12"
-=======
+    "svelte-lazy": "^1.0.12",
     "svelte-viewport-info": "^0.1.12"
->>>>>>> 62c39c3b849ea25a91b591a9cf4d8f7a775420da
   }
 }

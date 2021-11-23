@@ -334,11 +334,8 @@
   .bonjour-dialog-container .p1 {
     font-size: 0.875rem;
     font-weight: 400;
-<<<<<<< HEAD
     font-family: "roc-grotesk";
-=======
     font-family: 'moret';
->>>>>>> 62c39c3b849ea25a91b591a9cf4d8f7a775420da
     width: 88%;
   }
   .bonjour-dialog-container .footer {

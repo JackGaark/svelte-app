@@ -1,5 +1,4 @@
 <script>
-<<<<<<< HEAD
   import { ChevronLeftIcon, ChevronRightIcon } from "svelte-feather-icons";
   import { debug } from "svelte/internal";
   import Lazy from 'svelte-lazy';
@@ -10,11 +9,9 @@
   let x = 0;
   export let slides;
   // export let newSlides;
-=======
   import { debounce } from '$lib/utils/helpers';
 
   export let slidesData;
->>>>>>> 62c39c3b849ea25a91b591a9cf4d8f7a775420da
   export let title;
   export let title2;
   export let titleFontClassName;
@@ -150,7 +147,6 @@
     style={`width: ${isMobile ? `${mobile_width * slides.length}px` : `${slides.length * 100}vw`}`}
   >
     {#each slides as slide, i}
-<<<<<<< HEAD
       {#if slide.type === "image"}
       <Lazy height={300}>
         <div
@@ -171,7 +167,6 @@
             <Lazy height={300}>
               <video src={slide.src} autoplay="true" loop muted playsinline/>
             </Lazy>
-=======
       <div
         class="slider-slide"
         type={slide.type}
@@ -208,10 +203,8 @@
               <!-- svelte-ignore a11y-img-redundant-alt -->
               <img src={slide.imageSrc} alt="left column image" />
             </div>
->>>>>>> 62c39c3b849ea25a91b591a9cf4d8f7a775420da
           </div>
         {:else}
-<<<<<<< HEAD
           {#if slide.type === "two-columns"}
             <div class="slide two-columns-slide">
               <div class="slide-column slide-left-column">
@@ -222,7 +215,6 @@
                   <Lazy height={300}>
                     <img src={slide.imageSrc} alt="left column image">
                   </Lazy>
-=======
           <div
             class="slide text_slide"
             style={`
@@ -242,7 +234,6 @@
                     {textSlide.title}
                   </h5>
                   <p>{@html textSlide.src}</p>
->>>>>>> 62c39c3b849ea25a91b591a9cf4d8f7a775420da
                 </div>
               {/each}
             {:else}
@@ -255,6 +246,7 @@
             {/if}
           </div>
         {/if}
+        </div>
       </div>
     {/each}
   </div>
