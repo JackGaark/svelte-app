@@ -1,14 +1,5 @@
 <script>
-  import { ChevronLeftIcon, ChevronRightIcon } from "svelte-feather-icons";
-  import { debug } from "svelte/internal";
   import Lazy from 'svelte-lazy';
-
-
-  let activeSlide;
-  let slide = 0;
-  let x = 0;
-  export let slides;
-  // export let newSlides;
   import { debounce } from '$lib/utils/helpers';
 
   export let slidesData;
@@ -147,26 +138,6 @@
     style={`width: ${isMobile ? `${mobile_width * slides.length}px` : `${slides.length * 100}vw`}`}
   >
     {#each slides as slide, i}
-      {#if slide.type === "image"}
-      <Lazy height={300}>
-        <div
-          id={i}
-          class={`slide ${sliderCursor}`}
-          style={`background-position: ${i}00vw center; background-image: url(${slide.src})`}
-        />
-      </Lazy>
-      {:else}
-        {#if slide.type === "video"}
-        <div
-          id={i}
-          class={`slide slide-video ${sliderCursor} ${slide.addPadding ? "slide-video-extra-padding": ""}`}
-          style={`background-position: ${i}00vw center; position: relative;`}
-        >
-          <div class={`${slide.addPadding ? "video-container": ""}`}>
-            <!-- svelte-ignore a11y-media-has-caption -->
-            <Lazy height={300}>
-              <video src={slide.src} autoplay="true" loop muted playsinline/>
-            </Lazy>
       <div
         class="slider-slide"
         type={slide.type}
@@ -174,11 +145,13 @@
         style={`width:${isMobile ? `${Math.round(innerHeight * aspectRatio.mobile)}px` : '100vw'};`}
       >
         {#if slide.type === 'image'}
+        <Lazy height={300}>
           <div
-            id={i}
-            class={`slide ${sliderCursor}`}
-            style={`background-position: ${i}00vw center; background-image: url(${slide.src})`}
+          id={i}
+          class={`slide ${sliderCursor}`}
+          style={`background-position: ${i}00vw center; background-image: url(${slide.src})`}
           />
+        </Lazy>
         {:else if slide.type === 'video'}
           <div
             id={i}
@@ -191,9 +164,11 @@
           >
             <div class={`${slide.addPadding ? 'video-container' : ''} ${isMobile ? '100%' : ''}`}>
               <!-- svelte-ignore a11y-media-has-caption -->
-              <video src={slide.src} autoplay="true" loop muted playsinline />
+              <Lazy height={300}>
+                <video src={slide.src} autoplay="true" loop muted playsinline />
+              </Lazy>
+              </div>
             </div>
-          </div>
         {:else if slide.type === 'two-columns'}
           <div class="slide two-columns-slide">
             <div class="slide-column slide-left-column">
@@ -201,20 +176,12 @@
             </div>
             <div class="slide-column slide-right-column">
               <!-- svelte-ignore a11y-img-redundant-alt -->
-              <img src={slide.imageSrc} alt="left column image" />
+              <Lazy height={300}>
+                <img src={slide.imageSrc} alt="left column image" />
+              </Lazy>
             </div>
           </div>
         {:else}
-          {#if slide.type === "two-columns"}
-            <div class="slide two-columns-slide">
-              <div class="slide-column slide-left-column">
-                <video src={slide.videoSrc} autoplay="true" loop muted playsinline/>
-              </div>
-                <div class="slide-column slide-right-column">
-                  <!-- svelte-ignore a11y-img-redundant-alt -->
-                  <Lazy height={300}>
-                    <img src={slide.imageSrc} alt="left column image">
-                  </Lazy>
           <div
             class="slide text_slide"
             style={`
@@ -246,7 +213,6 @@
             {/if}
           </div>
         {/if}
-        </div>
       </div>
     {/each}
   </div>
