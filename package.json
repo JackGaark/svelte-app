@@ -2,7 +2,7 @@
   "name": "svelte-app",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev",
+    "dev": "svelte-kit dev --host 0.0.0.0",
     "build": "svelte-kit build",
     "preview": "svelte-kit preview",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
@@ -23,6 +23,10 @@
   },
   "type": "module",
   "dependencies": {
+<<<<<<< HEAD
     "svelte-lazy": "^1.0.12"
+=======
+    "svelte-viewport-info": "^0.1.12"
+>>>>>>> 62c39c3b849ea25a91b591a9cf4d8f7a775420da
   }
 }

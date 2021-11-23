@@ -1,5 +1,5 @@
 <script>
-  import { fly } from "svelte/transition";
+  import { fly } from 'svelte/transition';
   import { _ } from 'svelte-i18n';
   let scrollY;
   export let modalOpen = false;
@@ -26,44 +26,59 @@
     class="popup"
     transition:fly={{
       y: -window.innerHeight,
-      duration: 1000,
+      duration: 1000
     }}
   >
-  <img src="images/dialog-icon.png" class="dialog-icon" alt="Dialog icon" on:click={hideModal} />
-  <img src="images/dialog-icon-mobile.png" class="dialog-icon mobile" alt="Dialog icon" on:click={hideModal} />
-  <img src="images/dialog-icon-mobile.png" class="dialog-icon mobile" alt="Dialog icon" on:click={hideModal} />
-   
+    <img src="images/dialog-icon.png" class="dialog-icon" alt="Dialog icon" on:click={hideModal} />
+    <img
+      src="images/dialog-icon-mobile.png"
+      class="dialog-icon mobile"
+      alt="Dialog icon"
+      on:click={hideModal}
+    />
+    <img
+      src="images/dialog-icon-mobile.png"
+      class="dialog-icon mobile"
+      alt="Dialog icon"
+      on:click={hideModal}
+    />
+
     <div class="bonjour-button" on:click={showBonjourDialog}>{$_('dialog.sayBonjour')}</div>
     {#if bonjourOpen}
-      <div class="bonjour-dialog" transition:fly={{
-        x: window.innerWidth,
-        duration: 1000,
-      }}>
-      <div class="bonjour-dialog-container">
-        <h1>{$_('dialog.sayHi.title')}</h1>
-        <p class="p1">
-          {$_('dialog.sayHi.p1.text1')} 
-          {$_('dialog.sayHi.p1.text2')} 
-          {@html $_('dialog.sayHi.p1.text3')}
-          <br> 
-          {$_('dialog.sayHi.p1.text4')} 
-          {$_('dialog.sayHi.p1.text5')} 
-          {$_('dialog.sayHi.p1.text6')} 
-          {$_('dialog.sayHi.p1.text7')} 
-        </p>
-        <div class="address">
-          <h4>{$_('dialog.sayHi.address1.title')}</h4>
-          <span>{$_('dialog.sayHi.address1.text')}</span>
+      <div
+        class="bonjour-dialog"
+        transition:fly={{
+          x: window.innerWidth,
+          duration: 1000
+        }}
+      >
+        <div class="bonjour-dialog-container">
+          <h1>{$_('dialog.sayHi.title')}</h1>
+          <p class="p1">
+            {$_('dialog.sayHi.p1.text1')}
+            {$_('dialog.sayHi.p1.text2')}
+            {@html $_('dialog.sayHi.p1.text3')}
+            <br />
+            {$_('dialog.sayHi.p1.text4')}
+            {$_('dialog.sayHi.p1.text5')}
+            {$_('dialog.sayHi.p1.text6')}
+            {$_('dialog.sayHi.p1.text7')}
+          </p>
+          <div class="address">
+            <h4>{$_('dialog.sayHi.address1.title')}</h4>
+            <span>{$_('dialog.sayHi.address1.text')}</span>
+          </div>
+          <div class="address">
+            <h4>{$_('dialog.sayHi.address2.title')}</h4>
+            <span>{$_('dialog.sayHi.address2.text')}</span>
+          </div>
+          <div class="footer">
+            <p>{$_('dialog.sayHi.footer.text')}</p>
+          </div>
+          <div class="bonjour-button close" on:click={hideBonjourDialog}>
+            {$_('dialog.sayBonjour')}
+          </div>
         </div>
-        <div class="address">
-          <h4>{$_('dialog.sayHi.address2.title')}</h4>
-          <span>{$_('dialog.sayHi.address2.text')}</span>
-        </div>
-        <div class="footer">
-          <p>{$_('dialog.sayHi.footer.text')}</p>
-        </div>
-        <div class="bonjour-button close" on:click={hideBonjourDialog}>{$_('dialog.sayBonjour')}</div>
-      </div>
       </div>
     {/if}
     <div class="modal-container">
@@ -72,12 +87,16 @@
       <div class="modal-section left-side">
         <div class="modal-section-content">
           <h5 class="title">{$_('dialog.title')}</h5>
-          <p class="left-text"> 
+          <p class="left-text">
             {$_('dialog.leftText')}
           </p>
         </div>
       </div>
-      <img src="images/dialog-center-mobile.jpeg" class="dialog-center-mobile" alt="Dialog center" />
+      <img
+        src="images/dialog-center-mobile.jpeg"
+        class="dialog-center-mobile"
+        alt="Dialog center"
+      />
       <div class="modal-section right-side">
         <div class="right modal-section-content">
           <div class="services">
@@ -153,7 +172,6 @@
     font-family: 'roc-grotesk';
     overflow-y: hide;
     position: relative;
-
   }
   .modal-section {
     width: 50%;
@@ -163,10 +181,10 @@
     padding-bottom: 530px;
   }
   .left-side {
-    background-color: #1900FF;
+    background-color: #1900ff;
   }
   .right-side {
-    background-color: #E2EE75;
+    background-color: #e2ee75;
   }
   .modal-section-content {
     padding: 50px;
@@ -174,12 +192,11 @@
     position: relative;
     font-family: 'moret';
     padding-bottom: 0;
-
   }
   .modal-section-content p {
     position: absolute;
     left: 55px;
-    z-index:1;
+    z-index: 1;
     margin-top: 25px;
   }
   .dialog-icon {
@@ -192,7 +209,7 @@
     z-index: 4;
   }
   .dialog-icon.mobile {
-    display:none;
+    display: none;
   }
   .modal-container {
     color: #fff;
@@ -203,11 +220,11 @@
     font-family: 'Opposit-Medium';
     font-weight: 100;
     font-size: 18px;
-    color: #E2EE75;
+    color: #e2ee75;
     margin-bottom: 2px;
     margin-left: 5px;
   }
-  
+
   .dialog-center {
     position: absolute;
     top: 105%;
@@ -220,6 +237,7 @@
     font-size: 54px;
     line-height: 70px;
   }
+
 
 .right.modal-section-content {
   display: flex;
@@ -247,7 +265,23 @@
   display: none;
 }
 
-.image-logo {
+  .right.modal-section-content h5 {
+    color: #c84501;
+    font-weight: 200;
+    margin-left: -20px;
+  }
+  .right.modal-section-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #1900ff;
+    margin-left: -20px;
+  }
+  .dialog-center-mobile {
+    display: none;
+  }
+
+  .image-logo {
     position: absolute;
     left: 55px;
     top: 30px;
@@ -256,19 +290,19 @@
     z-index: 1;
   }
   .bonjour-button {
-    background-color:#C84501;
+    background-color: #c84501;
     writing-mode: vertical-rl;
     text-orientation: sideways;
     position: absolute;
     right: 50px;
     top: 400px;
-    color:#1900FF;
+    color: #1900ff;
     padding: 10px;
     border-radius: 14.33px;
     font-size: 0.8rem;
     z-index: 2;
     font-weight: 400;
-    font-family: "moret";
+    font-family: 'moret';
     cursor: pointer;
     width: 8px;
     line-height: 8px;
@@ -278,29 +312,33 @@
     height: 500px;
     position: absolute;
     z-index: 3;
-    background-color: #F86C01;
-    border: solid 1px #F86C01;
+    background-color: #f86c01;
+    border: solid 1px #f86c01;
     top: 20vh;
-    right:0;
+    right: 0;
     padding: 25px;
-}
+  }
   .bonjour-dialog-container {
-    position:relative;
-    color: #1F0EDF;
+    position: relative;
+    color: #1f0edf;
     overflow-y: auto;
   }
   .bonjour-dialog-container h1 {
     font-weight: 100;
-    font-family: "Opposit-Medium";
+    font-family: 'Opposit-Medium';
     color: #fff;
   }
   .bonjour-dialog-container h4 {
-    margin-bottom:0;
+    margin-bottom: 0;
   }
   .bonjour-dialog-container .p1 {
     font-size: 0.875rem;
     font-weight: 400;
+<<<<<<< HEAD
     font-family: "roc-grotesk";
+=======
+    font-family: 'moret';
+>>>>>>> 62c39c3b849ea25a91b591a9cf4d8f7a775420da
     width: 88%;
   }
   .bonjour-dialog-container .footer {
@@ -308,13 +346,12 @@
     margin-top: 60px;
   }
   .bonjour-button.close {
-    background-color: #1F0EDF;
-    color:  #F86C01;
+    background-color: #1f0edf;
+    color: #f86c01;
     top: 230px;
     right: 20px;
   }
-    @media screen and (max-width: 600px) {
-    
+  @media screen and (max-width: 600px) {
     .image-logo {
       position: absolute;
       left: 25px;
@@ -322,12 +359,12 @@
       width: 117px;
       height: 4.75rem;
       z-index: 1;
-  }
-    
-      .modal-section {
+    }
+
+    .modal-section {
       width: 100%;
       flex: 1;
-      overflow:initial;
+      overflow: initial;
       padding-bottom: 0px;
     }
     .dialog-center-mobile {
@@ -337,17 +374,17 @@
       object-fit: cover;
     }
     .dialog-center {
-      display:none;
+      display: none;
     }
 
-    .modal-container { 
+    .modal-container {
       flex-direction: column;
       flex-wrap: nowrap;
       justify-content: normal;
       overflow-y: auto;
       height: 100vh;
       align-items: flex-start;
-			align-content: flex-start;
+      align-content: flex-start;
     }
     .modal-section-content p {
       position: relative;
@@ -360,7 +397,7 @@
     .bonjour-dialog {
       width: 70vw;
       height: 70vh;
-      top:100px
+      top: 100px;
     }
 
     .dialog-icon {
@@ -368,7 +405,7 @@
     }
     .dialog-icon.mobile {
       width: 37px;
-      display:block;
+      display: block;
       height: 23px;
       padding-top: 55px;
       padding-right: 40px;
@@ -393,13 +430,12 @@
     }
 
     h5.title {
-    font-family: 'Opposit-Medium';
-    font-weight: 100;
-    font-size: 18px;
-    color: #E2EE75;
-    margin-bottom: 2px;
-    margin-left: -20px;
+      font-family: 'Opposit-Medium';
+      font-weight: 100;
+      font-size: 18px;
+      color: #e2ee75;
+      margin-bottom: 2px;
+      margin-left: -20px;
+    }
   }
-
-}
 </style>
