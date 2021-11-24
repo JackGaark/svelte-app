@@ -336,12 +336,13 @@
     font-size: 0.875rem;
     font-weight: 400;
     font-family: "roc-grotesk";
-    font-family: 'moret';
+    /* font-family: 'moret'; */
     width: 88%;
   }
   .bonjour-dialog-container .footer {
     color: #000;
     margin-top: 60px;
+    font-family: "roc-grotesk";
   }
   .bonjour-button.close {
     background-color: #1f0edf;

@@ -824,16 +824,11 @@
             type: 'image'
           },
           {
-            imageSrc: 'images/LB_2_2.jpg',
-            videoSrc: 'videos/LB_2_2v.mp4',
-            type: 'two-columns'
-          },
-          {
             src: 'images/CIS_2.jpg',
             type: 'image'
           },
           {
-            src: 'images/CIS_3jpg',
+            src: 'images/CIS_3.jpg',
             type: 'image'
           },
           {
@@ -841,7 +836,7 @@
             type: 'image'
           },
           {
-            src: 'images/CIS_5jpg',
+            src: 'images/CIS_5.jpg',
             type: 'image'
           },
           {

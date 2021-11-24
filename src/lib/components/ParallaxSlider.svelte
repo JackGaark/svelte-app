@@ -280,11 +280,11 @@
   }
 
   .slide-right-column {
-    margin-left: 55px;
+    margin-left: 15px;
   }
 
   .slide-left-column {
-    margin-right: 55px;
+    margin-right: 15px;
   }
 
   .slide-left-column video {
