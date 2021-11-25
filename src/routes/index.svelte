@@ -844,7 +844,7 @@
             type: 'image'
           },
           {
-            src: 'images/CIS_7x.jpg',
+            src: 'images/CIS_7.jpg',
             type: 'image'
           },
           {
