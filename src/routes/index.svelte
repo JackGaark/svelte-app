@@ -94,9 +94,7 @@
         <span style="color:#F8D0FB">☏</span>
         mobile's your thing,<span style="color:#E0A239">➙</span> rotate your device, that would be
         Super
-        <span style="color:#F8D0FB">&#10075;</span>
-        <span style="color:#F8D0FB">&#8255;</span>
-        <span style="color:#F8D0FB">&#10075;</span>
+        <span style="color:#F8D0FB">❛‿❛</span>
       </p>
     </div>
     <div style="display:flex; justify-content:space-between; margin-top:2rem;">
@@ -1289,8 +1287,8 @@
   .mobile-portrait-message {
     font-family: roc-grotesk;
     color: #e2ee75;
-    font-size: 28px;
-    line-height: 1.25;
+    font-size: 24px;
+    line-height: 1.3;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }

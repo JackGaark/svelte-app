@@ -127,10 +127,12 @@
 >
   <img class="image-logo" src="images/LOGO-Ai small_Super Bonjour smaller.svg" alt="Logo" />
   <img class="image-logo mobile" src="images/LOGOFACE-Ai.svg" alt="Logo" />
-  <h2 class="slider-title">
-    <span class={`${titleFontClassName || ''}`}>{title}</span>
-    <span class={`${title2FontClassName || ''}`}>{title2 || ''}</span>
-  </h2>
+  <div class={'slider-title'}>
+    <h2 class={`${titleFontClassName || ''}`}>{title}{title2 || ''}</h2>
+    <div class="paginator">
+      <h4>{active_index + 1} / {slides.length}</h4>
+    </div>
+  </div>
   <div
     class={`slider ${sliderCursor}`}
     bind:this={sliderEl}
@@ -165,7 +167,14 @@
             <div class={`${slide.addPadding ? 'video-container' : ''} ${isMobile ? '100%' : ''}`}>
               <!-- svelte-ignore a11y-media-has-caption -->
               <Lazy height={300}>
-                <video src={slide.src} autoplay="true" loop muted playsinline />
+                <video
+                  style={`width: ${isMobile ? '100%' : '100vw'}`}
+                  src={slide.src}
+                  autoplay="true"
+                  loop
+                  muted
+                  playsinline
+                />
               </Lazy>
             </div>
           </div>
@@ -195,12 +204,26 @@
           >
             {#if isMobile}
               <!-- All the text is encapsulated in one slide for mobile -->
-              {#each slidesData.slice(text_slide_index, slidesData.length) as textSlide}
-                <div style="padding:1rem 2rem">
-                  <h5 class="text_title">
+              {#each slidesData.slice(text_slide_index, slidesData.length) as textSlide, i}
+                <div
+                  class="text_slide_mobile"
+                  style={`
+                    ${i === 1 ? `background: rgba(255,255,255,0.2)` : ''}
+                `}
+                >
+                  <h5 class="text_title text_title_mobile">
                     {textSlide.title}
                   </h5>
-                  <p>{@html textSlide.src}</p>
+                  <p
+                    class="text_mobile"
+                    style={`
+                    font-size: ${i > 0 ? '16px' : '20px'};
+                    font-family: ${textSlide.font || 'moret'};
+                    color: ${textSlide.color};
+                    `}
+                  >
+                    {@html textSlide.src}
+                  </p>
                 </div>
               {/each}
             {:else}
@@ -215,9 +238,6 @@
         {/if}
       </div>
     {/each}
-  </div>
-  <div class="paginator">
-    <h4>{active_index + 1} / {slides.length}</h4>
   </div>
 </div>
 
@@ -251,10 +271,6 @@
 
   .image-logo.mobile {
     display: none;
-  }
-
-  .slider-title .roc-grotesk {
-    font-family: 'roc-grotesk', sans-serif;
   }
 
   .slide-video-extra-padding video {
@@ -383,36 +399,35 @@
     right: 0;
   }
 
-  .paginator {
-    position: absolute;
-    bottom: 0;
-    right: 20vw;
-    text-align: center;
-    width: 100px;
-    font-family: 'moret';
-    /* background-color: rgb(255 255 255 / 80%); */
-    color: #fff;
-    font-size: 36px;
-  }
-
   .slider-title {
-    font-family: 'moret';
-    /* background-color: rgb(255 255 255 / 80%); */
-    min-width: 20vw;
+    width: 100%;
     padding: 25px;
     padding-left: 55px;
     padding-bottom: 30px;
-    margin-bottom: 20px;
-    position: absolute;
-    z-index: 1;
-    left: 0px;
-    bottom: 0;
+    margin-bottom: 50px;
+    padding-right: 20vw;
+    font-family: 'moret';
     color: #fff;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .slider-title h2 {
+    font-family: 'roc-grotesk', sans-serif;
     font-size: 38px;
     font-weight: normal;
+    margin: 0;
+  }
+
+  .paginator h4 {
+    font-size: 36px;
+    margin: 0;
   }
   video {
-    width: 100vw;
     height: 100vh;
     object-fit: cover;
   }
@@ -436,11 +451,14 @@
 
   @media screen and (max-width: 1200px) {
     .slider-title {
-      bottom: 0;
       margin-bottom: -10px;
+    }
+
+    .slider-title h2 {
       font-size: 2.25rem;
     }
-    .paginator {
+
+    .slider-title .paginator h4 {
       font-size: 1.6rem;
       right: 20vw;
       bottom: 0;
@@ -485,12 +503,16 @@
     }
 
     .slider-title {
-      font-size: 1rem;
-      width: 5vw;
       padding-left: 25px;
+      align-items: flex-end;
     }
 
-    .paginator {
+    .slider-title h2 {
+      width: 5vw;
+      font-size: 1rem;
+    }
+
+    .slider-title .paginator h4 {
       font-size: 1rem;
       right: 5vw;
       margin-right: 35px;
@@ -522,7 +544,43 @@
       left: 25px;
     }
   }
-  @media screen and (orientation: landscape) and (max-height: 499px) {
-    /* For mobile-size but acts on desktop as well */
+
+  @media screen and (max-width: 1200px) and (max-height: 499px) {
+    /* For mobile-size but acts on short height desktop as well */
+    .slider-title {
+      width: 100%;
+      padding: 30px 55px;
+      align-items: center;
+    }
+
+    .slider-title h2 {
+      font-size: 1.5rem;
+    }
+
+    .slider-title .paginator h4 {
+      font-size: 1.5rem;
+      margin-bottom: 0;
+    }
+  }
+  /* Mobile text slides */
+  .text_slide_mobile {
+    min-height: 375px;
+    padding: 70px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+  }
+
+  .text_title_mobile {
+    font-size: 12px;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1.5rem;
+  }
+
+  .text_mobile {
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 0;
   }
 </style>
