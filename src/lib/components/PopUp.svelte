@@ -182,7 +182,7 @@
   }
   .modal-section-content p {
     position: relative;
-    left: 55px;
+    left: 0;
     z-index: 1;
     margin-top: 25px;
   }
@@ -221,7 +221,7 @@
   }
 
   .left-text {
-    font-size: 54px;
+    font-size: 27px;
     line-height: 70px;
   }
 
@@ -295,12 +295,12 @@
   }
   .bonjour-dialog {
     width: 485px;
-    height: 500px;
+    height: 550px;
     position: absolute;
     z-index: 3;
     background-color: #f86c01;
     border: solid 1px #f86c01;
-    top: 20vh;
+    top: 13vh;
     right: 0;
     padding: 25px;
   }

@@ -845,7 +845,7 @@
           type: 'image'
         },
         {
-          src: 'images/CIS_7x.jpg',
+          src: 'images/CIS_7.jpg',
           type: 'image'
         },
         {
@@ -1224,8 +1224,9 @@
           type: 'image'
         },
         {
-          src: 'images/DT_2_5x.jpg',
-          type: 'image'
+          addPadding: true,
+          src: 'videos/DT_2_5 LIGHT.mp4',
+          type: 'video'
         },
         {
           src: 'images/DT_2_6.jpg',
