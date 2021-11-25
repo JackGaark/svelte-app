@@ -117,6 +117,11 @@
   // -------------------------
 </script>
 
+<svelte:body
+  on:orientationchangeend={() => {
+    active_index = 0;
+    updateProjectIndex(0);
+  }} />
 <div
   class="slider-wrapper"
   bind:clientWidth={wrapperWidth}
