@@ -228,15 +228,15 @@
 
   .dialog-center {
     position: absolute;
-    top: 105%;
+    top: 130%;
     left: 55%;
     transform: translate(-50%, -50%);
     width: 350px;
   }
 
   .left-text {
-    font-size: 27px;
-    line-height: 70px;
+    font-size: 45px;
+    line-height: 130%;
   }
 
 
