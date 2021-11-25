@@ -121,7 +121,7 @@
   class="slider-wrapper"
   bind:clientWidth={wrapperWidth}
   on:mousemove={handleMousemove}
-  style={isMobile ? `width:${innerWidth}px; height:${innerHeight}px` : ''}
+  style={isMobile ? `width:${innerWidth}px; height:${innerHeight}px;` : ''}
 >
   <img class="image-logo" src="images/LOGO-Ai small_Super Bonjour smaller.svg" alt="Logo" />
   <!-- <img class="image-logo mobile" src="images/LOGOFACE-Ai.svg" alt="Logo" /> -->
@@ -135,21 +135,30 @@
     class={`slider ${sliderCursor}`}
     bind:this={sliderEl}
     on:click={handleSliderClick}
-    style={`width: ${isMobile ? `${mobile_width * slides.length}px` : `${slides.length * 100}vw`}`}
+    style={`${
+      isMobile
+        ? `width: ${mobile_width * slides.length}px; height:100%;`
+        : `width: ${slides.length * 100}vw;`
+    }`}
   >
     {#each slides as slide, i}
       <div
         class="slider-slide"
         type={slide.type}
         bind:this={slide_els[i]}
-        style={`width:${isMobile ? `${Math.round(innerHeight * aspectRatio.mobile)}px` : '100vw'};`}
+        style={`${
+          isMobile
+            ? `width: ${Math.round(innerHeight * aspectRatio.mobile)}px; height:100%;`
+            : 'width: 100vw'
+        }; `}
       >
         {#if slide.type === 'image'}
           <Lazy height={300}>
             <div
               id={i}
-              class={`slide ${sliderCursor}`}
-              style={`background-position: ${i}00vw center; background-image: url(${slide.src})`}
+              class={`slide ${sliderCursor};`}
+              style={`background-position: ${i}00vw center; background-image: url(${slide.src});
+              ${isMobile ? `height:${innerHeight}px;` : ''}; `}
             />
           </Lazy>
         {:else if slide.type === 'video'}

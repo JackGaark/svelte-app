@@ -71,6 +71,12 @@
   };
 </script>
 
+<svelte:head>
+  <meta
+    name="viewport"
+    content="height=device-height, initial-scale=1, width=device-width, initial-scale=1"
+  />
+</svelte:head>
 <svelte:body
   on:viewportchanged={() => {
     innerWidth = viewport.Width;
@@ -81,6 +87,8 @@
     innerHeight = viewport.Height;
   }}
   on:orientationchangeend={() => {
+    innerWidth = viewport.Width;
+    innerHeight = viewport.Height;
     isLandscapeView = viewport.Orientation === 'landscape';
   }} />
 
@@ -1251,14 +1259,36 @@
 </main>
 
 <style>
+  :global(html) {
+    height: 100%;
+    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5ae;
+  }
   :global(body) {
     padding: 0;
+    height: 100%;
+    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    background-color: #5ae;
   }
 
   .container {
-    overflow: hidden;
     transition: transform 0.5s linear;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
   }
 
   .header {
