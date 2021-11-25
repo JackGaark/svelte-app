@@ -1223,8 +1223,9 @@
             type: 'image'
           },
           {
-            src: 'images/DT_2_5x.jpg',
-            type: 'image'
+            addPadding: true,
+            src: 'videos/DT_2_5 LIGHT.mp4',
+            type: 'video'
           },
           {
             src: 'images/DT_2_6.jpg',
