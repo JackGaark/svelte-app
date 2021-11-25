@@ -196,7 +196,7 @@
   }
   .modal-section-content p {
     position: relative;
-    left: 55px;
+    left: 0;
     z-index: 1;
     margin-top: 25px;
   }
@@ -235,7 +235,7 @@
   }
 
   .left-text {
-    font-size: 54px;
+    font-size: 27px;
     line-height: 70px;
   }
 
