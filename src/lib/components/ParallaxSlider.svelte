@@ -174,7 +174,8 @@
             }`}
             style={`background-position: ${i}00vw center; position: relative;${
               isMobile ? '' : 'width:100vw'
-            }`}
+            }
+            ${isMobile ? `height:${innerHeight}px;` : ''}; `}
           >
             <div
               class={`${slide.addPadding ? 'video-container' : ''}`}
@@ -214,6 +215,7 @@
             font-size: ${slide.fontSize};
             overflow-y:${isMobile ? 'scroll' : 'auto'};
             width:100%;
+            ${isMobile ? `height:${innerHeight}px;` : ''}; 
             `}
             on:scroll={handleScrollDown}
           >

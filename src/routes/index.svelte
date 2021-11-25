@@ -51,7 +51,7 @@
 
   // Slide in the next project vertically, if it exists.
   const nextProject = (project_index) => {
-    if (project_index < MAX_NUM_PROJECTS) {
+    if (project_index <= MAX_NUM_PROJECTS) {
       return (containerEl.style.transform = `translate(0px, ${0 - project_index * innerHeight}px)`);
     }
   };
