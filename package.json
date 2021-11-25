@@ -23,6 +23,7 @@
   },
   "type": "module",
   "dependencies": {
+    "svelte-lazy": "^1.0.12",
     "svelte-viewport-info": "^0.1.12"
   }
 }

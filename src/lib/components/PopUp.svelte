@@ -102,41 +102,44 @@
           <div class="services">
             <h5 class="title">{$_('dialog.services.title')}</h5>
             <ul>
-              <li>{$_('dialog.services.strategy')}</li>
-              <li>{$_('dialog.services.branding')}</li>
-              <li>{$_('dialog.services.design')}</li>
-              <li>{$_('dialog.services.creativeDirection')}</li>
-              <li>{$_('dialog.services.artDirection')}</li>
-              <li>{$_('dialog.services.motion')}</li>
-              <li>{$_('dialog.services.production')}</li>
-              <li>{$_('dialog.services.digital')}</li>
-              <li>{$_('dialog.services.content')}</li>
+              <li>{@html $_('dialog.services.strategy')}</li>
+              <li>{@html $_('dialog.services.branding')}</li>
+              <li>{@html $_('dialog.services.design')}</li>
+              <li>{@html $_('dialog.services.creativeDirection')}</li>
+              <li>{@html $_('dialog.services.artDirection')}</li>
+              <li>{@html $_('dialog.services.motion')}</li>
+              <li>{@html $_('dialog.services.production')}</li>
+              <li>{@html $_('dialog.services.digital')}</li>
+              <li>{@html $_('dialog.services.content')}</li>
+              <!-- <li>{@html $_('dialog.services.content')}</li>
+              <li>{@html $_('dialog.services.content')}</li> -->
             </ul>
           </div>
           <div class="client-list">
             <h5 class="title">{$_('dialog.clientList.title')}</h5>
             <ul>
-              <li>Kombi Canada</li>
               <li>Nike</li>
+              <li>Herschel Supply</li>
+              <li>Kombi</li>
               <li>Altitude Sports</li>
-              <li>Little Burgundy</li>
-              <li>Saxx Underwear</li>
+              <li>Ground Sounds</li>
+              <li>Saje Wellness</li>
               <li>Fable Home</li>
-              <li>Herschel Supply Co.</li>
-              <li>Call it Spring</li>
-              <li>Aldo</li>
-              <li>Hirrs</li>
-              <li>Nine Point Agency</li>
-              <li>Alain Carle Architect</li>
+              <li>Nine Point Cannabis PR</li>
+              <li>Frank Ghery, The Grand LA</li>
               <li>Osei Duro</li>
-              <li>Koppitsch Wine</li>
-              <li>Boxermans</li>
-              <li>Loic</li>
-              <li>Denise</li>
-              <li>Kit and Ace</li>
-              <li>Oh Baby Nutrition</li>
+              <li>HIRRS Bodywear</li>
               <li>La Firme</li>
-              <li>...</li>
+              <li>Alain Carle Architect</li>
+              <li>Little Burgundy Shoes</li>
+              <li>Call It Spring</li>
+              <li>ALDO</li>
+              <li>DAVIDs TEA</li>
+              <li>Kit & Ace</li>
+              <li>Eddie Bauer</li>
+              <li>enRoute</li>
+              <li>SAXX</li>
+              <li>RISE Kombucha</li>
             </ul>
           </div>
         </div>
@@ -146,6 +149,11 @@
 {/if}
 
 <style>
+  .services li {
+    margin-bottom: 8px;
+    line-height: 130%;
+  }
+  
   .popup {
     height: 80vh;
     width: 100vw;
@@ -169,8 +177,9 @@
     width: 50%;
     min-width: 300px;
     flex: 1 1 auto;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     padding-bottom: 530px;
+    height: 100%;
   }
   .left-side {
     background-color: #1900ff;
@@ -186,7 +195,7 @@
     padding-bottom: 0;
   }
   .modal-section-content p {
-    position: absolute;
+    position: relative;
     left: 55px;
     z-index: 1;
     margin-top: 25px;
@@ -230,13 +239,32 @@
     line-height: 70px;
   }
 
-  .right.modal-section-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-family: 'roc-grotesk';
-    font-size: 18px;
-  }
+
+.right.modal-section-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: 'roc-grotesk';
+  font-size:  18px;
+}
+  
+.right.modal-section-content h5 {
+  color: #C84501;
+  font-weight: 200;
+  margin-left: -20px;
+}
+.right.modal-section-content ul {
+  line-height: 130%;
+  margin-bottom: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #1900FF;
+  margin-left: -20px;
+}
+.dialog-center-mobile {
+  display: none;
+}
 
   .right.modal-section-content h5 {
     color: #c84501;
@@ -305,14 +333,16 @@
     margin-bottom: 0;
   }
   .bonjour-dialog-container .p1 {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
     font-weight: 400;
-    font-family: 'moret';
+    font-family: "roc-grotesk";
+    /* font-family: 'moret'; */
     width: 88%;
   }
   .bonjour-dialog-container .footer {
     color: #000;
     margin-top: 60px;
+    font-family: "roc-grotesk";
   }
   .bonjour-button.close {
     background-color: #1f0edf;

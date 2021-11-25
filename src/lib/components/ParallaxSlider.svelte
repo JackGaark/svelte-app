@@ -1,4 +1,5 @@
 <script>
+  import Lazy from 'svelte-lazy';
   import { debounce } from '$lib/utils/helpers';
 
   export let slidesData;
@@ -17,7 +18,7 @@
   // [sliderEl] is the element that wraps all the project slides and translates based on which slide is active (e.g. slides[active_index]).
   let sliderEl;
 
-  /* 
+  /*
   In mobile, the text slides are condensed into one. So the [slides] array is shortened to only have the first text slide.
   In the html, we iterate over the leftover text slides slidesData.slice(text_slides_index, slidesData.length) and input them to the main text slide.
    */
@@ -114,7 +115,7 @@
     if (scrollTop + innerHeight >= scrollHeight - 100) {
       nextSlide();
     }
-  }, 200);
+  }, 100);
   // -------------------------
 </script>
 
@@ -144,28 +145,28 @@
         style={`width:${isMobile ? `${Math.round(innerHeight * aspectRatio.mobile)}px` : '100vw'};`}
       >
         {#if slide.type === 'image'}
-          <div
-            id={i}
-            class={`slide ${sliderCursor}`}
-            style={`background-position: ${i}00vw center; background-image: url(${slide.src})`}
-          />
+          <Lazy height={300}>
+            <div
+              id={i}
+              class={`slide ${sliderCursor}`}
+              style={`background-position: ${i}00vw center; background-image: url(${slide.src})`}
+            />
+          </Lazy>
         {:else if slide.type === 'video'}
           <div
             id={i}
-            class={`
-            slide
-            slide-video
-            ${sliderCursor}
-            ${slide.addPadding ? 'slide-video-extra-padding' : ''}`}
-            style={`
-            background-position: ${i}00vw center;
-            position: relative;
-            ${isMobile ? '' : 'width:100vw'}
-            `}
+            class={`slide slide-video ${sliderCursor} ${
+              slide.addPadding ? 'slide-video-extra-padding' : ''
+            }`}
+            style={`background-position: ${i}00vw center; position: relative;${
+              isMobile ? '' : 'width:100vw'
+            }`}
           >
-            <div class="video-container">
+            <div class={`${slide.addPadding ? 'video-container' : ''} ${isMobile ? '100%' : ''}`}>
               <!-- svelte-ignore a11y-media-has-caption -->
-              <video src={slide.src} autoplay="true" loop muted playsinline />
+              <Lazy height={300}>
+                <video src={slide.src} autoplay="true" loop muted playsinline />
+              </Lazy>
             </div>
           </div>
         {:else if slide.type === 'two-columns'}
@@ -175,7 +176,9 @@
             </div>
             <div class="slide-column slide-right-column">
               <!-- svelte-ignore a11y-img-redundant-alt -->
-              <img src={slide.imageSrc} alt="left column image" />
+              <Lazy height={300}>
+                <img src={slide.imageSrc} alt="left column image" />
+              </Lazy>
             </div>
           </div>
         {:else}
@@ -259,7 +262,7 @@
     height: 70vh;
     margin-left: 15vw;
     margin-right: 15vw;
-    /* object-fit: none; */
+    object-fit: contain;
     margin-top: 15vh;
     margin-bottom: 15vh;
   }
@@ -277,11 +280,11 @@
   }
 
   .slide-right-column {
-    margin-left: 55px;
+    margin-left: 15px;
   }
 
   .slide-left-column {
-    margin-right: 55px;
+    margin-right: 15px;
   }
 
   .slide-left-column video {

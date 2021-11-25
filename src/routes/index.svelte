@@ -128,27 +128,27 @@
         {innerHeight}
         slidesData={[
           {
-            src: 'images/HSCo_Mag_1.png',
+            src: 'images/HSCo_Mag_1.jpg',
             type: 'image'
           },
           {
-            src: 'images/HSCo_Mag_2.png',
+            src: 'images/HSCo_Mag_2.jpg',
             type: 'image'
           },
           {
-            src: 'images/HSCo_Mag_3.png',
+            src: 'images/HSCo_Mag_3.jpg',
             type: 'image'
           },
           {
-            src: 'images/HSCo_Mag_4.png',
+            src: 'images/HSCo_Mag_4.jpg',
             type: 'image'
           },
           {
-            src: 'images/HSCo_Mag_5.png',
+            src: 'images/HSCo_Mag_5.jpg',
             type: 'image'
           },
           {
-            src: 'images/HSCo_Mag_6.png',
+            src: 'images/HSCo_Mag_6.jpg',
             type: 'image'
           },
           {
@@ -190,6 +190,7 @@
         {innerHeight}
         slidesData={[
           {
+<<<<<<< HEAD
             src: 'images/OD_1.png',
             type: 'image'
           },
@@ -215,6 +216,33 @@
           },
           {
             src: 'images/OD_7.png',
+=======
+            src: 'images/OD_1.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/OD_2.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/OD_3.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/OD_4.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/OD_5.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/OD_6.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/OD_7.jpg',
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
             type: 'image'
           },
           {
@@ -256,6 +284,7 @@
         {innerHeight}
         slidesData={[
           {
+<<<<<<< HEAD
             src: 'images/Fable_1.png',
             type: 'image'
           },
@@ -273,6 +302,25 @@
           },
           {
             src: 'images/Fable_5.png',
+=======
+            src: 'images/Fable_1.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/Fable_2.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/Fable_3.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/Fable_4.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/Fable_5.jpg',
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
             type: 'image'
           },
           {
@@ -318,6 +366,7 @@
         {innerHeight}
         slidesData={[
           {
+<<<<<<< HEAD
             src: 'images/HSCo_1.png',
             type: 'image'
           },
@@ -343,6 +392,33 @@
           },
           {
             src: 'images/HSCo_7.png',
+=======
+            src: 'images/HSCo_1.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/HSCo_2.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/HSCo_3.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/HSCo_4.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/HSCo_5.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/HSCo_6.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/HSCo_7.jpg',
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
             type: 'image'
           },
           {
@@ -384,11 +460,19 @@
         {innerHeight}
         slidesData={[
           {
+<<<<<<< HEAD
             src: 'images/NP_1.png',
             type: 'image'
           },
           {
             src: 'images/NP_2.png',
+=======
+            src: 'images/NP_1.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/NP_2.jpg',
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
             type: 'image'
           },
           {
@@ -404,7 +488,11 @@
             type: 'video'
           },
           {
+<<<<<<< HEAD
             src: 'images/NP_6.png',
+=======
+            src: 'images/NP_6.jpg',
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
             type: 'image'
           },
           {
@@ -455,6 +543,7 @@
         {innerHeight}
         slidesData={[
           {
+<<<<<<< HEAD
             src: 'images/HIRRS_1.png',
             type: 'image'
           },
@@ -472,11 +561,34 @@
           },
           {
             src: 'images/HIRRS_5.png',
+=======
+            src: 'images/HIRRS_1.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/HIRRS_2.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/HIRRS_3.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/HIRRS_4.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/HIRRS_5.jpg',
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
             type: 'image'
           },
 
           {
+<<<<<<< HEAD
             src: 'images/HIRRS_6.png',
+=======
+            src: 'images/HIRRS_6.jpg',
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
             type: 'image'
           },
           {
@@ -518,6 +630,7 @@
         {innerHeight}
         slidesData={[
           {
+<<<<<<< HEAD
             src: 'images/LB_1_1.png',
             type: 'image'
           },
@@ -535,6 +648,25 @@
           },
           {
             src: 'images/LB_1_6.png',
+=======
+            src: 'images/LB_1_1.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/LB_1_2.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/LB_1_3.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/LB_1_5.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/LB_1_6.jpg',
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
             type: 'image'
           },
           {
@@ -575,6 +707,7 @@
         {innerHeight}
         slidesData={[
           {
+<<<<<<< HEAD
             src: 'images/Rise_1.png',
             type: 'image'
           },
@@ -596,6 +729,29 @@
           },
           {
             src: 'images/Rise_6.png',
+=======
+            src: 'images/Rise_1.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/Rise_2.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/Rise_3.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/Rise_4.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/Rise_5.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/Rise_6.jpg',
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
             type: 'image'
           },
           {
@@ -641,6 +797,7 @@
         {innerHeight}
         slidesData={[
           {
+<<<<<<< HEAD
             src: 'images/KOMBI_1.png',
             type: 'image'
           },
@@ -662,6 +819,29 @@
           },
           {
             src: 'images/KOMBI_6.png',
+=======
+            src: 'images/KOMBI_1.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/KOMBI_2.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/KOMBI_3.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/KOMBI_4.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/KOMBI_5.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/KOMBI_6.jpg',
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
             type: 'image'
           },
           {
@@ -703,6 +883,7 @@
         {innerHeight}
         slidesData={[
           {
+<<<<<<< HEAD
             src: 'images/NIKE_1.png',
             type: 'image'
           },
@@ -720,6 +901,25 @@
           },
           {
             src: 'images/NIKE_5.png',
+=======
+            src: 'images/NIKE_1.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/NIKE_2.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/NIKE_3.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/NIKE_4.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/NIKE_5.jpg',
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
             type: 'image'
           },
           {
@@ -766,15 +966,24 @@
         {innerHeight}
         slidesData={[
           {
+<<<<<<< HEAD
             src: 'images/LB_2_1.png',
             type: 'image'
           },
           {
             imageSrc: 'images/LB_2_2.png',
+=======
+            src: 'images/LB_2_1.jpg',
+            type: 'image'
+          },
+          {
+            imageSrc: 'images/LB_2_2.jpg',
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
             videoSrc: 'videos/LB_2_2v.mp4',
             type: 'two-columns'
           },
           {
+<<<<<<< HEAD
             src: 'images/LB_2_3.png',
             type: 'image'
           },
@@ -796,6 +1005,29 @@
           },
           {
             src: 'images/LB_2_8.png',
+=======
+            src: 'images/LB_2_3.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/LB_2_4.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/LB_2_5.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/LB_2_6.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/LB_2_7.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/LB_2_8.jpg',
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
             type: 'image'
           },
           {
@@ -820,6 +1052,7 @@
         {innerHeight}
         slidesData={[
           {
+<<<<<<< HEAD
             src: 'images/CIS_1.png',
             type: 'image'
           },
@@ -854,6 +1087,37 @@
           },
           {
             src: 'images/CIS_8.png',
+=======
+            src: 'images/CIS_1.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/CIS_2.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/CIS_3.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/CIS_4.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/CIS_5.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/CIS_6.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/CIS_7x.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/CIS_8.jpg',
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
             type: 'image'
           },
           {
@@ -895,6 +1159,7 @@
         {innerHeight}
         slidesData={[
           {
+<<<<<<< HEAD
             src: 'images/LOUISE_1.png',
             type: 'image'
           },
@@ -908,6 +1173,21 @@
           },
           {
             src: 'images/LOUISE_4.png',
+=======
+            src: 'images/LOUISE_1.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/LOUISE_2.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/LOUISE_3.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/LOUISE_4.jpg',
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
             type: 'image'
           },
           {
@@ -949,6 +1229,7 @@
         {innerHeight}
         slidesData={[
           {
+<<<<<<< HEAD
             src: 'images/GHANA_1.png',
             type: 'image'
           },
@@ -990,6 +1271,49 @@
           },
           {
             src: 'images/GHANA_11.png',
+=======
+            src: 'images/GHANA_1.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/GHANA_2.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/GHANA_3.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/GHANA_4.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/GHANA_5.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/GHANA_6.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/GHANA_7.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/GHANA_8.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/GHANA_9.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/GHANA_10.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/GHANA_11.jpg',
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
             type: 'image'
           },
           {
@@ -1022,6 +1346,7 @@
         {innerHeight}
         slidesData={[
           {
+<<<<<<< HEAD
             src: 'images/DT1_1.png',
             type: 'image'
           },
@@ -1047,6 +1372,33 @@
           },
           {
             src: 'images/DT1_7.png',
+=======
+            src: 'images/DT1_1.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/DT1_2.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/DT1_3.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/DT1_4.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/DT1_5.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/DT1_6.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/DT1_7.jpg',
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
             type: 'image'
           },
           {
@@ -1088,6 +1440,7 @@
         {innerHeight}
         slidesData={[
           {
+<<<<<<< HEAD
             src: 'images/Saxx_1.png',
             type: 'image'
           },
@@ -1109,6 +1462,29 @@
           },
           {
             src: 'images/Saxx_6.png',
+=======
+            src: 'images/Saxx_1.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/Saxx_2.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/Saxx_3.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/Saxx_4.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/Saxx_5.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/Saxx_6.jpg',
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
             type: 'image'
           },
           {
@@ -1150,6 +1526,7 @@
         {innerHeight}
         slidesData={[
           {
+<<<<<<< HEAD
             src: 'images/ALTI_1.png',
             type: 'image'
           },
@@ -1171,6 +1548,29 @@
           },
           {
             src: 'images/ALTI_6.png',
+=======
+            src: 'images/ALTI_1.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/ALTI_2.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/ALTI_3.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/ALTI_4.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/ALTI_5.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/ALTI_6.jpg',
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
             type: 'image'
           },
           {
@@ -1212,6 +1612,7 @@
         {innerHeight}
         slidesData={[
           {
+<<<<<<< HEAD
             src: 'images/DT_2_1.png',
             type: 'image'
           },
@@ -1237,6 +1638,33 @@
           },
           {
             src: 'images/DT_2_7.png',
+=======
+            src: 'images/DT_2_1.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/DT_2_2.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/DT_2_3.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/DT_2_4.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/DT_2_5x.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/DT_2_6.jpg',
+            type: 'image'
+          },
+          {
+            src: 'images/DT_2_7.jpg',
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
             type: 'image'
           },
           {
@@ -1261,7 +1689,11 @@
 
   .container {
     overflow: hidden;
+<<<<<<< HEAD
     transition: transform 1s linear;
+=======
+    transition: transform 0.5s linear;
+>>>>>>> b57c42677c14b4a6239efe23eada8fc1d747ac43
   }
 
   .header {
