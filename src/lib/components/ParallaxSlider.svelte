@@ -404,18 +404,6 @@
     right: 0;
   }
 
-  .paginator {
-    position: absolute;
-    bottom: 20px;
-    right: 20vw;
-    text-align: center;
-    width: 100px;
-    font-family: 'moret';
-    /* background-color: rgb(255 255 255 / 80%); */
-    color: #fff;
-    font-size: 1.75rem;
-  }
-
   .slider-title {
     width: 100%;
     padding: 25px;
@@ -429,6 +417,18 @@
     bottom: 0;
     color: #fff;
     font-size: 1.75rem;
+    font-weight: normal;
+    margin: 0;
+    z-index: 1;
+    z-index: 1;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .slider-title h2 {
+    font-family: 'roc-grotesk', sans-serif;
+    font-size: 38px;
     font-weight: normal;
     margin: 0;
   }
