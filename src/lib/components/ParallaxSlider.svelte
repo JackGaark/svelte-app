@@ -6,7 +6,6 @@
   export let title;
   export let title2;
   export let titleFontClassName;
-  export let title2FontClassName = '';
 
   // [isMobile] means the user is on a mobile device AND in landscape mode.
   export let isMobile = false;
@@ -14,7 +13,6 @@
   // Inner width and height of window.
   export let innerWidth;
   export let innerHeight;
-
   // [sliderEl] is the element that wraps all the project slides and translates based on which slide is active (e.g. slides[active_index]).
   let sliderEl;
 
@@ -126,7 +124,7 @@
   style={isMobile ? `width:${innerWidth}px; height:${innerHeight}px` : ''}
 >
   <img class="image-logo" src="images/LOGO-Ai small_Super Bonjour smaller.svg" alt="Logo" />
-  <img class="image-logo mobile" src="images/LOGOFACE-Ai.svg" alt="Logo" />
+  <!-- <img class="image-logo mobile" src="images/LOGOFACE-Ai.svg" alt="Logo" /> -->
   <div class={'slider-title'}>
     <h2 class={`${titleFontClassName || ''}`}>{title}{title2 || ''}</h2>
     <div class="paginator">
@@ -164,7 +162,10 @@
               isMobile ? '' : 'width:100vw'
             }`}
           >
-            <div class={`${slide.addPadding ? 'video-container' : ''} ${isMobile ? '100%' : ''}`}>
+            <div
+              class={`${slide.addPadding ? 'video-container' : ''}`}
+              style={`width: ${isMobile ? '100%' : ''}`}
+            >
               <!-- svelte-ignore a11y-media-has-caption -->
               <Lazy height={300}>
                 <video
@@ -207,9 +208,7 @@
               {#each slidesData.slice(text_slide_index, slidesData.length) as textSlide, i}
                 <div
                   class="text_slide_mobile"
-                  style={`
-                    ${i === 1 ? `background: rgba(255,255,255,0.2)` : ''}
-                `}
+                  style={`padding-bottom: ${i == 2 ? '100px' : '30px'}`}
                 >
                   <h5 class="text_title text_title_mobile">
                     {textSlide.title}
@@ -496,7 +495,6 @@
     }
 
     .image-logo {
-      display: none;
     }
     .image-logo.mobile {
       display: block;
@@ -547,6 +545,10 @@
 
   @media screen and (max-width: 1200px) and (max-height: 499px) {
     /* For mobile-size but acts on short height desktop as well */
+    .slide {
+      background-position: unset !important;
+    }
+
     .slider-title {
       width: 100%;
       padding: 30px 55px;
@@ -561,12 +563,27 @@
       font-size: 1.5rem;
       margin-bottom: 0;
     }
+    .slide-video-extra-padding video {
+      width: 70vw;
+      height: 70vh;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .image-logo {
+      position: absolute;
+      left: 55px;
+      top: 15px;
+      width: 100px;
+      height: 4.75rem;
+      z-index: 1;
+      cursor: url(/images/home-cursor.png), auto;
+    }
   }
   /* Mobile text slides */
   .text_slide_mobile {
     min-height: 375px;
     padding: 70px;
-    padding-bottom: 30px;
     box-sizing: border-box;
   }
 

@@ -1,9 +1,12 @@
 <script>
   import { fly } from 'svelte/transition';
   import { _ } from 'svelte-i18n';
+  import SayBonjour from '$lib/components/SayBonjour.svelte';
+
   let scrollY;
   export let modalOpen = false;
-  export let bonjourOpen = false;
+  export let bonjourOpen = true;
+  export let isMobile;
   function showModal() {
     modalOpen = true;
   }
@@ -43,8 +46,7 @@
       on:click={hideModal}
     />
 
-    <div class="bonjour-button" on:click={showBonjourDialog}>{$_('dialog.sayBonjour')}</div>
-    {#if bonjourOpen}
+    {#if bonjourOpen && !isMobile}
       <div
         class="bonjour-dialog"
         transition:fly={{
@@ -52,37 +54,13 @@
           duration: 1000
         }}
       >
-        <div class="bonjour-dialog-container">
-          <h1>{$_('dialog.sayHi.title')}</h1>
-          <p class="p1">
-            {$_('dialog.sayHi.p1.text1')}
-            {$_('dialog.sayHi.p1.text2')}
-            {@html $_('dialog.sayHi.p1.text3')}
-            <br />
-            {$_('dialog.sayHi.p1.text4')}
-            {$_('dialog.sayHi.p1.text5')}
-            {$_('dialog.sayHi.p1.text6')}
-            {$_('dialog.sayHi.p1.text7')}
-          </p>
-          <div class="address">
-            <h4>{$_('dialog.sayHi.address1.title')}</h4>
-            <span>{$_('dialog.sayHi.address1.text')}</span>
-          </div>
-          <div class="address">
-            <h4>{$_('dialog.sayHi.address2.title')}</h4>
-            <span>{$_('dialog.sayHi.address2.text')}</span>
-          </div>
-          <div class="footer">
-            <p>{$_('dialog.sayHi.footer.text')}</p>
-          </div>
-          <div class="bonjour-button close" on:click={hideBonjourDialog}>
-            {$_('dialog.sayBonjour')}
-          </div>
-        </div>
+        <SayBonjour {hideBonjourDialog} />
       </div>
     {/if}
     <div class="modal-container">
-      <img src="images/dialog-center.jpeg" class="dialog-center" alt="Dialog center" />
+      {#if !isMobile}
+        <img src="images/dialog-center.jpeg" class="dialog-center" alt="Dialog center" />
+      {/if}
       <img class="image-logo" src="images/00-sb-logo-simple-white.svg" alt="Logo" />
       <div class="modal-section left-side">
         <div class="modal-section-content">
@@ -143,7 +121,15 @@
             </ul>
           </div>
         </div>
+        {#if isMobile}
+          <img src="images/dialog-center.jpeg" alt="Dialog center" style="width:50%" />
+        {/if}
       </div>
+      {#if isMobile}
+        <div class="bonjour-dialog mobile">
+          <SayBonjour isMobile={true} />
+        </div>
+      {/if}
     </div>
   </div>
 {/if}
@@ -153,7 +139,7 @@
     margin-bottom: 8px;
     line-height: 130%;
   }
-  
+
   .popup {
     height: 80vh;
     width: 100vw;
@@ -239,32 +225,31 @@
     line-height: 70px;
   }
 
+  .right.modal-section-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'roc-grotesk';
+    font-size: 18px;
+  }
 
-.right.modal-section-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-family: 'roc-grotesk';
-  font-size:  18px;
-}
-  
-.right.modal-section-content h5 {
-  color: #C84501;
-  font-weight: 200;
-  margin-left: -20px;
-}
-.right.modal-section-content ul {
-  line-height: 130%;
-  margin-bottom: 8px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  color: #1900FF;
-  margin-left: -20px;
-}
-.dialog-center-mobile {
-  display: none;
-}
+  .right.modal-section-content h5 {
+    color: #c84501;
+    font-weight: 200;
+    margin-left: -20px;
+  }
+  .right.modal-section-content ul {
+    line-height: 130%;
+    margin-bottom: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #1900ff;
+    margin-left: -20px;
+  }
+  .dialog-center-mobile {
+    display: none;
+  }
 
   .right.modal-section-content h5 {
     color: #c84501;
@@ -319,37 +304,7 @@
     right: 0;
     padding: 25px;
   }
-  .bonjour-dialog-container {
-    position: relative;
-    color: #1f0edf;
-    overflow-y: auto;
-  }
-  .bonjour-dialog-container h1 {
-    font-weight: 100;
-    font-family: 'Opposit-Medium';
-    color: #fff;
-  }
-  .bonjour-dialog-container h4 {
-    margin-bottom: 0;
-  }
-  .bonjour-dialog-container .p1 {
-    font-size: 0.875rem;
-    font-weight: 400;
-    font-family: "roc-grotesk";
-    /* font-family: 'moret'; */
-    width: 88%;
-  }
-  .bonjour-dialog-container .footer {
-    color: #000;
-    margin-top: 60px;
-    font-family: "roc-grotesk";
-  }
-  .bonjour-button.close {
-    background-color: #1f0edf;
-    color: #f86c01;
-    top: 230px;
-    right: 20px;
-  }
+
   @media screen and (max-width: 600px) {
     .image-logo {
       position: absolute;
@@ -410,16 +365,6 @@
       padding-right: 40px;
     }
 
-    .bonjour-button {
-      top: 120px;
-      right: 50px;
-    }
-
-    .bonjour-button.close {
-      top: 5px;
-      right: 25px;
-    }
-
     .right.modal-section-content {
       padding-top: 0;
     }
@@ -435,6 +380,84 @@
       color: #e2ee75;
       margin-bottom: 2px;
       margin-left: -20px;
+    }
+  }
+
+  /* Landscape Mobile*/
+  @media screen and (max-width: 1200px) and (max-height: 499px) {
+    .dialog-icon {
+      width: 25px;
+      height: unset;
+      padding: 20px;
+      margin-top: 20px;
+      margin-right: 25px;
+    }
+    .image-logo {
+      position: absolute;
+      left: 55px;
+      top: 15px;
+      width: 100px;
+      height: 4.75rem;
+      z-index: 1;
+      cursor: url(/images/home-cursor.png), auto;
+    }
+
+    .modal-container {
+      background: #1900ff;
+    }
+
+    .modal-section {
+      padding-bottom: 0px;
+      height: unset;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .modal-section .modal-section-content {
+      padding: 35px;
+      padding-right: 10px;
+    }
+
+    .modal-section .modal-section-content .title {
+      font-size: 12px;
+      margin: 50px 0px;
+      margin-bottom: 30px;
+    }
+    .modal-section .modal-section-content .left-text {
+      font-size: 20px;
+      line-height: 1.3;
+      left: 0;
+      margin: 0;
+    }
+
+    .modal-section .right {
+      box-sizing: border-box;
+      padding-left: 10px;
+      padding-right: 35px;
+      display: flex;
+      font-size: 12px;
+      flex: 1;
+    }
+
+    .modal-section .right .services,
+    .modal-section .right .client-list {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+    }
+    .modal-section .right .services ul,
+    .modal-section .right .client-list ul {
+      margin-left: 0;
+    }
+
+    .bonjour-dialog.mobile {
+      width: 100%;
+      height: unset;
+      position: unset;
+      border: 0px;
+      padding: 0.5rem 10px;
+      margin-left: 25px;
     }
   }
 </style>
