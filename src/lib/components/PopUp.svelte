@@ -214,15 +214,15 @@
 
   .dialog-center {
     position: absolute;
-    top: 105%;
-    left: 55%;
-    transform: translate(-50%, -50%);
+    top: 120%;
+    left: 48%;
+    /* transform: translate(-50%, -50%); */
     width: 350px;
   }
 
   .left-text {
-    font-size: 27px;
-    line-height: 70px;
+    font-size: 40px;
+    line-height: 130%;
   }
 
   .right.modal-section-content {

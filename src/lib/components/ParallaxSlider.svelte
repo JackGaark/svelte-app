@@ -195,7 +195,7 @@
             </div>
           </div>
         {:else if slide.type === 'two-columns'}
-          <div class="slide two-columns-slide">
+          <div class="slide two-columns-slide" style={isMobile ? `height:${innerHeight}px;` : ''}>
             <div class="slide-column slide-left-column">
               <video src={slide.videoSrc} autoplay="true" loop muted playsinline />
             </div>
@@ -272,16 +272,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
-  .video-container iframe,
-  .video-container object,
-  .video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
   }
 
   .image-logo.mobile {
@@ -414,6 +404,18 @@
     right: 0;
   }
 
+  .paginator {
+    position: absolute;
+    bottom: 20px;
+    right: 20vw;
+    text-align: center;
+    width: 100px;
+    font-family: 'moret';
+    /* background-color: rgb(255 255 255 / 80%); */
+    color: #fff;
+    font-size: 1.75rem;
+  }
+
   .slider-title {
     width: 100%;
     padding: 25px;
@@ -425,15 +427,8 @@
     color: #fff;
     position: absolute;
     bottom: 0;
-    z-index: 1;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .slider-title h2 {
-    font-family: 'roc-grotesk', sans-serif;
-    font-size: 38px;
+    color: #fff;
+    font-size: 1.75rem;
     font-weight: normal;
     margin: 0;
   }
@@ -467,14 +462,10 @@
   @media screen and (max-width: 1200px) {
     .slider-title {
       margin-bottom: -10px;
+      font-size: 1.75rem;
     }
-
-    .slider-title h2 {
-      font-size: 2.25rem;
-    }
-
-    .slider-title .paginator h4 {
-      font-size: 1.6rem;
+    .paginator {
+      font-size: 1.75rem;
       right: 20vw;
       bottom: 0;
       margin-bottom: -10px;
@@ -510,8 +501,6 @@
       margin: 20px 50px;
     }
 
-    .image-logo {
-    }
     .image-logo.mobile {
       display: block;
     }
