@@ -385,14 +385,14 @@
 
   .paginator {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     right: 20vw;
     text-align: center;
     width: 100px;
     font-family: 'moret';
     /* background-color: rgb(255 255 255 / 80%); */
     color: #fff;
-    font-size: 36px;
+    font-size: 1.75rem;
   }
 
   .slider-title {
@@ -408,7 +408,7 @@
     left: 0px;
     bottom: 0;
     color: #fff;
-    font-size: 38px;
+    font-size: 1.75rem;
     font-weight: normal;
   }
   video {
@@ -439,10 +439,10 @@
     .slider-title {
       bottom: 0;
       margin-bottom: -10px;
-      font-size: 2.25rem;
+      font-size: 1.75rem;
     }
     .paginator {
-      font-size: 1.6rem;
+      font-size: 1.75rem;
       right: 20vw;
       bottom: 0;
       margin-bottom: -10px;
