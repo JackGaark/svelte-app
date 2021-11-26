@@ -118,10 +118,10 @@
 </script>
 
 <svelte:body
-  on:orientationchangeend={() => {
+  on:viewportchanged={() => {
     active_index = 0;
-    updateProjectIndex(0);
   }} />
+
 <div
   class="slider-wrapper"
   bind:clientWidth={wrapperWidth}

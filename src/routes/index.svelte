@@ -47,7 +47,7 @@
   let containerEl;
   let MAX_NUM_PROJECTS = 17; // number of projects in html.
   // Keep track of the currently displayed project state.
-  let current_project_index = 0;
+  $: current_project_index = 0;
 
   // Slide in the next project vertically, if it exists.
   const nextProject = (project_index) => {
@@ -59,15 +59,16 @@
   // Slide in vertically previous project if it exists.
   const prevProject = (project_index) => {
     if (project_index >= 0) {
-      return (containerEl.style.transform = `translate(0px, ${project_index * innerHeight}px)`);
+      return (containerEl.style.transform = `translate(0px, ${0 - project_index * innerHeight}px)`);
     }
   };
 
   // Handles project state.
   const handleProjectUpdate = (updated_project_index) => {
-    return updated_project_index > current_project_index
+    updated_project_index >= current_project_index
       ? nextProject(updated_project_index)
       : prevProject(updated_project_index);
+    return (current_project_index = updated_project_index);
   };
 </script>
 
@@ -81,6 +82,7 @@
   on:viewportchanged={() => {
     innerWidth = viewport.Width;
     innerHeight = viewport.Height;
+    handleProjectUpdate(current_project_index);
   }}
   on:resize={() => {
     innerWidth = viewport.Width;
@@ -1259,38 +1261,13 @@
 </main>
 
 <style>
-  :global(html) {
-    height: 100%;
-    width: 100%;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #5ae;
-  }
   :global(body) {
     padding: 0;
-    height: 100%;
-    width: 100%;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    overflow: hidden;
-    background-color: #5ae;
   }
-
   .container {
+    overflow: hidden;
     transition: transform 0.5s linear;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0;
-    margin: 0;
   }
-
   .header {
     position: fixed;
     top: 0px;
@@ -1335,6 +1312,38 @@
   }
   /* Landscape Mobile*/
   @media screen and (max-width: 1200px) and (max-height: 499px) {
+    :global(html) {
+      height: 100%;
+      width: 100%;
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #0000ff;
+    }
+    :global(body) {
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+      overflow: hidden;
+      background-color: #0000ff;
+    }
+
+    .container {
+      overflow: visible;
+      transition: transform 0.5s linear;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0;
+      margin: 0;
+    }
     .dialog-icon {
       width: 25px;
       height: unset;
