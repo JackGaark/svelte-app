@@ -1,0 +1,149 @@
+<script>
+  import { _ } from 'svelte-i18n';
+
+  export let hideBonjourDialog;
+  export let isMobile;
+</script>
+
+<div class="bonjour-dialog-container">
+  <div>
+    <h1>{$_('dialog.sayHi.title')}</h1>
+    <p class="p1">
+      {$_('dialog.sayHi.p1.text1')}
+      {$_('dialog.sayHi.p1.text2')}
+      {#if isMobile}
+        <br />
+        <br />
+      {/if}
+      {@html $_('dialog.sayHi.p1.text3')}
+      <br />
+      {#if !isMobile}
+        {$_('dialog.sayHi.p1.text4')}
+      {/if}
+      {$_('dialog.sayHi.p1.text5')}
+      {$_('dialog.sayHi.p1.text6')}
+      {$_('dialog.sayHi.p1.text7')}
+    </p>
+  </div>
+  <div>
+    {#if isMobile}
+      <h1 style="opacity:0; visibility:hidden">{'Founded by'}</h1>
+
+      <p>
+        {$_('dialog.sayHi.p1.text4')}
+      </p>
+    {/if}
+    <div class="address">
+      <h4>{$_('dialog.sayHi.address1.title')}</h4>
+      <span>{$_('dialog.sayHi.address1.text')}</span>
+    </div>
+    <div class="address">
+      <h4>{$_('dialog.sayHi.address2.title')}</h4>
+      <span>{$_('dialog.sayHi.address2.text')}</span>
+    </div>
+
+    <div class="footer">
+      <div class="social">
+        <h3>
+          GENERAL INQUIRIES <span
+            ><span style="color:#1900ff;">·</span> IG
+            <span style="color:#1900ff;">·</span> LINKEDIN</span
+          >
+        </h3>
+      </div>
+      <p>{$_('dialog.sayHi.footer.text')}</p>
+    </div>
+    {#if hideBonjourDialog}
+      <div class="bonjour-button close" on:click={hideBonjourDialog}>
+        {$_('dialog.sayBonjour')}
+      </div>
+    {/if}
+  </div>
+</div>
+
+<style>
+  .bonjour-button {
+    background-color: #c84501;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    position: absolute;
+    right: 50px;
+    top: 400px;
+    color: #1900ff;
+    padding: 10px;
+    border-radius: 14.33px;
+    font-size: 0.8rem;
+    z-index: 2;
+    font-weight: 400;
+    font-family: 'moret';
+    cursor: pointer;
+    width: 8px;
+    line-height: 8px;
+  }
+
+  .bonjour-dialog-container {
+    position: relative;
+    color: #1f0edf;
+    overflow-y: auto;
+  }
+  .bonjour-dialog-container h1 {
+    font-weight: 100;
+    font-family: 'Opposit-Medium';
+    color: #fff;
+  }
+  .bonjour-dialog-container h4 {
+    margin-bottom: 0;
+  }
+  .bonjour-dialog-container .p1 {
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-family: 'roc-grotesk';
+    width: 88%;
+  }
+  .bonjour-dialog-container .footer {
+    color: #000;
+    margin-top: 60px;
+    font-family: 'roc-grotesk';
+  }
+
+  .bonjour-dialog-container .footer .social h3 {
+    font-size: 16px;
+    font-family: 'moret';
+    color: #e2ee75;
+  }
+
+  .bonjour-dialog-container .footer .social h3 span {
+    color: #f8d0fb;
+  }
+
+  @media screen and (max-width: 600px) {
+    .bonjour-button {
+      top: 120px;
+      right: 50px;
+    }
+
+    .bonjour-button.close {
+      top: 5px;
+      right: 25px;
+    }
+  }
+
+  /* Landscape Mobile*/
+  @media screen and (max-width: 1200px) and (max-height: 499px) {
+    .bonjour-dialog-container {
+      display: flex;
+    }
+    .bonjour-dialog-container h1 {
+      font-size: 12px;
+    }
+    .bonjour-dialog-container p,
+    .bonjour-dialog-container .p1 {
+      line-height: 1.3;
+      font-size: 16px;
+    }
+
+    .bonjour-dialog-container .footer p {
+      font-size: 12px;
+    }
+  }
+</style>
