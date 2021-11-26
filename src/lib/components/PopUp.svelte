@@ -295,7 +295,7 @@
   }
   .bonjour-dialog {
     width: 485px;
-    height: 550px;
+    height: 560px;
     position: absolute;
     z-index: 3;
     background-color: #f86c01;
