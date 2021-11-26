@@ -1304,7 +1304,7 @@
     height: 39px;
     padding: 33px;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 28px;
     margin-right: 25px;
   }
   .mobile-portrait {
