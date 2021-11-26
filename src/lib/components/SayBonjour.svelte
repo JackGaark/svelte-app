@@ -43,17 +43,20 @@
     </div>
 
     <div class="footer">
-      <div class="social">
-        <h3>
-          GENERAL INQUIRIES <span
-            ><span style="color:#1900ff;">·</span> IG
-            <span style="color:#1900ff;">·</span> LINKEDIN</span
-          >
-        </h3>
-      </div>
+      {#if isMobile}
+        <div class="social">
+          <h3>
+            GENERAL INQUIRIES <span
+              ><span style="color:#1900ff;">·</span> IG
+              <span style="color:#1900ff;">·</span> LINKEDIN</span
+            >
+          </h3>
+        </div>
+      {/if}
+
       <p>{$_('dialog.sayHi.footer.text')}</p>
     </div>
-    {#if hideBonjourDialog}
+    {#if !isMobile}
       <div class="bonjour-button close" on:click={hideBonjourDialog}>
         {$_('dialog.sayBonjour')}
       </div>
@@ -115,6 +118,12 @@
   .bonjour-dialog-container .footer .social h3 span {
     color: #f8d0fb;
   }
+  .bonjour-button.close {
+    background-color: #1f0edf;
+    color: #f86c01;
+    top: 230px;
+    right: 20px;
+  }
 
   @media screen and (max-width: 600px) {
     .bonjour-button {
@@ -144,6 +153,9 @@
 
     .bonjour-dialog-container .footer p {
       font-size: 12px;
+    }
+    .bonjour-button {
+      display: none;
     }
   }
 </style>
