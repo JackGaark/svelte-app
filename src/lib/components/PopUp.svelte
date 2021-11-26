@@ -5,7 +5,7 @@
 
   let scrollY;
   export let modalOpen = false;
-  export let bonjourOpen = true;
+  export let bonjourOpen = false;
   export let isMobile;
   function showModal() {
     modalOpen = true;
@@ -45,7 +45,9 @@
       alt="Dialog icon"
       on:click={hideModal}
     />
-
+    {#if !isMobile}
+      <div class="bonjour-button" on:click={showBonjourDialog}>{$_('dialog.sayBonjour')}</div>
+    {/if}
     {#if bonjourOpen && !isMobile}
       <div
         class="bonjour-dialog"
@@ -385,6 +387,9 @@
 
   /* Landscape Mobile*/
   @media screen and (max-width: 1200px) and (max-height: 499px) {
+    .bonjour-button {
+      display: none;
+    }
     .dialog-icon {
       width: 25px;
       height: unset;
@@ -438,6 +443,9 @@
       font-size: 12px;
       flex: 1;
     }
+    .modal-section .right .services li {
+      margin-bottom: 0;
+    }
 
     .modal-section .right .services,
     .modal-section .right .client-list {
@@ -445,6 +453,7 @@
       display: flex;
       flex-direction: column;
       box-sizing: border-box;
+      line-height: 1.3;
     }
     .modal-section .right .services ul,
     .modal-section .right .client-list ul {

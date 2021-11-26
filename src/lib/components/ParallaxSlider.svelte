@@ -114,6 +114,8 @@
       nextSlide();
     }
   }, 100);
+
+  $: textSlides = slidesData.slice(text_slide_index, slidesData.length);
   // -------------------------
 </script>
 
@@ -221,10 +223,13 @@
           >
             {#if isMobile}
               <!-- All the text is encapsulated in one slide for mobile -->
-              {#each slidesData.slice(text_slide_index, slidesData.length) as textSlide, i}
+              {#each textSlides as textSlide, i}
                 <div
                   class="text_slide_mobile"
-                  style={`padding-bottom: ${i == 2 ? '100px' : '30px'}`}
+                  style={`
+                  padding-top: ${i == 0 ? '70px' : '30px'};
+                  padding-bottom: ${i == textSlides.length - 1 ? '100px' : '30px'}
+                  `}
                 >
                   <h5 class="text_title text_title_mobile">
                     {textSlide.title}
@@ -587,8 +592,9 @@
   }
   /* Mobile text slides */
   .text_slide_mobile {
-    min-height: 375px;
-    padding: 70px;
+    /* min-height: 375px; */
+    padding: 30px 70px;
+    padding-bottom: 30px;
     box-sizing: border-box;
   }
 
