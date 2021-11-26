@@ -88,6 +88,7 @@
   }
   .bonjour-dialog-container h1 {
     font-weight: 100;
+    font-size: 1.125rem;
     font-family: 'Opposit-Medium';
     color: #fff;
   }
@@ -103,6 +104,7 @@
   .bonjour-dialog-container .footer {
     color: #000;
     margin-top: 60px;
+    font-size: 0.875rem;
     font-family: 'roc-grotesk';
   }
 
