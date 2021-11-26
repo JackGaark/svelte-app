@@ -473,7 +473,7 @@
       font-size: 1.75rem;
       right: 20vw;
       bottom: 0;
-      margin-bottom: -10px;
+      margin-bottom: -5px;
     }
 
     .slide {
