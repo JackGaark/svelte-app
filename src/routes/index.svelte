@@ -735,7 +735,7 @@
         },
         {
           addPadding: true,
-          src: 'videos/NIKE_6.mov',
+          src: 'videos/NIKE_6.mp4',
           type: 'video'
         },
         {
