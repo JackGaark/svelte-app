@@ -867,7 +867,7 @@
           type: 'text',
           title: 'Creative Direction & Brand DNA',
           fontSize: '54px',
-          color: '#C84600',
+          color: '#C34C25',
           backgroundColor: '#CABADF'
         },
         {
