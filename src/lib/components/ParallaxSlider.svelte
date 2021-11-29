@@ -5,7 +5,8 @@
   export let slidesData;
   export let title;
   export let title2;
-  export let titleFontClassName;
+  export let titleFont;
+  export let title2Font;
 
   // [isMobile] means the user is on a mobile device AND in landscape mode.
   export let isMobile = false;
@@ -133,7 +134,14 @@
   <img class="image-logo" src="images/LOGO-Ai small_Super Bonjour smaller.svg" alt="Logo" />
   <!-- <img class="image-logo mobile" src="images/LOGOFACE-Ai.svg" alt="Logo" /> -->
   <div class={'slider-title'}>
-    <h2 class={`${titleFontClassName || ''}`}>{title}{title2 || ''}</h2>
+    <h2>
+      <span style={`font-family: ${titleFont || 'roc-grotesk'};`}>
+        {title}
+      </span>
+      <span style={`font-family: ${title2Font || 'moret'};`}>
+        {title2}
+      </span>
+    </h2>
     <div class="paginator">
       <h4>{active_index + 1} / {slides.length}</h4>
     </div>

@@ -132,7 +132,7 @@
       id={0}
       updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.1.title')}
-      titleFontClassName="roc-grotesk"
+      titleFont="roc-grotesk"
       title2={$_('slider.1.title2')}
       isMobile={isMobile && isLandscapeView}
       {innerWidth}
@@ -194,7 +194,7 @@
       id={1}
       updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.2.title')}
-      titleFontClassName="roc-grotesk"
+      titleFont="roc-grotesk"
       title2={$_('slider.2.title2')}
       isMobile={isMobile && isLandscapeView}
       {innerWidth}
@@ -260,7 +260,7 @@
       id={2}
       updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.3.title')}
-      titleFontClassName="roc-grotesk"
+      titleFont="roc-grotesk"
       title2={$_('slider.3.title2')}
       isMobile={isMobile && isLandscapeView}
       {innerWidth}
@@ -322,7 +322,7 @@
       id={3}
       updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.4.title')}
-      titleFontClassName="roc-grotesk"
+      titleFont="roc-grotesk"
       title2={$_('slider.4.title2')}
       isMobile={isMobile && isLandscapeView}
       {innerWidth}
@@ -388,7 +388,7 @@
       id={4}
       updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.5.title')}
-      titleFontClassName="roc-grotesk"
+      titleFont="roc-grotesk"
       title2={$_('slider.5.title2')}
       isMobile={isMobile && isLandscapeView}
       {innerWidth}
@@ -459,7 +459,7 @@
       id={5}
       updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.6.title')}
-      titleFontClassName="roc-grotesk"
+      titleFont="roc-grotesk"
       title2={$_('slider.6.title2')}
       isMobile={isMobile && isLandscapeView}
       {innerWidth}
@@ -522,7 +522,7 @@
       id={6}
       updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.7.title')}
-      titleFontClassName="roc-grotesk"
+      titleFont="roc-grotesk"
       title2={$_('slider.7.title2')}
       isMobile={isMobile && isLandscapeView}
       {innerWidth}
@@ -579,7 +579,7 @@
       id={7}
       updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.8.title')}
-      titleFontClassName="roc-grotesk"
+      titleFont="roc-grotesk"
       title2={$_('slider.8.title2')}
       isMobile={isMobile && isLandscapeView}
       {innerWidth}
@@ -645,7 +645,7 @@
       id={8}
       updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.9.title')}
-      titleFontClassName="roc-grotesk"
+      titleFont="roc-grotesk"
       title2={$_('slider.9.title2')}
       isMobile={isMobile && isLandscapeView}
       {innerWidth}
@@ -707,7 +707,7 @@
       id={9}
       updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.10.title')}
-      titleFontClassName="roc-grotesk"
+      titleFont="roc-grotesk"
       title2={$_('slider.10.title2')}
       isMobile={isMobile && isLandscapeView}
       {innerWidth}
@@ -736,7 +736,8 @@
         {
           addPadding: true,
           src: 'videos/NIKE_6.mp4',
-          type: 'video'
+          type: 'video',
+          backgroundColor: '#222232'
         },
         {
           src: 'As part of the North American Nike campaign to revive the cultural caché of Air Max, we were brought on as the Canadian team. The images, featuring multimedia artist Will Selviz were rolled out at Nike and Foot Locker, in-store and online,  and to launch Air Max Day.',
@@ -770,7 +771,6 @@
       id={10}
       updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.11.title')}
-      titleFontClassName="roc-grotesk"
       title2={$_('slider.11.title2')}
       isMobile={isMobile && isLandscapeView}
       {innerWidth}
@@ -824,7 +824,7 @@
       id={11}
       updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.12.title')}
-      titleFontClassName="roc-grotesk"
+      titleFont="roc-grotesk"
       title2={$_('slider.12.title2')}
       isMobile={isMobile && isLandscapeView}
       {innerWidth}
@@ -894,7 +894,7 @@
       id={12}
       updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.13.title')}
-      titleFontClassName="roc-grotesk"
+      titleFont="roc-grotesk"
       title2={$_('slider.13.title2')}
       isMobile={isMobile && isLandscapeView}
       {innerWidth}
@@ -948,7 +948,7 @@
       id={13}
       updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.14.title')}
-      titleFontClassName="roc-grotesk"
+      titleFont="roc-grotesk"
       title2={$_('slider.14.title2')}
       isMobile={isMobile && isLandscapeView}
       {innerWidth}
@@ -1021,7 +1021,7 @@
       id={14}
       updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.15.title')}
-      titleFontClassName="roc-grotesk"
+      titleFont="roc-grotesk"
       title2={$_('slider.15.title2')}
       isMobile={isMobile && isLandscapeView}
       {innerWidth}
@@ -1087,7 +1087,7 @@
       id={15}
       updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.16.title')}
-      titleFontClassName="roc-grotesk"
+      titleFont="roc-grotesk"
       title2={$_('slider.16.title2')}
       isMobile={isMobile && isLandscapeView}
       {innerWidth}
@@ -1149,7 +1149,7 @@
       id={16}
       updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.17.title')}
-      titleFontClassName="roc-grotesk"
+      titleFont="roc-grotesk"
       title2={$_('slider.17.title2')}
       isMobile={isMobile && isLandscapeView}
       {innerWidth}
@@ -1211,7 +1211,7 @@
       id={17}
       updateProjectIndex={(id) => handleProjectUpdate(id)}
       title={$_('slider.18.title')}
-      titleFontClassName="roc-grotesk"
+      titleFont="roc-grotesk"
       title2={$_('slider.18.title2')}
       isMobile={isMobile && isLandscapeView}
       {innerWidth}

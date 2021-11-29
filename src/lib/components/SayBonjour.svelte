@@ -43,7 +43,6 @@
     </div>
 
     <div class="footer">
-      {#if isMobile}
         <div class="social">
           <h3>
             GENERAL INQUIRIES <span
@@ -52,7 +51,6 @@
             >
           </h3>
         </div>
-      {/if}
 
       <p>{$_('dialog.sayHi.footer.text')}</p>
     </div>
