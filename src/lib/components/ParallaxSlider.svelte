@@ -185,7 +185,9 @@
             style={`background-position: ${i}00vw center; position: relative;${
               isMobile ? '' : 'width:100vw'
             }
-            ${isMobile ? `height:${innerHeight}px;` : ''}; `}
+            ${isMobile ? `height:${innerHeight}px;` : ''}; background-color: ${
+            slide.backgroundColor || ''
+            };`}
           >
             <div
               class={`${slide.addPadding ? 'video-container' : ''}`}
@@ -441,7 +443,7 @@
 
   .slider-title h2 {
     font-family: 'roc-grotesk', sans-serif;
-    font-size: 38px;
+    font-size: 36px;
     font-weight: normal;
     margin: 0;
   }

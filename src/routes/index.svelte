@@ -421,7 +421,8 @@
         {
           addPadding: true,
           src: 'videos/NP_7.mov',
-          type: 'video'
+          type: 'video',
+          backgroundColor: '#231F20'
         },
         {
           src: 'videos/NP_8.mp4',
@@ -1235,6 +1236,7 @@
         },
         {
           addPadding: true,
+          backgroundColor: '#9A7429',
           src: 'videos/DT_2_5 LIGHT.mp4',
           type: 'video'
         },
