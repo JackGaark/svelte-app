@@ -23,6 +23,8 @@
   },
   "type": "module",
   "dependencies": {
+    "dotenv": "^10.0.0",
+    "dotenv-cli": "^4.1.1",
     "svelte-lazy": "^1.0.12",
     "svelte-viewport-info": "^0.1.12"
   }

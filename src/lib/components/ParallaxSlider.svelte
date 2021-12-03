@@ -7,6 +7,10 @@
   export let title2;
   export let titleFont;
   export let title2Font;
+  const cdnImageUrl = "https://res.cloudinary.com/dzzdoq1bq/image/upload/v1638569218/static/"
+
+  const cdnVideoUrl = "https://res.cloudinary.com/dzzdoq1bq/video/upload/v1638569211/static/"
+
 
   // [isMobile] means the user is on a mobile device AND in landscape mode.
   export let isMobile = false;
@@ -172,7 +176,7 @@
             <div
               id={i}
               class={`slide ${sliderCursor};`}
-              style={`background-position: ${i}00vw center; background-image: url(${slide.src});
+              style={`background-position: ${i}00vw center; background-image: url(${cdnImageUrl}${slide.src});
               ${isMobile ? `height:${innerHeight}px;` : ''}; `}
             />
           </Lazy>
@@ -197,7 +201,7 @@
               <Lazy height={300}>
                 <video
                   style={`width: ${isMobile ? '100%' : '100vw'}`}
-                  src={slide.src}
+                  src={`${cdnVideoUrl}${slide.src}`}
                   autoplay="true"
                   loop
                   muted

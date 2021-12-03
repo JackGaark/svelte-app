@@ -167,7 +167,7 @@
     flex: 1 1 auto;
     /* overflow-y: auto; */
     padding-bottom: 530px;
-    height: 100%;
+    /* height: 100%; */
   }
   .left-side {
     background-color: #1900ff;
@@ -223,7 +223,7 @@
   }
 
   .left-text {
-    font-size: 40px;
+    font-size: 54px;
     line-height: 130%;
   }
 
