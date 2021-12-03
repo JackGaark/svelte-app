@@ -73,11 +73,15 @@
 </script>
 
 <svelte:head>
-  <meta
+  <title>
+    SuperBonjour
+  </title>
+  <meta name="description" content="Creative agency"/>
+    <meta
     name="viewport"
     content="height=device-height, initial-scale=1, width=device-width, initial-scale=1"
-  />
-</svelte:head>
+    />
+  </svelte:head>
 <svelte:body
   on:viewportchanged={() => {
     innerWidth = viewport.Width;
