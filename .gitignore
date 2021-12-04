@@ -4,4 +4,4 @@ node_modules
 /.svelte-kit
 /package
 todo.txt
-notes.txt
+notes.txt.env*
