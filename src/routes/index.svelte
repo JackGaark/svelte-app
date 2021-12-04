@@ -1241,7 +1241,7 @@
         {
           addPadding: true,
           backgroundColor: '#9A7429',
-          src: 'videos/DT_2_5 LIGHT.mp4',
+          src: 'videos/DT_2.mp4',
           type: 'video'
         },
         {
