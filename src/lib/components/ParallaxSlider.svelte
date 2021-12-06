@@ -136,6 +136,8 @@
   style={isMobile ? `width:${innerWidth}px; height:${innerHeight}px;` : ''}
 >
   <img class="image-logo" src="images/LOGO-Ai small_Super Bonjour smaller.svg" alt="Logo" />
+  <div class="mobile-tap-caption" on:click={handleSliderClick}>Tap</div>
+  
   <!-- <img class="image-logo mobile" src="images/LOGOFACE-Ai.svg" alt="Logo" /> -->
   <div class={'slider-title'}>
     <h2>
@@ -276,6 +278,10 @@
 </div>
 
 <style>
+
+.mobile-tap-caption {
+    display: none;
+  }
   video::-webkit-media-controls-fullscreen-button,
   video::-webkit-media-controls-play-button,
   video::-webkit-media-controls-pausebutton {
@@ -478,7 +484,23 @@
     cursor: url(/images/left-cursor.svg), auto;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 900px) {
+    .mobile-tap-caption {
+      display: block;
+      position: absolute;
+      top: 50vh;
+      right: 20px;
+      background-color: orange;
+      color: #fff;
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      z-index: 1;
+      line-height: 50px;
+      text-align: center;
+    }
+    
     .slider-title {
       margin-bottom: -10px;
       font-size: 1.75rem;

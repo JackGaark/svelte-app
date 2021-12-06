@@ -90,9 +90,9 @@
               <li>{@html $_('dialog.services.motion')}</li>
               <li>{@html $_('dialog.services.production')}</li>
               <li>{@html $_('dialog.services.digital')}</li>
-              <li>{@html $_('dialog.services.content')}</li>
-              <!-- <li>{@html $_('dialog.services.content')}</li>
-              <li>{@html $_('dialog.services.content')}</li> -->
+              <li>{@html $_('dialog.services.content1')}</li>
+              <li>{@html $_('dialog.services.content2')}</li>
+              <li>{@html $_('dialog.services.content3')}</li>
             </ul>
           </div>
           <div class="client-list">
@@ -166,7 +166,7 @@
     min-width: 300px;
     flex: 1 1 auto;
     /* overflow-y: auto; */
-    padding-bottom: 530px;
+    /* padding-bottom: 530px; */
     /* height: 100%; */
   }
   .left-side {
@@ -186,7 +186,7 @@
     position: relative;
     left: 0;
     z-index: 1;
-    margin-top: 25px;
+    margin-top: 5px;
   }
   .dialog-icon {
     position: absolute;

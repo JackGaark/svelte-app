@@ -86,9 +86,9 @@ export const en = {
       motion: 'Digital Strategy & <br>Design',
       production: 'Photography, Film & <br>Motion Direction',
       digital: 'Art Direction',
-      content: 'Editorial Design',
-      // content: 'Packaging Design',
-      // content: 'Experiential Activations'
+      content1: 'Editorial Design',
+      content2: 'Packaging Design',
+      content3: 'Experiential Activations'
     },
     clientList: {
       title: 'Client List',
