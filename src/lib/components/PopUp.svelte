@@ -283,7 +283,7 @@
     text-orientation: sideways;
     position: absolute;
     right: 50px;
-    top: 400px;
+    top: 375px;
     color: #1900ff;
     padding: 10px;
     border-radius: 14.33px;

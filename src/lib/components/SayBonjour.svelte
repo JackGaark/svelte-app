@@ -121,8 +121,8 @@
   .bonjour-button.close {
     background-color: #1f0edf;
     color: #f86c01;
-    top: 230px;
-    right: 20px;
+    top: 245px;
+    right: 25px;
   }
 
   @media screen and (max-width: 600px) {
