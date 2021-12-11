@@ -45,9 +45,10 @@
     <div class="footer">
         <div class="social">
           <h3>
-            GENERAL INQUIRIES
+            <a href="https://www.instagram.com/super_bonjour/">GENERAL INQUIRIES
+            </a> 
             <span>
-              <span style="color:#F8D0FB;">·</span>
+              <span  style="color:#F8D0FB;">·</span>
               IG
               <span style="color:#F8D0FB;">·
 
@@ -90,6 +91,9 @@
     position: relative;
     color: #1f0edf;
     overflow-y: auto;
+    font-family: 'roc-grotesk';
+    font-size: .875rem;
+    font-weight: 400;
   }
   .bonjour-dialog-container h1 {
     font-weight: 100;
@@ -99,19 +103,27 @@
   }
   .bonjour-dialog-container h4 {
     margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 700;
+    font-size: .875rem;
+    font-family: 'roc-grotesk';
   }
   .bonjour-dialog-container .p1 {
     font-size: 0.875rem;
     font-weight: 400;
     font-family: 'roc-grotesk';
     width: 80%;
+    margin-top: 55px;
   }
   .bonjour-dialog-container .footer {
     color: #000;
-    margin-top: 60px;
-    font-size: 0.875rem;
+    margin-top: 35px;
+    font-size: 0.775rem;
+    font-weight: 200;
     font-family: 'roc-grotesk';
   }
+
+  
 
   .bonjour-dialog-container .footer .social h3 {
     font-size: 16px;

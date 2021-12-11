@@ -104,11 +104,11 @@ export const en = {
       },
       address1: {
         title: 'West Coast Offices',
-        text: '478 Union street, Vancouver, BC CA - V6A2B6',
+        text: '478 Union street, Vancouver, BC CA — V6A 2B6',
       },
       address2: {
         title: 'East Coast Offices',
-        text: '1747 Saint Patrick, Montréal, QC CA - H3K3G9',
+        text: '1747 Saint Patrick, Montréal, QC CA — H3K 3G9',
       },
       footer: {
         text: 'We acknowledges that in Vancouver we operate on unceded Coast Salish territory of the sḵwx̱wú7mesh (Squamish), sel̓íl̓witulh (Tsleil-Waututh), and xʷməθkʷəy̓əm (Musqueam) nations and that in Tiohtiá:ke (known as Montreal) we operate on the unceded traditional territory of the Kanien’kehá:ka Nation.',
