@@ -127,6 +127,7 @@
 
   .bonjour-dialog-container .footer .social h3 {
     font-size: 16px;
+    letter-spacing: .015rem;
     font-family: 'moret';
     color: #e2ee75;
   }
