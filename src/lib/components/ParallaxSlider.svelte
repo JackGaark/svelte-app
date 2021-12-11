@@ -136,7 +136,7 @@
   style={isMobile ? `width:${innerWidth}px; height:${innerHeight}px;` : ''}
 >
   <img class="image-logo" src="images/LOGO-Ai small_Super Bonjour smaller.svg" alt="Logo" />
-  <div class="mobile-tap-caption" on:click={handleSliderClick}>Tap</div>
+  <div class="mobile-tap-caption" on:click={handleSliderClick}>Tap!</div>
   
   <!-- <img class="image-logo mobile" src="images/LOGOFACE-Ai.svg" alt="Logo" /> -->
   <div class={'slider-title'}>
@@ -486,6 +486,9 @@
 
   @media screen and (max-width: 900px) {
     .mobile-tap-caption {
+      font-family: 'Opposit-Medium';
+      text-transform: uppercase;
+      letter-spacing: .12rem;
       display: block;
       position: absolute;
       top: 50vh;
