@@ -167,7 +167,7 @@
           type: 'image'
         },
         {
-          src: 'Magazines *♡* Also a great medium to reposition a brand. We created a tool to build a community and generate lasting ties with creatives and travelers.<br>Vol 1: Islands — a theme explored geographically and metaphorically. From the launch party on Echo Park’s island to a 1-800 number connecting you to the sounds of island life, every detail was considered.  ',
+          src: 'Super Bonjour guided Herschel away from their regionalist identity, and placed them in a global community. We used the magazine to reposition the brand, while working with our network to generate lasting ties with creatives and travelers.  Vol 1: Islands — a theme explored geographically and metaphorically.',
           type: 'text',
           title: 'Creating a Travel Magazine',
           fontSize: '54px',
@@ -175,7 +175,7 @@
           backgroundColor: '#C3862C'
         },
         {
-          src: '360 Content Strategy — <br>We took on the full scope from editorial lineups, branded Google Docs and social media meta accounts, to commissioning original content. Working with our network was key when building Herschel’s global community.<br><br>Brand Positioning, Creative Direction  <br>Production, Theme Development, Contributor Outreach <br>Pagination & Flatplan, Art Direction, Editorial Design <br>Print Management & Distribution Strategy <br>Event & Activation',
+          src: '360 Content Strategy —<br>We took on the full scope of the project from editorial lineups, commissioning original content, social media meta accounts and branded Google Docs. We planned a launch event, during the LA Art Book Fair, on Echo Park’s island and a 1-800 number connecting callers to the sounds of island life.<br><br>Brand Positioning, Creative Direction <br>Production, Theme Development, Contributor Outreach <br>Pagination & Flatplan, Art Direction, Editorial Design<br>Print Management & Distribution Strategy <br>Event & Activation',
           type: 'text',
           title: 'Scope',
           font: 'roc-grotesk, sans-serif',
@@ -233,7 +233,7 @@
           type: 'image'
         },
         {
-          src: 'Working out of the Accra studio and residence, we were immersed in Osei Duro’s process and day-to-day. We dove deep, via workshops and collecting insights to inform the brand’s expressions — in photography, casting, styling, tone and content. These images are from their 2019 campaign, shot on location with emerging local talent.',
+          src: 'Establishing the brand’s storytelling style meant immersing ourselves in Osei Duro’s process and day-to-day out of the Accra studio in Ghana.  We dove deep, via workshops and collecting insights, to inform the brand’s expressions in photography, casting, styling, tone and content. These images are from their 2019 campaign, shot on location with emerging local talent.',
           type: 'text',
           title: 'Brand Platform & Campaign Strategy',
           fontSize: '54px',
@@ -295,7 +295,7 @@
           type: 'video'
         },
         {
-          src: 'Carefully crafting each image, capturing the often overlooked in-between moments, the campaign positioned Fable as slow artisanal luxury and celebrates the softness of life at home. We defined codes that felt unique to Fable, for a proprietary sense of refinement and emotionally engaging storytelling — while steering them away from a generic DTC look. ',
+          src: 'Capturing the often overlooked in-between moments at home, our creative strategy positioned Fable’s  identity as slow, artisanal luxury. We defined codes that felt unique to Fable for a proprietary sense of refinement and emotionally engaging storytelling — while steering them away from a generic DTC look.',
           type: 'text',
           title: 'Brand Campaign Strategy',
           fontSize: '54px',
@@ -636,7 +636,7 @@
           backgroundColor: '#C374F6'
         },
         {
-          src: 'Photography Mathieu Fortin, Nik Mirus<br>Assist. Alexis Belhumeur, Aljosa Alijagic, Jeremy Bobrow<br>Styling Marianne Dubreuil<br>HMU Nicolas Blanchet<br> Sets & Props Audrey St-Laurent<br>Brand Strategy Marissa De Miguel<br>Models Nicholas, Hawa, Yvan, Lina<br>Produced & Shot st Studio L’Éloi, Montréal',
+          src: 'Photography Mathieu Fortin, Nik Mirus<br>Assist. Alexis Belhumeur, Aljosa Alijagic, Jeremy Bobrow<br>Styling Marianne Dubreuil<br>HMU Nicolas Blanchet<br> Sets & Props Audrey St-Laurent<br>Brand Strategy Marissa De Miguel<br>Models Nicholas, Hawa, Yvan, Lina<br>Produced & Shot st Studio L’Éloi, Montréal<br>Graphic Design Assist. Vanessa Bourgault',
           type: 'text',
           title: 'Rise Kombucha',
           font: 'roc-grotesk, sans-serif',
@@ -817,7 +817,7 @@
         {
           src: 'Photography Kelly Jacob, Akina Chan, Briggs Ogloff, William Arcand, Marie H. Rainville, Assist. Don Loga, Emily Velasquez Gilbert, Kyle Gibson, Alex Guiry, Axel & Jacques Palomares, Greg Beck <br>Videography Gerardo Alcaine <br>Styling Tinashe Musara, Leila Bani, Tiana Franks, Frédérique Gauthier, Izabel Soucy, Assist. Eunice Huot, Alyson Holler <br>Sets & Props Evelyne Morin <br>HMU Ashley Diabo, Maxine Munsun, Maria Walton, Alana & Maddie Alper, Léonie Lévesque, Claudine Jourdain <br>Models Ivy, Jamil, Ludovie, Kevin, Simone, Zacc, Anastasia, Tatenda, Shade, Whitney, Ciana Yekta, Chanel, Noémie Jérôme, Naomy, Adams, <br>Production Aaron Van Dyck (Vancouver),  Kristia Louis-Seize (Montréal)',
           type: 'text',
-          title: 'Scope',
+          title: 'Credits',
           font: 'roc-grotesk, sans-serif',
           fontSize: '30px',
           color: '#E2EE75',
