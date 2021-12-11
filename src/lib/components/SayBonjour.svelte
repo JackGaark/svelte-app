@@ -30,7 +30,7 @@
       <h1 style="opacity:0; visibility:hidden">{'Founded by'}</h1>
 
       <p>
-        {$_('dialog.sayHi.p1.text4')}
+        <!-- {$_('dialog.sayHi.p1.text4')} -->
       </p>
     {/if}
     <div class="address">
