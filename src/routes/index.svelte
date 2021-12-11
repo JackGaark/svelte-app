@@ -1004,7 +1004,7 @@
           type: 'image'
         },
         {
-          src: 'Through our relationship with Osei Duro, we<br>experienced something beyond a typical partnership.<br>We collaborated with creatives in many cities, travelled and immersed ourselves in different realities, and<br>challenged our understanding of (slow) fashion. It fundamentally changed our understanding of the industry, our practice and our impact.',
+          src: 'Through our relationship with Osei Duro, we<br>experienced something beyond a typical partnership.<br>We collaborated with creatives in many cities, travelled and immersed ourselves in different realities, and schallenged our understanding of (slow) fashion. It fundamentally changed our understanding of the industry, our practice and our impact.',
           type: 'text',
           title: 'A Photo Essay on Slow Fashion',
           fontSize: '54px',
@@ -1123,7 +1123,7 @@
           type: 'image'
         },
         {
-          src: 'For the love of dad — a feminist take on Father’s Day, updating how men are portrayed. Inspired by Linda McCartney’s family photos, our concept was anchored in the compassionate and tender gaze of a partner.<br>Challenging the outdated codes of masculinity, we analyzed what it means to be a father (figure) today and crafted a love letter to the true spirit of fatherhood.',
+          src: 'For the love of dad — a feminist take on Father’s Day, updating how men are portrayed. Inspired by Linda McCartney’s family photos, our concept was anchored in the compassionate and tender gaze of a partner. Challenging the outdated codes of masculinity, we analyzed what it means to be a father (figure) today and crafted a love letter to the true spirit of fatherhood.',
           type: 'text',
           title: 'Campaign Concept & Storytelling',
           fontSize: '54px',
@@ -1131,7 +1131,7 @@
           backgroundColor: '#CABADF'
         },
         {
-          src: 'Sometimes, casting needs to happen on both sides of the lens. We reached out to our community to find the right pairing of family and photographer. <br>Partnering with our favorite London-based photographer, Imogene Barron, we captured sweet father-daughter moments at the Jean-Marie home.<br>Creative Direction<br>Messaging<br>Casting<br>Art Buying<br>Virtual Art Direction',
+          src: 'Sometimes, casting needs to happen on both sides of the lens. We reached out to our community to find the right pairing of family and photographer. <br>Partnering with our favorite London-based photographer, Imogene Barron, we captured sweet father-daughter moments at the Jean-Marie home.<br><br>Creative Direction<br>Messaging<br>Casting<br>Art Buying<br>Virtual Art Direction',
           type: 'text',
           title: 'Scope',
           font: 'roc-grotesk, sans-serif',
@@ -1253,7 +1253,7 @@
           type: 'image'
         },
         {
-          src: 'Creative Direction, Campaign Strategy & On-set Direction<br>Super Bonjour<br>This edit includes images from various seasons.<br>Photography Nik Mirus, Mathieu Fortin<br>Assist. Jeremy Bobrow, Marc-André Dumas<br>DOP Nik Mirus Assist. Gerardo Alcaine, Gaffer Bastien Mayer, Grip Stéphane Klopp<br>Copy & Script Sacha Jackson<br>Sets & Props Evelyne Morin, Audrey St-Laurent, Michaël Ho<br>Styling Rima Chahine<br>Produced & Shot at Studio L’Éloi, Montréal',
+          src: 'Creative Direction, Campaign Strategy & On-set Direction Super Bonjour<br>This edit includes images from various seasons.<br>Photography Nik Mirus, Mathieu Fortin<br>Assist. Jeremy Bobrow, Marc-André Dumas<br>DOP Nik Mirus Assist. Gerardo Alcaine, Gaffer Bastien Mayer, Grip Stéphane Klopp<br>Copy & Script Sacha Jackson<br>Sets & Props Evelyne Morin, Audrey St-Laurent, Michaël Ho<br>Styling Rima Chahine<br>Produced & Shot at Studio L’Éloi, Montréal',
           type: 'text',
           title: 'Fable Home',
           font: 'roc-grotesk, sans-serif',
