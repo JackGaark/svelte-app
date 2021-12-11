@@ -504,7 +504,7 @@
           backgroundColor: '#290B15'
         },
         {
-          src: 'Supporting their slow fashion ethos, we worked with the founders to establish a creative direction designed to last.<br>Creative Direction<br>Art Buying<br>Casting<br>On-set Direction',
+          src: 'Supporting their slow fashion ethos, we worked with the founders to establish a creative direction designed to last.<br><br>Creative Direction<br>Art Buying<br>Casting<br>On-set Direction',
           type: 'text',
           title: 'Scope',
           font: 'roc-grotesk, sans-serif',
@@ -689,7 +689,7 @@
           backgroundColor: '#3851BA'
         },
         {
-          src: 'As Kombi’s strategic and creative partner we supported their internal team throughout campaign development from concept to production. Additionally, we supported the brand to shape their customer facing personality.<br>Creative Direction<br>Campaign Strategy<br>Concept<br>Voice & Messaging<br> Casting<br>Art Buying<br>On-set Direction<br>Seasonal Design Direction<br>Production',
+          src: 'As Kombi’s strategic and creative partner we supported their internal team throughout campaign development from concept to production. Additionally, we supported the brand to shape their customer facing personality.<br><br>Creative Direction<br>Campaign Strategy<br>Concept<br>Voice & Messaging<br> Casting<br>Art Buying<br>On-set Direction<br>Seasonal Design Direction<br>Production',
           type: 'text',
           title: 'Scope',
           font: 'roc-grotesk, sans-serif',
