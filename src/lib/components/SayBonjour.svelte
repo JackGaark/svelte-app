@@ -113,7 +113,7 @@
     font-weight: 400;
     font-family: 'roc-grotesk';
     width: 80%;
-    margin-top: 55px;
+    margin-top: 5px;
   }
   .bonjour-dialog-container .footer {
     color: #000;
