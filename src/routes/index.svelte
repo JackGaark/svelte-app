@@ -764,7 +764,7 @@
         {
           src: 'Vancouver Team — <br>Talent Will Selviz <br>Photography Conor Cunningham <br>Assist. Rob Seebacher, Mats Schram, Donnel Barroso <br>Styling Leila Bani, Assist. Masha Pazhouh, Deo Cruz <br>HMU Christopher Deagle <br>DOP The Pool Service <br>Production Design Hank Mann <br>Sets & Props Freddy Harder, Lauren Barrufa <br>1st AD Richard Amies<br>Production Blue Amber, Vancouver',
           type: 'text',
-          title: 'Scope',
+          title: 'Credits',
           font: 'roc-grotesk, sans-serif',
           fontSize: '30px',
           color: '#E2EE75',
@@ -815,7 +815,7 @@
           type: 'image'
         },
         {
-          src: 'Photography Kelly Jacob, Akina Chan, Briggs Ogloff, William Arcand, Marie H. Rainville, Assist. Don Loga, Emily Velasquez Gilbert, Kyle Gibson, Alex Guiry, Axel & Jacques Palomares, Greg Beck Videography Gerardo Alcaine Styling Tinashe Musara, Leila Bani, Tiana Franks, Frédérique Gauthier, Izabel Soucy, Assist. Eunice Huot, Alyson Holler Sets & Props Evelyne Morin HMU Ashley Diabo, Maxine Munsun, Maria Walton, Alana & Maddie Alper, Léonie Lévesque, Claudine Jourdain Models Ivy, Jamil, Ludovie, Kevin, Simone, Zacc, Anastasia, Tatenda, Shade, Whitney, Ciana Yekta, Chanel, Noémie Jérôme, Naomy, Adams, Production Aaron Van Dyck (Vancouver),  Kristia Louis-Seize (Montréal)',
+          src: 'Photography Kelly Jacob, Akina Chan, Briggs Ogloff, William Arcand, Marie H. Rainville, Assist. Don Loga, Emily Velasquez Gilbert, Kyle Gibson, Alex Guiry, Axel & Jacques Palomares, Greg Beck <br>Videography Gerardo Alcaine <br>Styling Tinashe Musara, Leila Bani, Tiana Franks, Frédérique Gauthier, Izabel Soucy, Assist. Eunice Huot, Alyson Holler <br>Sets & Props Evelyne Morin <br>HMU Ashley Diabo, Maxine Munsun, Maria Walton, Alana & Maddie Alper, Léonie Lévesque, Claudine Jourdain <br>Models Ivy, Jamil, Ludovie, Kevin, Simone, Zacc, Anastasia, Tatenda, Shade, Whitney, Ciana Yekta, Chanel, Noémie Jérôme, Naomy, Adams, <br>Production Aaron Van Dyck (Vancouver),  Kristia Louis-Seize (Montréal)',
           type: 'text',
           title: 'Scope',
           font: 'roc-grotesk, sans-serif',
@@ -868,7 +868,7 @@
           type: 'image'
         },
         {
-          src: 'We updated the brand strategy to support the client’s<br>shift from trend retailer to a purpose-driven brand. We<br>brought significant changes to the DNA, resetting them<br>on a foundation of inclusion, a community-first<br>approach that is still true to the brand today. Extending<br>these values behind the lens with the crew and talent<br>allowed us to prove the Call It Spring family is real.',
+          src: 'We updated the brand strategy to support the client’s shift from trend retailer to a purpose-driven brand. We brought significant changes to the DNA, resetting them on a foundation of inclusion, a community-first approach that is still true to the brand today. Extending these values behind the lens with the crew and talent allowed us to prove the Call It Spring family is real.',
           type: 'text',
           title: 'Creative Direction & Brand DNA',
           fontSize: '54px',
@@ -876,7 +876,7 @@
           backgroundColor: '#CABADF'
         },
         {
-          src: 'As the once-upon-a-time in house, we go way back. Our history, trust and<br>deep understanding of their business reality positioned us as long-term<br>partners.<br>Creative Direction<br>Brand Strategy<br>Messaging Casting<br>On-set Direction<br>SB Secret Sauce Shot List<br>Shoe Face Ratio™',
+          src: 'As the once-upon-a-time in house, we go way back. Our history, trust and deep understanding of their business reality positioned us as long-term partners.<br><br>Creative Direction<br>Brand Strategy<br>Messaging Casting<br>On-set Direction<br>SB Secret Sauce Shot List<br>Shoe Face Ratio™',
           type: 'text',
           title: 'Scope',
           font: 'roc-grotesk, sans-serif',
@@ -885,7 +885,7 @@
           backgroundColor: '#CABADF'
         },
         {
-          src: 'This edit includes images from various seasons.<br>Photography Tim Barber Styling Imogene Barron<br>Sets & Props Sean Daly<br>HMU Nikki Providence, Sandy Ganzer, Danielle & Nicole Kahlani<br>Models KC, Dronme, Sandrine, Shaheem, Barbie, Julian, Christie, Alexis, Bella,<br>Sahara, Josiah<br>Production The Production Club, Jade Jean-Marie, Natasha Forte, Camp<br>Productions Shot on location in LA & London',
+          src: 'This edit includes images from various seasons.<br>Photography Tim Barber Styling Imogene Barron<br>Sets & Props Sean Daly<br>HMU Nikki Providence, Sandy Ganzer, Danielle & Nicole Kahlani<br>Models KC, Dronme, Sandrine, Shaheem, Barbie, Julian, Christie, Alexis, Bella,Sahra, Josiah<br>Production The Production Club, Jade Jean-Marie, Natasha Forte, Camp Productions <br>Shot on location in LA & London',
           type: 'text',
           title: 'Credits',
           font: 'roc-grotesk, sans-serif',
@@ -922,7 +922,7 @@
           type: 'image'
         },
         {
-          src: 'How do you begin with a sound and create imagery that<br>speaks to the emotion and personal message of a song?<br>With Louise Burns, coming to terms with teen stardom<br>led her towards heartbreaking introspection and her<br>fourth album, Portraits. Our creative direction<br>recognized her growth and spoke to the strength of<br>being a grown ass woman.',
+          src: 'How do you begin with a sound and create imagery that speaks to the emotion and personal message of a song?<br>With Louise Burns, coming to terms with teen stardom led her towards heartbreaking introspection and her fourth album, Portraits. Our creative direction recognized her growth and spoke to the strength of being a grown ass woman.',
           type: 'text',
           title: 'Creative Direction & Design',
           fontSize: '54px',
@@ -930,7 +930,7 @@
           backgroundColor: '#1D1D1D'
         },
         {
-          src: 'We worked collaboratively  with Louise to define her new<br>look and build the team to help create it.<br><br>Creative Direction<br>On-set Direction<br>Graphic Design',
+          src: 'We worked collaboratively  with Louise to define her new look and build the team to help create it.<br><br>Creative Direction<br>On-set Direction<br>Graphic Design',
           type: 'text',
           title: 'Scope',
           font: 'roc-grotesk, sans-serif',
@@ -1004,7 +1004,7 @@
           type: 'image'
         },
         {
-          src: 'Through our relationship with Osei Duro, we<br>experienced something beyond a typical partnership.<br>We collaborated with creatives in many cities, travelled<br>and immersed ourselves in different realities, and<br>challenged our understanding of (slow) fashion. It<br>fundamentally changed our understanding of the<br>industry, our practice and our impact.',
+          src: 'Through our relationship with Osei Duro, we<br>experienced something beyond a typical partnership.<br>We collaborated with creatives in many cities, travelled and immersed ourselves in different realities, and<br>challenged our understanding of (slow) fashion. It fundamentally changed our understanding of the industry, our practice and our impact.',
           type: 'text',
           title: 'A Photo Essay on Slow Fashion',
           fontSize: '54px',
@@ -1012,7 +1012,7 @@
           backgroundColor: '#111E'
         },
         {
-          src: 'Campaign Photography Jessica Sarkodie, Mathieu Fortin Film & Travel Photography Super BonjourSets & Props Osei Duro, Super Bonjour Styling Osei Duro, Jay Forest HMU by Alana & Maddie Alper Models Nuerki, Penny Shot in Montréal and in various locations around Accra, Ghana',
+          src: 'Campaign Photography Jessica Sarkodie, Mathieu Fortin <br>Film & Travel Photography Super Bonjour<br>Sets & Props Osei Duro, Super Bonjour <br>Styling Osei Duro, Jay Forest<br>HMU by Alana & Maddie Alper<br>Models Nuerki, Penny<br>Shot in Montréal and in various locations around Accra, Ghana',
           type: 'text',
           title: 'Credits',
           font: 'roc-grotesk, sans-serif',
@@ -1061,7 +1061,7 @@
           type: 'image'
         },
         {
-          src: 'As their creative partners, we worked with the in-house<br>team to course correct their positioning vis-a-vis a<br>booming wellness industry. We refined a proprietary<br>take on self-care and rituals, updated their overall<br>design codes to inform their campaigns, packaging, tone<br>and OOH messaging.',
+          src: 'As their creative partners, we worked with the in-house team to course correct their positioning vis-a-vis a booming wellness industry. We refined a proprietary take on self-care and rituals, updated their overall design codes to inform their campaigns, packaging, tone and OOH messaging.',
           type: 'text',
           title: 'Brand Positioning & Campaign Strategy',
           fontSize: '54px',
@@ -1123,7 +1123,7 @@
           type: 'image'
         },
         {
-          src: 'For the love of dad — a feminist take on Father’s Day,<br>updating how men are portrayed. Inspired by Linda<br>McCartney’s family photos, our concept was anchored in<br>the compassionate and tender gaze of a partner.<br>Challenging the outdated codes of masculinity, we<br>analyzed what it means to be a father (figure) today and<br>crafted a love letter to the true spirit of fatherhood.',
+          src: 'For the love of dad — a feminist take on Father’s Day, updating how men are portrayed. Inspired by Linda McCartney’s family photos, our concept was anchored in the compassionate and tender gaze of a partner.<br>Challenging the outdated codes of masculinity, we analyzed what it means to be a father (figure) today and crafted a love letter to the true spirit of fatherhood.',
           type: 'text',
           title: 'Campaign Concept & Storytelling',
           fontSize: '54px',
@@ -1131,7 +1131,7 @@
           backgroundColor: '#CABADF'
         },
         {
-          src: 'Sometimes, casting needs to happen on both sides of the lens. We<br>reached out to our community to find the right pairing of family and<br> photographer. Partnering with our favorite London-based<br>photographer, Imogene Barron, we captured sweet father-daughter<br>moments at the Jean-Marie home.<br>Creative Direction<br>Messaging<br>Casting<br>Art Buying<br>Virtual Art Direction',
+          src: 'Sometimes, casting needs to happen on both sides of the lens. We reached out to our community to find the right pairing of family and photographer. <br>Partnering with our favorite London-based photographer, Imogene Barron, we captured sweet father-daughter moments at the Jean-Marie home.<br>Creative Direction<br>Messaging<br>Casting<br>Art Buying<br>Virtual Art Direction',
           type: 'text',
           title: 'Scope',
           font: 'roc-grotesk, sans-serif',
@@ -1185,7 +1185,7 @@
           type: 'image'
         },
         {
-          src: 'Starting from a copy brief, we rooted this concept in<br>emotional insights, designed to unite. Capturing that<br>very moment of transformation — the feeling of<br>achieving a new personal best — we called in a<br>community of lunchtime athletes and introducing them<br>to their new favorite retailer.',
+          src: 'Starting from a copy brief, we rooted this concept in<br>emotional insights, designed to unite. Capturing that<br>very moment of transformation — the feeling of<br>achieving a new personal best — we called in a<br>community of lunchtime athletes and introducing them to their new favorite retailer.',
           type: 'text',
           title: 'OOH Campaign Direction',
           fontSize: '54px',
@@ -1193,7 +1193,7 @@
           backgroundColor: '#C34C25'
         },
         {
-          src: 'We joined the in-house team to develop an awareness campaign for multiple<br>cities and new markets.<br><br>Campaign Strategy & Qualitative Insights<br>Storyboarding, Casting & On-set Direction<br>SB Secret Sauce Shot List',
+          src: 'We joined the in-house team to develop an awareness campaign for multiple cities and new markets.<br><br>Campaign Strategy & Qualitative Insights<br>Storyboarding, Casting & On-set Direction<br>SB Secret Sauce Shot List',
           type: 'text',
           title: 'Scope',
           font: 'roc-grotesk, sans-serif',
@@ -1253,7 +1253,7 @@
           type: 'image'
         },
         {
-          src: 'Creative Direction, Campaign Strategy & On-set Direction<br>Super Bonjour<br>This edit includes images from various seasons.<br>Photography Nik Mirus, Mathieu Fortin<br>Assist. Jeremy Bobrow, Marc-André Dumas<br>DOP Nik Mirus Assist. Gerardo Alcaine, Gaffer Bastien<br>Mayer, Grip Stéphane Klopp<br> Copy & Script Sacha Jackson<br>Sets & Props Evelyne Morin, Audrey St-Laurent, Michaël Ho<br>Styling Rima Chahine<br>Produced & Shot at Studio L’Éloi, Montréal',
+          src: 'Creative Direction, Campaign Strategy & On-set Direction<br>Super Bonjour<br>This edit includes images from various seasons.<br>Photography Nik Mirus, Mathieu Fortin<br>Assist. Jeremy Bobrow, Marc-André Dumas<br>DOP Nik Mirus Assist. Gerardo Alcaine, Gaffer Bastien Mayer, Grip Stéphane Klopp<br>Copy & Script Sacha Jackson<br>Sets & Props Evelyne Morin, Audrey St-Laurent, Michaël Ho<br>Styling Rima Chahine<br>Produced & Shot at Studio L’Éloi, Montréal',
           type: 'text',
           title: 'Fable Home',
           font: 'roc-grotesk, sans-serif',
