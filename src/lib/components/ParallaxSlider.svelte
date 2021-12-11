@@ -355,7 +355,7 @@
   .text_slide_container {
     padding-left: 55px;
     padding-top: 50px;
-    width: 80%;
+    width: 88%;
     line-height: 130%;
   }
 

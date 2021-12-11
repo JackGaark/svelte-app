@@ -98,12 +98,9 @@ export const en = {
       title: 'Bonjour, Hi',
       p1: {
         text1: 'We work with brands and businesses seeking strategy informed by cultural relevance and design that safeguards value and longevity. We advocate for progressive, sustainable lifestyles and we believe in accountability.',
-        text2: 'We also believe in multiple time dimensions, but that’s beside the point. Contact us if any of that sounds right to you',
-        text3: 'Contact us if any of that sounds right to you ✿ you can get in touch in via <a href="mailto:vanda@superbonjour.com">email</a>. Or snail mail ✎ or slide into our <a href="https://www.instagram.com/super_bonjour/">DMs</a> ツ if that’s your thing',
-        text4: 'Super Bonjour is founded by Reanna Evoy (PST) & Vanda Daftari (EST). ',
-        text5: 'Or slide into',
-        text6: 'Our DMS.',
-        text7: "If that's your thing",
+        // text2: 'We also believe in multiple time dimensions, but that’s beside the point.',
+        text3: 'We also believe in multiple time dimensions, but that’s beside the point.<br><br>Contact us if any of that sounds right to you. You can get in touch ✿ <a href="mailto:vanda@superbonjour.com" style="color: #F8D0FB" letter-spacing: "0.05em">via email</a>. Or snail mail ✎ or slide into <a href="https://www.instagram.com/super_bonjour/" style="color: #F8D0FB">our DMs</a> ツ if that’s your thing.<br><br>Super Bonjour is founded by Reanna Evoy (PST) and Vanda Daftari (EST). ',
+        // text4: 'Super Bonjour is founded by Reanna Evoy (PST) & Vanda Daftari (EST). '
       },
       address1: {
         title: 'West Coast Offices',

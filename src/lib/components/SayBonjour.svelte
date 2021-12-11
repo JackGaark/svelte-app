@@ -10,7 +10,7 @@
     <h1>{$_('dialog.sayHi.title')}</h1>
     <p class="p1">
       {$_('dialog.sayHi.p1.text1')}
-      {$_('dialog.sayHi.p1.text2')}
+      <!-- {$_('dialog.sayHi.p1.text2')} -->
       {#if isMobile}
         <br />
         <br />
@@ -18,11 +18,11 @@
       {@html $_('dialog.sayHi.p1.text3')}
       <br />
       {#if !isMobile}
-        {$_('dialog.sayHi.p1.text4')}
+        <!-- {$_('dialog.sayHi.p1.text4')} -->
       {/if}
-      {$_('dialog.sayHi.p1.text5')}
+      <!-- {$_('dialog.sayHi.p1.text5')}
       {$_('dialog.sayHi.p1.text6')}
-      {$_('dialog.sayHi.p1.text7')}
+      {$_('dialog.sayHi.p1.text7')} -->
     </p>
   </div>
   <div>
@@ -45,10 +45,14 @@
     <div class="footer">
         <div class="social">
           <h3>
-            GENERAL INQUIRIES <span
-              ><span style="color:#1900ff;">·</span> IG
-              <span style="color:#1900ff;">·</span> LINKEDIN</span
-            >
+            GENERAL INQUIRIES
+            <span>
+              <span style="color:#F8D0FB;">·</span>
+              IG
+              <span style="color:#F8D0FB;">·
+
+              </span> LINKEDIN
+            </span>
           </h3>
         </div>
 
@@ -64,7 +68,7 @@
 
 <style>
   .bonjour-button {
-    background-color: #c84501;
+    background-color: #E93E3E;
     writing-mode: vertical-rl;
     text-orientation: sideways;
     position: absolute;
@@ -100,7 +104,7 @@
     font-size: 0.875rem;
     font-weight: 400;
     font-family: 'roc-grotesk';
-    width: 88%;
+    width: 80%;
   }
   .bonjour-dialog-container .footer {
     color: #000;
@@ -123,6 +127,7 @@
     color: #f86c01;
     top: 245px;
     right: 25px;
+    text-transform: uppercase;
   }
 
   @media screen and (max-width: 600px) {

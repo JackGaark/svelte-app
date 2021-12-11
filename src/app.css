@@ -43,6 +43,7 @@ body {
 a {
   color: rgb(0, 100, 200);
   text-decoration: none;
+  font-family: 'moret';
 }
 
 a:hover {

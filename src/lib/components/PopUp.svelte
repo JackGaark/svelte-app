@@ -278,7 +278,7 @@
     z-index: 1;
   }
   .bonjour-button {
-    background-color: #c84501;
+    background-color: #E93E3E;
     writing-mode: vertical-rl;
     text-orientation: sideways;
     position: absolute;
@@ -294,6 +294,7 @@
     cursor: pointer;
     width: 8px;
     line-height: 8px;
+    text-transform: uppercase;
   }
   .bonjour-dialog {
     width: 485px;
