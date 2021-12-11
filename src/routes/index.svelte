@@ -110,7 +110,7 @@
       Bonjour! <span style="color:#f86c00">✿</span>
       Our work looks best, viewed on desktop. We love a big screen with lots of pixels, but if
       <span style="color:#F8D0FB">☏</span>
-      mobile's your thing,<span style="color:#E0A239">➙</span> rotate your device, that would be
+      mobile's your thing <span style="color:#E0A239">➙</span> <span style="color:#f86c00">rotate your device</span>, that would be
       Super
       <span style="color:#F8D0FB">❛‿❛</span>
     </p>
