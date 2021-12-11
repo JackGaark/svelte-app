@@ -441,7 +441,7 @@
           backgroundColor: '#C3862C'
         },
         {
-          src: 'Our strategy evolved Nine Point’s brand identity into a complete ecosystem,<br>including branding, design, direction, tone and photography.<br><br>Brand Strategy<br>Creative Direction<br>Identity & Digital Design<br>Voice & Messaging<br>Art Direction<br>Off-figure Sets & Props',
+          src: 'Our strategy evolved Nine Point’s brand identity into a complete ecosystem,including branding, design, direction, tone and photography.<br><br>Brand Strategy<br>Creative Direction<br>Identity & Digital Design<br>Voice & Messaging<br>Art Direction<br>Off-figure Sets & Props',
           type: 'text',
           title: 'Scope',
           font: 'roc-grotesk, sans-serif',
@@ -561,7 +561,7 @@
           backgroundColor: '#C84600'
         },
         {
-          src: 'Having history with the brand and team, SB x LB share a lot of trust and respect.<br>As their campaign partners, we have had the pleasure to support their brand<br>leaders and creative team.<br><br>Creative Direction<br>Campaign Strategy<br>Casting<br>Art Buying<br>On-set Direction<br>Seasonal Design Direction',
+          src: 'Having history with the brand and team, SB x LB share a lot of trust and respect. As their campaign partners, we have had the pleasure to support their brand leaders and creative team.<br><br>Creative Direction<br>Campaign Strategy<br>Casting<br>Art Buying<br>On-set Direction<br>Seasonal Design Direction',
           type: 'text',
           title: 'Scope',
           font: 'roc-grotesk, sans-serif',
@@ -570,7 +570,7 @@
           backgroundColor: '#C84600'
         },
         {
-          src: 'Photography Melissa Gamache, Pegah Farahmand, Carlo Calope<br>Assist. Renaud Lafrenière, Patrick Custo-Blanch, William Cole, Jeremy Bobrow,<br>Aljosa Alijagic, Don Loga<br>Styling Frederique Gauthier, Tinashe Musara, Assist. Leah Grantham, Haji Maa<br>HMU Cynthia-Christina Cadieux, Marianne Caron, Léonie Lévesque, Assist. Ana-<br>Maria Cimpoia, Claudine Jourdain<br>Models Jefferson, Sophie, Jade, Celeste, Mustapha, Sheida, Damian, Miranda,<br>Megane, Chelsea, Miles, Soukayna<br>Sets & Props Michaël Ho, Marie Hélène Lavoie<br>Production Kristia Louis-Seize, Studio L’Éloi, Little Burgundy Shoes',
+          src: 'Photography Melissa Gamache, Pegah Farahmand, Carlo Calope<br>Assist. Renaud Lafrenière, Patrick Custo-Blanch, William Cole, Jeremy Bobrow, Aljosa Alijagic, Don Loga<br>Styling Frederique Gauthier, Tinashe Musara, Assist. Leah Grantham, Haji Maa<br>HMU Cynthia-Christina Cadieux, Marianne Caron, Léonie Lévesque, <br>Assist. Ana-Maria Cimpoia, Claudine Jourdain<br>Models Jefferson, Sophie, Jade, Celeste, Mustapha, Sheida, Damian, Miranda, Megane, Chelsea, Miles, Soukayna<br>Sets & Props Michaël Ho, Marie Hélène Lavoie<br>Production Kristia Louis-Seize, Studio L’Éloi, Little Burgundy Shoes',
           type: 'text',
           title: 'Credits',
           font: 'roc-grotesk, sans-serif',
@@ -689,7 +689,7 @@
           backgroundColor: '#3851BA'
         },
         {
-          src: 'As Kombi’s strategic and creative partner we supported their internal team<br>throughout campaign development from concept to production.<br> Additionally, we supported the brand to shape their customer facing personality.<br>Creative Direction<br>Campaign Strategy<br>Concept<br>Voice & Messaging<br> Casting<br>Art Buying<br>On-set Direction<br>Seasonal Design Direction<br>Production',
+          src: 'As Kombi’s strategic and creative partner we supported their internal team throughout campaign development from concept to production. Additionally, we supported the brand to shape their customer facing personality.<br>Creative Direction<br>Campaign Strategy<br>Concept<br>Voice & Messaging<br> Casting<br>Art Buying<br>On-set Direction<br>Seasonal Design Direction<br>Production',
           type: 'text',
           title: 'Scope',
           font: 'roc-grotesk, sans-serif',
@@ -698,7 +698,7 @@
           backgroundColor: '#3851BA'
         },
         {
-          src: 'Photography Kelly Jacob, assisted by Renaud Robert, Tom Berthelot<br>  Videography  Matt Charland, Oli Chapo<br>Styling Izabel Soucy, Assist. Samuel Joubert<br>HMU Valeria Amirova<br>Models Sam, Juliette, Jade, Cole, Rokko Riders<br>Catherine Perrault, Antoine St-Hilaire, Julien Gauthier, Jacob Gagnon<br>Producer Jade Fortin Côté, Assist.  Alexis Gauvin B.',
+          src: 'Photography Kelly Jacob, Assist. Renaud Robert, Tom Berthelot<br>  Videography  Matt Charland, Oli Chapo<br>Styling Izabel Soucy, Assist. Samuel Joubert<br>HMU Valeria Amirova<br>Models Sam, Juliette, Jade, Cole, Rokko Riders<br>Catherine Perrault, Antoine St-Hilaire, Julien Gauthier, Jacob Gagnon<br>Producer Jade Fortin Côté, Assist. Alexis Gauvin B.',
           type: 'text',
           title: 'Credits',
           font: 'roc-grotesk, sans-serif',
@@ -762,7 +762,7 @@
           backgroundColor: '#222232'
         },
         {
-          src: 'Vancouver Team — Talent Will Selviz Photography Conor Cunningham Assist. Rob Seebacher, Mats Schram, Donnel Barroso Styling Leila Bani, Assist. Masha Pazhouh, Deo Cruz HMU Christopher Deagle DOP The Pool Service Production Design Hank Mann Sets & Props Freddy Harder, Lauren Barrufa 1st AD Richard AmiesProduction Blue Amber, Vancouver',
+          src: 'Vancouver Team — <br>Talent Will Selviz <br>Photography Conor Cunningham <br>Assist. Rob Seebacher, Mats Schram, Donnel Barroso <br>Styling Leila Bani, Assist. Masha Pazhouh, Deo Cruz <br>HMU Christopher Deagle <br>DOP The Pool Service <br>Production Design Hank Mann <br>Sets & Props Freddy Harder, Lauren Barrufa <br>1st AD Richard Amies<br>Production Blue Amber, Vancouver',
           type: 'text',
           title: 'Scope',
           font: 'roc-grotesk, sans-serif',
