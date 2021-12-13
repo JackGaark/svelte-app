@@ -26,7 +26,7 @@
   // Check for mobile device.
   onMount(async () => {
     //for testing purpose on mobile
-    let forceMobile = true;
+    let forceMobile = false;
     isMobile = checkIsMobile(forceMobile);
     if (isMobile) {
       document.body.scrollTop = 0;
