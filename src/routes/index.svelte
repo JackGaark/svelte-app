@@ -25,6 +25,7 @@
   $: isLandscapeView = false;
   // Check for mobile device.
   onMount(async () => {
+    //for testing purpose on mobile
     let forceMobile = true;
     isMobile = checkIsMobile(forceMobile);
     if (isMobile) {

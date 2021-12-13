@@ -1,5 +1,6 @@
 <script>
   import { _ } from 'svelte-i18n';
+import { start_hydrating } from 'svelte/internal';
 
   export let hideBonjourDialog;
   export let isMobile;
@@ -17,8 +18,10 @@
       {/if}
       {@html $_('dialog.sayHi.p1.text3')}
       <br />
+      <br />
+      
       {#if !isMobile}
-        <!-- {$_('dialog.sayHi.p1.text4')} -->
+        {$_('dialog.sayHi.p1.text4')}
       {/if}
       <!-- {$_('dialog.sayHi.p1.text5')}
       {$_('dialog.sayHi.p1.text6')}
@@ -30,15 +33,15 @@
       <h1 style="opacity:0; visibility:hidden">{'Founded by'}</h1>
 
       <p>
-        <!-- {$_('dialog.sayHi.p1.text4')} -->
+        {$_('dialog.sayHi.p1.text4')}
       </p>
     {/if}
     <div class="address">
-      <h4>{$_('dialog.sayHi.address1.title')}</h4>
+      <h4>{@html $_('dialog.sayHi.address1.title')}</h4>
       <span>{$_('dialog.sayHi.address1.text')}</span>
     </div>
     <div class="address">
-      <h4>{$_('dialog.sayHi.address2.title')}</h4>
+      <h4>{@html $_('dialog.sayHi.address2.title')}</h4>
       <span>{$_('dialog.sayHi.address2.text')}</span>
     </div>
 
@@ -59,6 +62,7 @@
         </div>
 
       <p>{$_('dialog.sayHi.footer.text')}</p>
+      <p>{$_('dialog.sayHi.disclaimer.text')}</p>
     </div>
     {#if !isMobile}
       <div class="bonjour-button close" on:click={hideBonjourDialog}>
@@ -100,7 +104,7 @@
   }
   .bonjour-dialog-container h1 {
     font-weight: 100;
-    font-size: 1.125rem;
+    font-size: .875rem;
     font-family: 'Opposit-Medium';
     color: #fff;
   }
@@ -129,7 +133,7 @@
   
 
   .bonjour-dialog-container .footer .social h3 {
-    font-size: 16px;
+    font-size: .875rem;
     letter-spacing: .015rem;
     font-family: 'moret';
     color: #e2ee75;
@@ -164,16 +168,16 @@
       display: flex;
     }
     .bonjour-dialog-container h1 {
-      font-size: 12px;
+      font-size: .875rem;
     }
     .bonjour-dialog-container p,
     .bonjour-dialog-container .p1 {
       line-height: 1.3;
-      font-size: 16px;
+      font-size: .875rem;
     }
 
     .bonjour-dialog-container .footer p {
-      font-size: 12px;
+      font-size: .875rem;
     }
     .bonjour-button {
       display: none;
