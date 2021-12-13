@@ -99,12 +99,12 @@ import { start_hydrating } from 'svelte/internal';
     color: #1f0edf;
     overflow-y: auto;
     font-family: 'roc-grotesk';
-    font-size: .875rem;
+    font-size: 1rem;
     font-weight: 400;
   }
   .bonjour-dialog-container h1 {
     font-weight: 100;
-    font-size: .875rem;
+    font-size: 1rem;
     font-family: 'Opposit-Medium';
     color: #fff;
   }
@@ -112,7 +112,7 @@ import { start_hydrating } from 'svelte/internal';
     margin-bottom: 0;
     margin-top: 0;
     font-weight: 700;
-    font-size: .875rem;
+    font-size: 1rem;
     font-family: 'roc-grotesk';
   }
   .bonjour-dialog-container .p1 {
@@ -133,7 +133,7 @@ import { start_hydrating } from 'svelte/internal';
   
 
   .bonjour-dialog-container .footer .social h3 {
-    font-size: .875rem;
+    font-size: 1rem;
     letter-spacing: .015rem;
     font-family: 'moret';
     color: #e2ee75;
@@ -168,16 +168,16 @@ import { start_hydrating } from 'svelte/internal';
       display: flex;
     }
     .bonjour-dialog-container h1 {
-      font-size: .875rem;
+      font-size: 1rem;
     }
     .bonjour-dialog-container p,
     .bonjour-dialog-container .p1 {
       line-height: 1.3;
-      font-size: .875rem;
+      font-size: 1rem;
     }
 
     .bonjour-dialog-container .footer p {
-      font-size: .875rem;
+      font-size: 1rem;
     }
     .bonjour-button {
       display: none;
