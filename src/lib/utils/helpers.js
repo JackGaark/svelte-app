@@ -1,5 +1,8 @@
 // A function to detect whether the user is on a mobile device.
-export const checkIsMobile = function () {
+export const checkIsMobile = function (force = false) {
+  if (force) {
+    return true;
+  }
   let check = false;
   (function (a) {
     if (

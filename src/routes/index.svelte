@@ -25,7 +25,8 @@
   $: isLandscapeView = false;
   // Check for mobile device.
   onMount(async () => {
-    isMobile = checkIsMobile();
+    let forceMobile = true;
+    isMobile = checkIsMobile(forceMobile);
     if (isMobile) {
       document.body.scrollTop = 0;
       document.body.style.overflow = 'hidden';
@@ -73,15 +74,13 @@
 </script>
 
 <svelte:head>
-  <title>
-    SuperBonjour
-  </title>
-  <meta name="description" content="Creative agency"/>
-    <meta
+  <title>SuperBonjour</title>
+  <meta name="description" content="Creative agency" />
+  <meta
     name="viewport"
     content="height=device-height, initial-scale=1, width=device-width, initial-scale=1"
-    />
-  </svelte:head>
+  />
+</svelte:head>
 <svelte:body
   on:viewportchanged={() => {
     innerWidth = viewport.Width;
@@ -110,8 +109,8 @@
       Bonjour! <span style="color:#f86c00">✿</span>
       Our work looks best, viewed on desktop. We love a big screen with lots of pixels, but if
       <span style="color:#F8D0FB">☏</span>
-      mobile's your thing <span style="color:#E0A239">➙</span> <span style="color:#f86c00">rotate your device</span>, that would be
-      Super
+      mobile's your thing <span style="color:#E0A239">➙</span>
+      <span style="color:#f86c00">rotate your device</span>, that would be Super
       <span style="color:#F8D0FB">❛‿❛</span>
     </p>
   </div>
