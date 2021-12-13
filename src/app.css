@@ -40,6 +40,15 @@ body {
     'Helvetica Neue', sans-serif;
 }
 
+a.contact-link {
+  color: #F8D0FB;
+
+}
+
+a.contact-link:hover {
+  color: #e2ee75;
+}
+
 a {
   color: rgb(0, 100, 200);
   text-decoration: none;

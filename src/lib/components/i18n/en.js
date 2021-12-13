@@ -99,7 +99,7 @@ export const en = {
       p1: {
         text1: 'We work with brands and businesses seeking strategy informed by cultural relevance and design that safeguards value and longevity. We advocate for progressive, sustainable lifestyles and we believe in accountability.',
         // text2: 'We also believe in multiple time dimensions, but that’s beside the point.',
-        text3: 'We also believe in multiple time dimensions, but that’s beside the point.<br><br>Contact us if any of that sounds right to you. You can get in touch ✿ <a href="mailto:vanda@superbonjour.com" style="color: #F8D0FB" letter-spacing: "0.05em">via email</a>. Or snail mail ✎ or slide into <a href="https://www.instagram.com/super_bonjour/" style="color: #F8D0FB">our DMs</a> if that’s your ツ thing.<br><br>Super Bonjour is founded by Reanna Evoy (PST) and Vanda Daftari (EST). ',
+        text3: 'We also believe in multiple time dimensions, but that’s beside the point.<br><br>Contact us if any of that sounds right to you. You can get in touch ✿ <a href="mailto:vanda@superbonjour.com" target="__blank" style="letter-spacing: 0.05em" class="contact-link">via email</a>. Or snail mail ✎ or slide into <a href="https://www.instagram.com/super_bonjour/" target="__blank" class="contact-link">our DMs</a> if that’s your ツ thing.<br><br>Super Bonjour is founded by Reanna Evoy (PST) and Vanda Daftari (EST). ',
         // text4: 'Super Bonjour is founded by Reanna Evoy (PST) & Vanda Daftari (EST). '
       },
       address1: {

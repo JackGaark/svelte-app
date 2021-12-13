@@ -45,15 +45,16 @@
     <div class="footer">
         <div class="social">
           <h3>
-            <a href="https://www.instagram.com/super_bonjour/">GENERAL INQUIRIES
+            <a href="mailto:vanda@superbonjour.com" target="__blank" class="contact-link">GENERAL INQUIRIES
             </a> 
-            <span>
-              <span  style="color:#F8D0FB;">·</span>
+            <a href="https://www.instagram.com/super_bonjour/" target="__blank" class="contact-link">
+              <span>·</span>
               IG
-              <span style="color:#F8D0FB;">·
-
-              </span> LINKEDIN
-            </span>
+            </a>
+            <a href="https://www.linkedin.com/company/super-bonjour/" target="__blank" class="contact-link">
+              <span>·</span>
+              LINKEDIN
+            </a>
           </h3>
         </div>
 
@@ -68,7 +69,9 @@
 </div>
 
 <style>
-  .bonjour-button {
+    
+
+    .bonjour-button {
     background-color: #E93E3E;
     writing-mode: vertical-rl;
     text-orientation: sideways;
