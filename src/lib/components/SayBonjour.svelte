@@ -48,7 +48,7 @@ import { start_hydrating } from 'svelte/internal';
     <div class="footer">
         <div class="social">
           <h3>
-            <a href="mailto:vanda@superbonjour.com" target="__blank" class="contact-link">GENERAL INQUIRIES
+            <a href="mailto:salut@superbonjour.com" target="__blank" class="contact-link">GENERAL INQUIRIES
             </a> 
             <a href="https://www.instagram.com/super_bonjour/" target="__blank" class="contact-link">
               <span>·</span>
@@ -99,7 +99,7 @@ import { start_hydrating } from 'svelte/internal';
     color: #1f0edf;
     overflow-y: auto;
     font-family: 'roc-grotesk';
-    font-size: 1rem;
+    font-size: .875rem;
     font-weight: 400;
   }
   .bonjour-dialog-container h1 {
@@ -112,7 +112,7 @@ import { start_hydrating } from 'svelte/internal';
     margin-bottom: 0;
     margin-top: 0;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: .875rem;
     font-family: 'roc-grotesk';
   }
   .bonjour-dialog-container .p1 {
