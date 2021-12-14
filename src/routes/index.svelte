@@ -1004,7 +1004,7 @@
           type: 'image'
         },
         {
-          src: 'Through our relationship with Osei Duro, we<br>experienced something beyond a typical partnership.<br>We collaborated with creatives in many cities, travelled and immersed ourselves in different realities, and schallenged our understanding of (slow) fashion. It fundamentally changed our understanding of the industry, our practice and our impact.',
+          src: 'Through our relationship with Osei Duro, we<br>experienced something beyond a typical partnership.<br>We collaborated with creatives in many cities, travelled and immersed ourselves in different realities, and challenged our understanding of (slow) fashion. It fundamentally changed our understanding of the industry, our practice and our impact.',
           type: 'text',
           title: 'A Photo Essay on Slow Fashion',
           fontSize: '54px',
