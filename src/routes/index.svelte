@@ -1185,7 +1185,7 @@
           type: 'image'
         },
         {
-          src: 'Starting from a copy brief, we rooted this concept in<br>emotional insights, designed to unite. Capturing that<br>very moment of transformation — the feeling of<br>achieving a new personal best — we called in a<br>community of lunchtime athletes and introducing them to their new favorite retailer.',
+          src: 'Starting from a copy brief, we rooted this concept in emotional insights, designed to unite. Capturing that very moment of transformation — the feeling of achieving a new personal best — we called in a community of lunchtime athletes and introducing them to their new favorite retailer.',
           type: 'text',
           title: 'OOH Campaign Direction',
           fontSize: '54px',
