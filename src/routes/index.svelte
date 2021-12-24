@@ -76,7 +76,7 @@
 
 <svelte:head>
   <title>SuperBonjour</title>
-  <meta name="description" content="Creative agency" />
+  <meta name="description" content="Creative Studio. We specialize in strategy, branding & content. We work with brands seeking cultural relevance. We advocate for progressive & sustainable values." />
   <meta
     name="viewport"
     content="height=device-height, initial-scale=1, width=device-width, initial-scale=1"
