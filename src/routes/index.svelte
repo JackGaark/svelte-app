@@ -81,6 +81,7 @@
     name="viewport"
     content="height=device-height, initial-scale=1, width=device-width, initial-scale=1"
   />
+  <meta property="og:url" content="https://www.superbonjour.com/"/>
 </svelte:head>
 <svelte:body
   on:viewportchanged={() => {
