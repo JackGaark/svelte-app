@@ -77,7 +77,6 @@
 <svelte:head>
   <title>SuperBonjour</title>
   <meta name="description" content="Creative agency" />
-  <meta property="og:url" content={"https://www.superbonjour.com/"} />
   <meta
     name="viewport"
     content="height=device-height, initial-scale=1, width=device-width, initial-scale=1"
