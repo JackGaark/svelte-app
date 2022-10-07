@@ -2,6 +2,7 @@
   import Lazy from 'svelte-lazy';
   import { debounce } from '$lib/utils/helpers';
 
+
   export let slidesData;
   export let title;
   export let title2;
@@ -53,10 +54,13 @@
   $: mobile_width = Math.round(innerHeight * aspectRatio.mobile); //in px
   $: DESKTOP_WIDTH = 100; //in vw
 
+
   // Calculates the offset for the x translation.
   let calculateXOffset = (w) => {
+    //w = width
     // [offset] is calculated by multiplying the width by the active index.
     let offset = active_index * w;
+    console.log("w", w)
     // When on mobile, the last slide has the image from the previous slide showing on the left.
     if (isMobile && active_index === slides.length - 1) {
       // calculate the left padding by taking the width of the window - the current slide width
@@ -65,19 +69,23 @@
     }
     return 0 - offset;
   };
+  
 
   // Handles the translation on [sliderEl] to move to the next slide.
   const nextSlide = () => {
     // On last slide of project, go to next project index.
+    if (active_index == 6) {
+      debugger
+    }
     if (isMobile && active_index === slides.length - 1) {
       return updateProjectIndex(id + 1);
     }
     // Update active index.
     active_index = active_index < slides.length - 1 ? active_index + 1 : 0;
     let translate_x = isMobile
-      ? `${calculateXOffset(mobile_width)}px`
-      : `${calculateXOffset(DESKTOP_WIDTH)}vw`;
-
+    ? `${calculateXOffset(mobile_width)}px`
+    : `${calculateXOffset(DESKTOP_WIDTH)}vw`;
+    
     return (sliderEl.style.transform = `translateX(${translate_x})`);
   };
 
