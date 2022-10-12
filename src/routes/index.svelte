@@ -47,7 +47,7 @@
   });
 
   let containerEl;
-  let MAX_DISPLAY_PROJECT = 10; //number of project before the more button
+  let MAX_DISPLAY_PROJECT = 17; //number of project before the more button
   let MAX_NUM_PROJECTS = 17; // number of projects in html.
   // Keep track of the currently displayed project state.
   $: current_project_index = 0;
