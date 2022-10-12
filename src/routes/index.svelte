@@ -47,10 +47,16 @@
   });
 
   let containerEl;
-  let MAX_DISPLAY_PROJECT = 17; //number of project before the more button
+  let MAX_DISPLAY_PROJECT = 10; //number of project before the more button
+  let CURRENT_NUM_PROJECTS_DISPLAY = MAX_DISPLAY_PROJECT;
   let MAX_NUM_PROJECTS = 17; // number of projects in html.
   // Keep track of the currently displayed project state.
   $: current_project_index = 0;
+
+  function clickbutton() {
+    alert('hello');
+    CURRENT_NUM_PROJECTS_DISPLAY = MAX_NUM_PROJECTS;
+  }
 
   // Slide in the next project vertically, if it exists.
   const nextProject = (project_index) => {
@@ -1134,9 +1140,11 @@
 <PopUp bind:modalOpen isMobile={isMobile && isLandscapeView} />
 
 <main>
+  <button on:click={clickbutton}>next project</button>
+
   <div class="container" bind:this={containerEl}>
     {#each projectsArray as project, i}
-      {#if i < MAX_DISPLAY_PROJECT}
+      {#if i < CURRENT_NUM_PROJECTS_DISPLAY}
         <ParallaxSlider
           id={project.id}
           updateProjectIndex={(id) => handleProjectUpdate(id)}
