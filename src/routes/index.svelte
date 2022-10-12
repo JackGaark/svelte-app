@@ -47,6 +47,7 @@
   });
 
   let containerEl;
+  let MAX_DISPLAY_PROJECT = 10; //number of project before the more button
   let MAX_NUM_PROJECTS = 17; // number of projects in html.
   // Keep track of the currently displayed project state.
   $: current_project_index = 0;
@@ -1134,18 +1135,20 @@
 
 <main>
   <div class="container" bind:this={containerEl}>
-    {#each projectsArray as project}
-      <ParallaxSlider
-        id={project.id}
-        updateProjectIndex={(id) => handleProjectUpdate(id)}
-        title={$_(project.title)}
-        titleFont="roc-grotesk"
-        title2={$_(project.title2)}
-        isMobile={isMobile && isLandscapeView}
-        {innerWidth}
-        {innerHeight}
-        slidesData={project.slidesData}
-      />
+    {#each projectsArray as project, i}
+      {#if i < MAX_DISPLAY_PROJECT}
+        <ParallaxSlider
+          id={project.id}
+          updateProjectIndex={(id) => handleProjectUpdate(id)}
+          title={$_(project.title)}
+          titleFont="roc-grotesk"
+          title2={$_(project.title2)}
+          isMobile={isMobile && isLandscapeView}
+          {innerWidth}
+          {innerHeight}
+          slidesData={project.slidesData}
+        />
+      {/if}
     {/each}
   </div>
 </main>
