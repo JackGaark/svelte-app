@@ -46,40 +46,6 @@
     })();
   });
 
-  let containerEl;
-  let MAX_DISPLAY_PROJECT = 10; //number of project before the more button
-  let CURRENT_NUM_PROJECTS_DISPLAY = MAX_DISPLAY_PROJECT;
-  let MAX_NUM_PROJECTS = 17; // number of projects in html.
-  // Keep track of the currently displayed project state.
-  $: current_project_index = 0;
-
-  function clickbutton() {
-    alert('hello');
-    CURRENT_NUM_PROJECTS_DISPLAY = MAX_NUM_PROJECTS;
-  }
-
-  // Slide in the next project vertically, if it exists.
-  const nextProject = (project_index) => {
-    console.log(project_index);
-    if (project_index < MAX_NUM_PROJECTS) {
-      return (containerEl.style.transform = `translate(0px, ${0 - project_index * innerHeight}px)`);
-    }
-  };
-
-  // Slide in vertically previous project if it exists.
-  const prevProject = (project_index) => {
-    if (project_index >= 0 && project_index <= MAX_NUM_PROJECTS) {
-      return (containerEl.style.transform = `translate(0px, ${0 - project_index * innerHeight}px)`);
-    }
-  };
-
-  // Handles project state.
-  const handleProjectUpdate = (updated_project_index) => {
-    updated_project_index > current_project_index
-      ? nextProject(updated_project_index)
-      : prevProject(updated_project_index);
-    return (current_project_index = updated_project_index);
-  };
   const projectsArray = [
     {
       id: 0,
@@ -1075,6 +1041,42 @@
       ]
     }
   ];
+
+  let containerEl;
+  let MAX_DISPLAY_PROJECT = 2; //number of project before the more button
+  let CURRENT_NUM_PROJECTS_DISPLAY = MAX_DISPLAY_PROJECT;
+  let MAX_NUM_PROJECTS = projectsArray.length; // number of projects in html.
+  let showMoreProjectsButton = true; //load all projects and hide button
+  // Keep track of the currently displayed project state.
+  $: current_project_index = 0;
+
+  function loadMoreProjects() {
+    showMoreProjectsButton = false;
+    CURRENT_NUM_PROJECTS_DISPLAY = MAX_NUM_PROJECTS;
+  }
+
+  // Slide in the next project vertically, if it exists.
+  const nextProject = (project_index) => {
+    console.log(project_index);
+    if (project_index < MAX_NUM_PROJECTS) {
+      return (containerEl.style.transform = `translate(0px, ${0 - project_index * innerHeight}px)`);
+    }
+  };
+
+  // Slide in vertically previous project if it exists.
+  const prevProject = (project_index) => {
+    if (project_index >= 0 && project_index <= MAX_NUM_PROJECTS) {
+      return (containerEl.style.transform = `translate(0px, ${0 - project_index * innerHeight}px)`);
+    }
+  };
+
+  // Handles project state.
+  const handleProjectUpdate = (updated_project_index) => {
+    updated_project_index > current_project_index
+      ? nextProject(updated_project_index)
+      : prevProject(updated_project_index);
+    return (current_project_index = updated_project_index);
+  };
 </script>
 
 <svelte:head>
@@ -1140,8 +1142,6 @@
 <PopUp bind:modalOpen isMobile={isMobile && isLandscapeView} />
 
 <main>
-  <button on:click={clickbutton}>next project</button>
-
   <div class="container" bind:this={containerEl}>
     {#each projectsArray as project, i}
       {#if i < CURRENT_NUM_PROJECTS_DISPLAY}
@@ -1158,6 +1158,9 @@
         />
       {/if}
     {/each}
+    {#if showMoreProjectsButton}
+      <button on:click={loadMoreProjects}>show more projects</button>
+    {/if}
   </div>
 </main>
 

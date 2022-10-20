@@ -2,7 +2,8 @@ export const en = {
   slider: {
     1: {
       title: 'Herschel Magazine — ',
-      title2: '2020'
+      title2: '2020',
+      src: 'Super Bonjour guided Herschel away from their regionalist identity, and placed them in a global community. We used the magazine to reposition the brand, while working with our network to generate lasting ties with creatives and travelers.  Vol 1: Islands — a theme explored geographically and metaphorically.'
     },
     2: {
       title: 'Osei Duro — ',
@@ -91,31 +92,33 @@ export const en = {
       content3: 'Experiential Activations'
     },
     clientList: {
-      title: 'Client List',
+      title: 'Client List'
     },
     sayBonjour: 'Say Bonjour',
     sayHi: {
       title: 'Bonjour, Hi',
       p1: {
-        text1: 'We work with brands and businesses seeking strategy informed by cultural relevance and design that safeguards value and longevity. We advocate for progressive, sustainable lifestyles and we believe in accountability.',
+        text1:
+          'We work with brands and businesses seeking strategy informed by cultural relevance and design that safeguards value and longevity. We advocate for progressive, sustainable lifestyles and we believe in accountability.',
         // text2: 'We also believe in multiple time dimensions, but that’s beside the point.',
-        text3: 'We also believe in multiple time dimensions, but that’s beside the point.<br><br>Contact us if any of that sounds right to you. You can get in touch ✿ <a href="mailto:salut@superbonjour.com" target="__blank" style="letter-spacing: 0.05em" class="contact-link">via email</a>. Or snail mail ✎ or slide into <a href="https://www.instagram.com/super_bonjour/" target="__blank" class="contact-link">our DMs</a> if that’s your ツ thing.',
+        text3:
+          'We also believe in multiple time dimensions, but that’s beside the point.<br><br>Contact us if any of that sounds right to you. You can get in touch ✿ <a href="mailto:salut@superbonjour.com" target="__blank" style="letter-spacing: 0.05em" class="contact-link">via email</a>. Or snail mail ✎ or slide into <a href="https://www.instagram.com/super_bonjour/" target="__blank" class="contact-link">our DMs</a> if that’s your ツ thing.',
         text4: 'Super Bonjour is founded by Reanna Evoy (PST) & Vanda Daftari (EST). '
       },
       address1: {
         title: '<strong class="addressTitle">West Coast Offices</strong>',
-        text: '478 Union street, Vancouver, BC CA — V6A 2B6',
+        text: '478 Union street, Vancouver, BC CA — V6A 2B6'
       },
       address2: {
         title: '<strong class="addressTitle">East Coast Offices</strong>',
-        text: '1747 Saint Patrick, Montréal, QC CA — H3K 3G9',
+        text: '1747 Saint Patrick, Montréal, QC CA — H3K 3G9'
       },
       footer: {
-        text: 'We acknowledges that in Vancouver we operate on unceded Coast Salish territory of the sḵwx̱wú7mesh (Squamish), sel̓íl̓witulh (Tsleil-Waututh), and xʷməθkʷəy̓əm (Musqueam) nations and that in Tiohtiá:ke (known as Montreal) we operate on the unceded traditional territory of the Kanien’kehá:ka Nation.',
+        text: 'We acknowledges that in Vancouver we operate on unceded Coast Salish territory of the sḵwx̱wú7mesh (Squamish), sel̓íl̓witulh (Tsleil-Waututh), and xʷməθkʷəy̓əm (Musqueam) nations and that in Tiohtiá:ke (known as Montreal) we operate on the unceded traditional territory of the Kanien’kehá:ka Nation.'
       },
       disclaimer: {
         text: 'NB— La gang, on ne vous oublie pas. Le site sera bientôt bilingue! ✎✎✎ 2022, inshallah!'
       }
-    },
-  },
+    }
+  }
 };
