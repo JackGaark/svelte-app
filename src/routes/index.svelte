@@ -77,26 +77,26 @@
           type: 'image'
         },
         {
-          src: 'Super Bonjour guided Herschel away from their regionalist identity, and placed them in a global community. We used the magazine to reposition the brand, while working with our network to generate lasting ties with creatives and travelers.  Vol 1: Islands — a theme explored geographically and metaphorically.',
+          src: 'slider.1.slidesData.1.src',
           type: 'text',
-          title: 'Creating a Travel Magazine',
+          title: 'slider.1.slidesData.1.title',
           fontSize: '54px',
           color: '#4E151D',
           backgroundColor: '#C3862C'
         },
         {
-          src: '360 Content Strategy —<br>We took on the full scope of the project from editorial lineups, commissioning original content, social media meta accounts and branded Google Docs. We planned a launch event, during the LA Art Book Fair, on Echo Park’s island and a 1-800 number connecting callers to the sounds of island life.<br><br>Brand Positioning, Creative Direction <br>Production, Theme Development, Contributor Outreach <br>Pagination & Flatplan, Art Direction, Editorial Design<br>Print Management & Distribution Strategy <br>Event & Activation',
+          src: 'slider.1.slidesData.2.src',
           type: 'text',
-          title: 'Scope',
+          title: 'slider.1.slidesData.2.title',
           font: 'roc-grotesk, sans-serif',
           fontSize: '30px',
           color: '#E2EE75',
           backgroundColor: '#C3862C'
         },
         {
-          src: 'Imogene Barron, Ryan Daniel Browne, Eva Cremers, Natasha & Dino Forte, Michelle Maguire, Meaghan Way, Kelsey McClellan, Ashley Oliveri, Catherine Potvin, Marie H. Rainville, Houmi Sakata, Victoria Sieczka, Aileen Son, Oumayma Ben Tanfous, Stephanie Mercier Voyer, Stephen Wilde, ​​Nico Young<br>Sacha Jackson, Editor<br><br>Featuring Hana Vu, Danny Smiles, Bradley Sheppard, Amélie Rousseaux, Apolla Echino, Maxime Bayol, Marc Cefalu<br><br>Awards<br> Editorial, Entire Publication — Applied Arts 2021<br>Design, Éditorial — Concours Idéa 2021',
+          src: 'slider.1.slidesData.3.src',
           type: 'text',
-          title: 'Contributors',
+          title: 'slider.1.slidesData.3.title',
           font: 'roc-grotesk, sans-serif',
           fontSize: '30px',
           color: '#E2EE75',
@@ -138,26 +138,26 @@
           type: 'image'
         },
         {
-          src: 'Establishing the brand’s storytelling style meant immersing ourselves in Osei Duro’s process and day-to-day out of the Accra studio in Ghana.  We dove deep, via workshops and collecting insights, to inform the brand’s expressions in photography, casting, styling, tone and content. These images are from their 2019 campaign, shot on location with emerging local talent.',
+          src: 'slider.2.slidesData.1.src',
           type: 'text',
-          title: 'Brand Platform & Campaign Strategy',
+          title: 'slider.2.slidesData.1.title',
           fontSize: '54px',
           color: '#E1D8CA',
           backgroundColor: '#111E0C'
         },
         {
-          src: 'Deep Dive & Immersion — <br>Factory and textile print shop visits and day-to-day operations<br><br>Brand Audit & Strategy — <br>Review of all the content to help establish a new strategy,<br> workshops and brand platform<br><br>2019 Campaign Shoots —<br>Creative Direction<br>Pre-production & On-set Direction<br>Campaign Shoots, on location<br>Lookbook Direction',
+          src: 'slider.2.slidesData.2.src',
           type: 'text',
-          title: 'Scope',
+          title: 'slider.2.slidesData.2.title',
           font: 'roc-grotesk, sans-serif',
           fontSize: '30px',
           color: '#E2EE75',
           backgroundColor: '#111E0C'
         },
         {
-          src: 'Campaign Photography Kay Kwabia<br>Film Photography Super Bonjour<br>Sets & Props Osei Duro, Super Bonjour<br>Styling Osei Duro, footwear and accessories sourced from Kantamanto Market<br>Models Eyiwaa, Amisum, Julee, David<br>Shot in Accra, Ghana',
+          src: 'slider.2.slidesData.3.src',
           type: 'text',
-          title: 'Credits',
+          title: 'slider.2.slidesData.3.title',
           font: 'roc-grotesk, sans-serif',
           fontSize: '30px',
           color: '#E2EE75',
@@ -195,26 +195,26 @@
           type: 'video'
         },
         {
-          src: 'Capturing the often overlooked in-between moments at home, our creative strategy positioned Fable’s  identity as slow, artisanal luxury. We defined codes that felt unique to Fable for a proprietary sense of refinement and emotionally engaging storytelling — while steering them away from a generic DTC look.',
+          src: 'slider.3.slidesData.1.src',
           type: 'text',
-          title: 'Brand Campaign Strategy',
+          title: 'slider.3.slidesData.1.title',
           fontSize: '54px',
           color: '#CBD0BA',
           backgroundColor: '##290B15'
         },
         {
-          src: 'Brand Audit & Campaign Strategy —<br>Review of the photo content on digital channels to establish a new strategy<br><br>2020 Campaign Shoot —<br> Creative Direction<br>Pre-production & On-set Direction<br>Ecomm Direction ',
+          src: 'slider.3.slidesData.2.src',
           type: 'text',
-          title: 'Scope',
+          title: 'slider.3.slidesData.2.title',
           font: 'roc-grotesk, sans-serif',
           fontSize: '30px',
           color: '#E2EE75',
           backgroundColor: '##290B15'
         },
         {
-          src: 'Campaign Photography Mathieu Fortin<br>Campaign Videography Gerardo Alcaine<br>Sets & Props Audrey St-Laurent<br>Retouching & E-commerce Photography Bonesso Dumas<br>Copy Sacha Jackson<br>Produced & Shot at Studio L’Éloi, Montréal',
+          src: 'slider.3.slidesData.3.src',
           type: 'text',
-          title: 'Credits',
+          title: 'slider.3.slidesData.3.title',
           font: 'roc-grotesk, sans-serif',
           fontSize: '30px',
           color: '#E2EE75',
@@ -256,26 +256,26 @@
           type: 'image'
         },
         {
-          src: 'A fresh take on everyone’s favourite backpack, we repositioned Herschel’s PNW roots: moving them out of the forest and into the world. Tapping into transformative travel, we explored the trip itself. How? Each season we discovered a new city with soul and a neighbourhood with community to tell stories about stepping outside and connecting to culture. ',
+          src: 'slider.4.slidesData.1.src',
           type: 'text',
-          title: 'Positioning & Seasonal Campaign Direction',
+          title: 'slider.4.slidesData.1.title',
           fontSize: '54px',
           color: '#CABADF',
           backgroundColor: '#384163'
         },
         {
-          src: 'In a creative partnership with their internal team, we supported their brand strategy by developing a distinct approach to seasonal versus product campaigns and a go-to-market strategy (drops and partnerships). <br><br>Creative Direction<br>Campaign Strategy<br>On-set Direction',
+          src: 'slider.4.slidesData.2.src',
           type: 'text',
-          title: 'Scope',
+          title: 'slider.4.slidesData.2.title',
           font: 'roc-grotesk, sans-serif',
           fontSize: '30px',
           color: '#E2EE75',
           backgroundColor: '#384163'
         },
         {
-          src: 'This edit includes images from various seasons<br>Photography Stephen Wilde<br>Styling Mila Franovic, Tiana Franks<br>Sets & Props Oliver Stenberg<br>HMU Maxine Munson, Becca Randle, Maria Walton<br>Production Marta Sanderson, Pip Groom, Robyn Farnham<br>Shot in LA, London & Vancouver',
+          src: 'slider.4.slidesData.3.src',
           type: 'text',
-          title: 'Credits',
+          title: 'slider.4.slidesData.3.title',
           font: 'roc-grotesk, sans-serif',
           fontSize: '30px',
           color: '#E2EE75',
@@ -639,8 +639,8 @@
     },
     {
       id: 11,
-      title: 'slides.12.title',
-      title2: 'slides.12.title2',
+      title: 'slider.12.title',
+      title2: 'slider.12.title2',
       slidesData: [
         {
           src: 'images/CIS_1.jpg',
@@ -704,8 +704,8 @@
     },
     {
       id: 12,
-      title: 'slides.13.title',
-      title2: 'slides.13.title2',
+      title: 'slider.13.title',
+      title2: 'slider.13.title2',
       slidesData: [
         {
           src: 'images/LOUISE_1.jpg',
@@ -753,8 +753,8 @@
     },
     {
       id: 13,
-      title: 'slides.14.title',
-      title2: 'slides.14.title2',
+      title: 'slider.14.title',
+      title2: 'slider.14.title2',
       slidesData: [
         {
           src: 'images/GHANA_1.jpg',
@@ -1032,7 +1032,7 @@
         {
           src: 'Creative Direction, Campaign Strategy & On-set Direction Super Bonjour<br>This edit includes images from various seasons.<br>Photography Nik Mirus, Mathieu Fortin<br>Assist. Jeremy Bobrow, Marc-André Dumas<br>DOP Nik Mirus Assist. Gerardo Alcaine, Gaffer Bastien Mayer, Grip Stéphane Klopp<br>Copy & Script Sacha Jackson<br>Sets & Props Evelyne Morin, Audrey St-Laurent, Michaël Ho<br>Styling Rima Chahine<br>Produced & Shot at Studio L’Éloi, Montréal',
           type: 'text',
-          title: 'Fable Home',
+          title: "David's Tea",
           font: 'roc-grotesk, sans-serif',
           fontSize: '30px',
           color: '#E2EE75',

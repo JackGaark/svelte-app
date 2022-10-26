@@ -1,17 +1,19 @@
 <script>
   import Lazy from 'svelte-lazy';
   import { debounce } from '$lib/utils/helpers';
+  import { _ } from 'svelte-i18n';
+  import { initI18n } from '$lib/components/i18n/i18n.js';
 
+  initI18n();
 
   export let slidesData;
   export let title;
   export let title2;
   export let titleFont;
   export let title2Font;
-  const cdnImageUrl = "https://res.cloudinary.com/dzzdoq1bq/image/upload/v1638569218/static/"
+  const cdnImageUrl = 'https://res.cloudinary.com/dzzdoq1bq/image/upload/v1638569218/static/';
 
-  const cdnVideoUrl = "https://res.cloudinary.com/dzzdoq1bq/video/upload/v1638569211/static/"
-
+  const cdnVideoUrl = 'https://res.cloudinary.com/dzzdoq1bq/video/upload/v1638569211/static/';
 
   // [isMobile] means the user is on a mobile device AND in landscape mode.
   export let isMobile = false;
@@ -54,13 +56,12 @@
   $: mobile_width = Math.round(innerHeight * aspectRatio.mobile); //in px
   $: DESKTOP_WIDTH = 100; //in vw
 
-
   // Calculates the offset for the x translation.
   let calculateXOffset = (w) => {
     //w = width
     // [offset] is calculated by multiplying the width by the active index.
     let offset = active_index * w;
-    console.log("w", w)
+    console.log('w', w);
     // When on mobile, the last slide has the image from the previous slide showing on the left.
     if (isMobile && active_index === slides.length - 1) {
       // calculate the left padding by taking the width of the window - the current slide width
@@ -69,13 +70,12 @@
     }
     return 0 - offset;
   };
-  
 
   // Handles the translation on [sliderEl] to move to the next slide.
   const nextSlide = () => {
     // On last slide of project, go to next project index.
     if (active_index == 6) {
-      debugger
+      debugger;
     }
     if (isMobile && active_index === slides.length - 1) {
       return updateProjectIndex(id + 1);
@@ -83,9 +83,9 @@
     // Update active index.
     active_index = active_index < slides.length - 1 ? active_index + 1 : 0;
     let translate_x = isMobile
-    ? `${calculateXOffset(mobile_width)}px`
-    : `${calculateXOffset(DESKTOP_WIDTH)}vw`;
-    
+      ? `${calculateXOffset(mobile_width)}px`
+      : `${calculateXOffset(DESKTOP_WIDTH)}vw`;
+
     return (sliderEl.style.transform = `translateX(${translate_x})`);
   };
 
@@ -145,7 +145,7 @@
 >
   <img class="image-logo" src="images/LOGO-Ai small_Super Bonjour smaller.svg" alt="Logo" />
   <div class="mobile-tap-caption" on:click={handleSliderClick}>Tap!</div>
-  
+
   <!-- <img class="image-logo mobile" src="images/LOGOFACE-Ai.svg" alt="Logo" /> -->
   <div class={'slider-title'}>
     <h2>
@@ -186,7 +186,9 @@
             <div
               id={i}
               class={`slide ${sliderCursor};`}
-              style={`background-position: ${i}00vw center; background-image: url(${cdnImageUrl}${slide.src});
+              style={`background-position: ${i}00vw center; background-image: url(${cdnImageUrl}${
+                slide.src
+              });
               ${isMobile ? `height:${innerHeight}px;` : ''}; `}
             />
           </Lazy>
@@ -200,7 +202,7 @@
               isMobile ? '' : 'width:100vw'
             }
             ${isMobile ? `height:${innerHeight}px;` : ''}; background-color: ${
-            slide.backgroundColor || ''
+              slide.backgroundColor || ''
             };`}
           >
             <div
@@ -256,7 +258,7 @@
                   `}
                 >
                   <h5 class="text_title text_title_mobile">
-                    {textSlide.title}
+                    {$_(textSlide.title)}
                   </h5>
                   <p
                     class="text_mobile"
@@ -266,16 +268,16 @@
                     color: ${textSlide.color};
                     `}
                   >
-                    {@html textSlide.src}
+                    {@html $_(textSlide.src)}
                   </p>
                 </div>
               {/each}
             {:else}
               <div class="text_slide_container">
                 <h5 class="text_title">
-                  {slide.title}
+                  {$_(slide.title)}
                 </h5>
-                {@html slide.src}
+                {@html $_(slide.src)}
               </div>
             {/if}
           </div>
@@ -286,8 +288,7 @@
 </div>
 
 <style>
-
-.mobile-tap-caption {
+  .mobile-tap-caption {
     display: none;
   }
   video::-webkit-media-controls-fullscreen-button,
@@ -496,7 +497,7 @@
     .mobile-tap-caption {
       font-family: 'Opposit-Medium';
       text-transform: uppercase;
-      letter-spacing: .12rem;
+      letter-spacing: 0.12rem;
       display: block;
       position: absolute;
       top: 50vh;
@@ -511,7 +512,7 @@
       line-height: 50px;
       text-align: center;
     }
-    
+
     .slider-title {
       margin-bottom: -10px;
       font-size: 1.75rem;
