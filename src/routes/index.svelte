@@ -13,6 +13,7 @@
   function showModal() {
     modalOpen = true;
   }
+
   function hideModal() {
     modalOpen = false;
   }
@@ -667,8 +668,8 @@
     },
     {
       id: 11,
-      title: 'slides.12.title',
-      title2: 'slides.12.title2',
+      title: 'slider.12.title',
+      title2: 'slider.12.title2',
       slidesData: [
         {
           src: 'images/CIS_1.jpg',
@@ -732,8 +733,8 @@
     },
     {
       id: 12,
-      title: 'slides.13.title',
-      title2: 'slides.13.title2',
+      title: 'slider.13.title',
+      title2: 'slider.13.title2',
       slidesData: [
         {
           src: 'images/LOUISE_1.jpg',
@@ -781,8 +782,8 @@
     },
     {
       id: 13,
-      title: 'slides.14.title',
-      title2: 'slides.14.title2',
+      title: 'slider.14.title',
+      title2: 'slider.14.title2',
       slidesData: [
         {
           src: 'images/GHANA_1.jpg',
