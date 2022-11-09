@@ -1178,6 +1178,7 @@
   .container {
     overflow: hidden;
     transition: transform 0.5s linear;
+    position: absolute;
   }
   .header {
     position: fixed;
@@ -1199,6 +1200,13 @@
     display: none;
   }
 
+  .background-image-Menu {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    position: relative;
+  }
+
   $bg: #f3f8fa;
   $white: #fff;
   $black: #282936;
@@ -1215,8 +1223,8 @@
     }
   }
   button {
+    z-index: 5;
     position: relative;
-    display: inline-block;
     cursor: pointer;
     outline: none;
     border: 0;
@@ -1298,9 +1306,9 @@
   }
 
   #buttonContainer {
-    margin-left: 50%;
-    align-self: center;
-    justify-self: center;
+    right: 20px;
+    z-index: 1000;
+    padding-bottom: 50px;
   }
 
   /* Portrait Mobile*/
