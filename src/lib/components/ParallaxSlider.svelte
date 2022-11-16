@@ -6,6 +6,7 @@
 
   initI18n();
 
+  export let isPreview;
   export let slidesData;
   export let title;
   export let title2;
@@ -138,7 +139,7 @@
   }} />
 
 <div
-  class="slider-wrapper"
+  class={`slider-wrapper ${isPreview ? 'slider-wrapper-preview' : ''}`}
   bind:clientWidth={wrapperWidth}
   on:mousemove={handleMousemove}
   style={isMobile ? `width:${innerWidth}px; height:${innerHeight}px;` : ''}
@@ -286,8 +287,26 @@
     {/each}
   </div>
 </div>
+{#if isPreview}
+  <div class="fadeout" />
+{/if}
 
 <style>
+  .fadeout {
+    position: relative;
+    bottom: 4em;
+    height: 4em;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background-image: -o-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background-image: -ms-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  }
+
+  .slider-wrapper-preview {
+    height: 50vh;
+    opacity: 0.7;
+  }
   .mobile-tap-caption {
     display: none;
   }

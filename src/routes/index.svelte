@@ -1043,7 +1043,7 @@
   ];
 
   let containerEl;
-  let MAX_DISPLAY_PROJECT = 2; //number of project before the more button
+  let MAX_DISPLAY_PROJECT = 5; //number of project before the more button
   let CURRENT_NUM_PROJECTS_DISPLAY = MAX_DISPLAY_PROJECT;
   let MAX_NUM_PROJECTS = projectsArray.length; // number of projects in html.
   let showMoreProjectsButton = true; //load all projects and hide button
@@ -1146,6 +1146,8 @@
     {#each projectsArray as project, i}
       {#if i < CURRENT_NUM_PROJECTS_DISPLAY}
         <ParallaxSlider
+          isPreview={i == CURRENT_NUM_PROJECTS_DISPLAY - 1 &&
+            CURRENT_NUM_PROJECTS_DISPLAY !== MAX_NUM_PROJECTS}
           id={project.id}
           updateProjectIndex={(id) => handleProjectUpdate(id)}
           title={$_(project.title)}
