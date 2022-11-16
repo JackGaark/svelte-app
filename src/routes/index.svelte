@@ -1159,14 +1159,12 @@
       {/if}
     {/each}
     {#if showMoreProjectsButton}
-      <div id="buttonContainer">
-        <button on:click={loadMoreProjects} class="learn-more">
-          <span class="circle" aria-hidden="true">
-            <span class="icon arrow" />
-          </span>
-          <span class="button-text">Learn More</span>
-        </button>
-      </div>
+      <button on:click={loadMoreProjects} class="learn-more">
+        <span class="circle" aria-hidden="true">
+          <span class="icon arrow" />
+        </span>
+        <span class="button-text">Learn More</span>
+      </button>
     {/if}
   </div>
 </main>
@@ -1223,8 +1221,9 @@
     }
   }
   button {
+    bottom: 2rem;
     z-index: 5;
-    position: relative;
+    position: absolute;
     cursor: pointer;
     outline: none;
     border: 0;
@@ -1234,6 +1233,7 @@
     padding: 0;
     font-size: inherit;
     font-family: inherit;
+    left: 50%;
     &.learn-more {
       width: 12rem;
       height: auto;
@@ -1303,12 +1303,6 @@
         color: $white;
       }
     }
-  }
-
-  #buttonContainer {
-    right: 20px;
-    z-index: 1000;
-    padding-bottom: 50px;
   }
 
   /* Portrait Mobile*/
