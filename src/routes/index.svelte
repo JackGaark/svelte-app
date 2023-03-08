@@ -672,6 +672,55 @@
       title2: 'slider.11.title2',
       slidesData: [
         {
+          src: 'images/LB_2_1.jpg',
+          type: 'image'
+        },
+        {
+          imageSrc: 'images/LB_2_2.jpg',
+          videoSrc: 'videos/LB_2_2v.mp4',
+          type: 'two-columns'
+        },
+        {
+          src: 'images/LB_2_3.jpg',
+          type: 'image'
+        },
+        {
+          src: 'images/LB_2_4.jpg',
+          type: 'image'
+        },
+        {
+          src: 'images/LB_2_5.jpg',
+          type: 'image'
+        },
+        {
+          src: 'images/LB_2_6.jpg',
+          type: 'image'
+        },
+        {
+          src: 'images/LB_2_7.jpg',
+          type: 'image'
+        },
+        {
+          src: 'images/LB_2_8.jpg',
+          type: 'image'
+        },
+        {
+          src: 'Photography Kelly Jacob, Akina Chan, Briggs Ogloff, William Arcand, Marie H. Rainville, Assist. Don Loga, Emily Velasquez Gilbert, Kyle Gibson, Alex Guiry, Axel & Jacques Palomares, Greg Beck <br>Videography Gerardo Alcaine <br>Styling Tinashe Musara, Leila Bani, Tiana Franks, Frédérique Gauthier, Izabel Soucy, Assist. Eunice Huot, Alyson Holler <br>Sets & Props Evelyne Morin <br>HMU Ashley Diabo, Maxine Munsun, Maria Walton, Alana & Maddie Alper, Léonie Lévesque, Claudine Jourdain <br>Models Ivy, Jamil, Ludovie, Kevin, Simone, Zacc, Anastasia, Tatenda, Shade, Whitney, Ciana Yekta, Chanel, Noémie Jérôme, Naomy, Adams, <br>Production Aaron Van Dyck (Vancouver),  Kristia Louis-Seize (Montréal)',
+          type: 'text',
+          title: 'Credits',
+          font: 'roc-grotesk, sans-serif',
+          fontSize: '30px',
+          color: '#E2EE75',
+          backgroundColor: '#A3232E'
+        }
+      ]
+    },
+    {
+      id: 11,
+      title: 'slider.12.title',
+      title2: 'slider.12.title2',
+      slidesData: [
+        {
           src: 'images/CIS_1.jpg',
           type: 'image'
         },
@@ -732,9 +781,9 @@
       ]
     },
     {
-      id: 11,
-      title: 'slider.12.title',
-      title2: 'slider.12.title2',
+      id: 12,
+      title: 'slider.13.title',
+      title2: 'slider.13.title2',
       slidesData: [
         {
           src: 'images/LOUISE_1.jpg',
@@ -781,9 +830,9 @@
       ]
     },
     {
-      id: 12,
-      title: 'slider.13.title',
-      title2: 'slider.13.title2',
+      id: 13,
+      title: 'slider.14.title',
+      title2: 'slider.14.title2',
       slidesData: [
         {
           src: 'images/GHANA_1.jpg',
@@ -849,9 +898,9 @@
       ]
     },
     {
-      id: 13,
-      title: 'slider.14.title',
-      title2: 'slider.14.title2',
+      id: 14,
+      title: 'slider.15.title',
+      title2: 'slider.15.title2',
       slidesData: [
         {
           src: 'images/DT1_1.jpg',
@@ -910,9 +959,9 @@
       ]
     },
     {
-      id: 14,
-      title: 'slider.15.title',
-      title2: 'slider.15.title2',
+      id: 15,
+      title: 'slider.16.title',
+      title2: 'slider.16.title2',
       slidesData: [
         {
           src: 'images/Saxx_1.jpg',
@@ -967,9 +1016,9 @@
       ]
     },
     {
-      id: 15,
-      title: 'slider.16.title',
-      title2: 'slider.16.title2',
+      id: 16,
+      title: 'slider.17.title',
+      title2: 'slider.17.title2',
       slidesData: [
         {
           src: 'images/ALTI_1.jpg',
@@ -1024,9 +1073,9 @@
       ]
     },
     {
-      id: 16,
-      title: 'slider.17.title',
-      title2: 'slider.17.title2',
+      id: 17,
+      title: 'slider.18.title',
+      title2: 'slider.18.title2',
       slidesData: [
         {
           src: 'images/DT_2_1.jpg',

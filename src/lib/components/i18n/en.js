@@ -45,15 +45,15 @@ export const en = {
       title2: '2019/20'
     },
     12: {
-      title: ' Louise Burns — ',
+      title: 'Call It Spring — ',
       title2: '2019/20'
     },
     13: {
-      title: 'Ghana — ',
+      title: 'Louise Burns — ',
       title2: '2019'
     },
     14: {
-      title: 'Call It Spring — ',
+      title: 'Ghana — ',
       title2: '2019'
     },
     15: {
