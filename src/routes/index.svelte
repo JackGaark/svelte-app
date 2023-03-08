@@ -490,9 +490,9 @@
       ]
     },
     {
-      id: 8,
-      title: 'slider.9.title',
-      title2: 'slider.9.title2',
+      id: 7,
+      title: 'slider.8.title',
+      title2: 'slider.8.title2',
       slidesData: [
         {
           src: 'images/Rise_1.jpg',
@@ -551,9 +551,9 @@
       ]
     },
     {
-      id: 9,
-      title: 'slider.10.title',
-      title2: 'slider.10.title2',
+      id: 8,
+      title: 'slider.9.title',
+      title2: 'slider.9.title2',
       slidesData: [
         {
           src: 'images/KOMBI_1.jpg',
@@ -608,9 +608,9 @@
       ]
     },
     {
-      id: 10,
-      title: 'slider.11.title',
-      title2: 'slider.11.title2',
+      id: 9,
+      title: 'slider.10.title',
+      title2: 'slider.10.title2',
       slidesData: [
         {
           src: 'images/NIKE_1.jpg',
@@ -667,9 +667,9 @@
       ]
     },
     {
-      id: 11,
-      title: 'slider.12.title',
-      title2: 'slider.12.title2',
+      id: 10,
+      title: 'slider.11.title',
+      title2: 'slider.11.title2',
       slidesData: [
         {
           src: 'images/CIS_1.jpg',
@@ -732,9 +732,9 @@
       ]
     },
     {
-      id: 12,
-      title: 'slider.13.title',
-      title2: 'slider.13.title2',
+      id: 11,
+      title: 'slider.12.title',
+      title2: 'slider.12.title2',
       slidesData: [
         {
           src: 'images/LOUISE_1.jpg',
@@ -781,9 +781,9 @@
       ]
     },
     {
-      id: 13,
-      title: 'slider.14.title',
-      title2: 'slider.14.title2',
+      id: 12,
+      title: 'slider.13.title',
+      title2: 'slider.13.title2',
       slidesData: [
         {
           src: 'images/GHANA_1.jpg',
@@ -849,9 +849,9 @@
       ]
     },
     {
-      id: 14,
-      title: 'slider.15.title',
-      title2: 'slider.15.title2',
+      id: 13,
+      title: 'slider.14.title',
+      title2: 'slider.14.title2',
       slidesData: [
         {
           src: 'images/DT1_1.jpg',
@@ -910,9 +910,9 @@
       ]
     },
     {
-      id: 15,
-      title: 'slider.16.title',
-      title2: 'slider.16.title2',
+      id: 14,
+      title: 'slider.15.title',
+      title2: 'slider.15.title2',
       slidesData: [
         {
           src: 'images/Saxx_1.jpg',
@@ -967,9 +967,9 @@
       ]
     },
     {
-      id: 16,
-      title: 'slider.17.title',
-      title2: 'slider.17.title2',
+      id: 15,
+      title: 'slider.16.title',
+      title2: 'slider.16.title2',
       slidesData: [
         {
           src: 'images/ALTI_1.jpg',
@@ -1024,9 +1024,9 @@
       ]
     },
     {
-      id: 17,
-      title: 'slider.18.title',
-      title2: 'slider.18.title2',
+      id: 16,
+      title: 'slider.17.title',
+      title2: 'slider.17.title2',
       slidesData: [
         {
           src: 'images/DT_2_1.jpg',
